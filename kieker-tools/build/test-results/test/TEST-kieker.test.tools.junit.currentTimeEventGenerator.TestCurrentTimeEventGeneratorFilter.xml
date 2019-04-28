@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kieker.test.tools.junit.currentTimeEventGenerator.TestCurrentTimeEventGeneratorFilter" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-04-28T08:03:49" hostname="icedsoul-PC" time="0.049">
+  <properties/>
+  <testcase name="testSecondBeyondBoundEvent" classname="kieker.test.tools.junit.currentTimeEventGenerator.TestCurrentTimeEventGeneratorFilter" time="0.009"/>
+  <testcase name="testSecondOnBoundEvent" classname="kieker.test.tools.junit.currentTimeEventGenerator.TestCurrentTimeEventGeneratorFilter" time="0.009"/>
+  <testcase name="testSecondWithinBoundNoEvent" classname="kieker.test.tools.junit.currentTimeEventGenerator.TestCurrentTimeEventGeneratorFilter" time="0.008"/>
+  <testcase name="testTwoWithinBoundOnlyOneEvent" classname="kieker.test.tools.junit.currentTimeEventGenerator.TestCurrentTimeEventGeneratorFilter" time="0.008"/>
+  <testcase name="testFirstRecordGeneratesEvent" classname="kieker.test.tools.junit.currentTimeEventGenerator.TestCurrentTimeEventGeneratorFilter" time="0.007"/>
+  <testcase name="testGapIntermediateEvents" classname="kieker.test.tools.junit.currentTimeEventGenerator.TestCurrentTimeEventGeneratorFilter" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[四月 28, 2019 4:03:49 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:49 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.currentTimeEventGenerator.TestCurrentTimeEventGeneratorFilter.testSecondBeyondBoundEvent()
+
+
+四月 28, 2019 4:03:49 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 28, 2019 4:03:49 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 28, 2019 4:03:49 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:49 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.currentTimeEventGenerator.TestCurrentTimeEventGeneratorFilter.testSecondOnBoundEvent()
+
+
+四月 28, 2019 4:03:49 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 28, 2019 4:03:49 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 28, 2019 4:03:49 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:49 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.currentTimeEventGenerator.TestCurrentTimeEventGeneratorFilter.testSecondWithinBoundNoEvent()
+
+
+四月 28, 2019 4:03:49 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 28, 2019 4:03:49 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 28, 2019 4:03:49 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:49 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.currentTimeEventGenerator.TestCurrentTimeEventGeneratorFilter.testTwoWithinBoundOnlyOneEvent()
+
+
+四月 28, 2019 4:03:49 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 28, 2019 4:03:49 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 28, 2019 4:03:49 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:49 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.currentTimeEventGenerator.TestCurrentTimeEventGeneratorFilter.testFirstRecordGeneratesEvent()
+
+
+四月 28, 2019 4:03:49 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 28, 2019 4:03:49 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 28, 2019 4:03:49 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:49 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.currentTimeEventGenerator.TestCurrentTimeEventGeneratorFilter.testGapIntermediateEvents()
+
+
+四月 28, 2019 4:03:49 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 28, 2019 4:03:49 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+]]></system-err>
+</testsuite>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.2.2" timestamp="2019-04-28T16:00:26.415">
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/core/controller/TestControllerConstruction.java">
+<violation beginline="35" endline="71" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="kieker.test.monitoring.junit.core.controller" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/core/controller/TestMonitoringControllerRecordsPassedInMonitoringStates.java">
+<violation beginline="36" endline="102" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="kieker.test.monitoring.junit.core.controller" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/core/controller/TestMonitoringControllerStateTransitions.java">
+<violation beginline="35" endline="144" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="kieker.test.monitoring.junit.core.controller" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/core/sampler/TestPeriodicSampling.java">
+<violation beginline="40" endline="79" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="kieker.test.monitoring.junit.core.sampler" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/core/signaturePattern/TestPatternParser.java">
+<violation beginline="37" endline="383" begincolumn="8" endcolumn="1" rule="ModifiedCyclomaticComplexity" ruleset="Code Size" package="kieker.test.monitoring.junit.core.signaturePattern" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/codesize.html#ModifiedCyclomaticComplexity" priority="3">
+The class 'TestPatternParser' has a Modified Cyclomatic Complexity of 11 (Highest = 27).
+</violation>
+<violation beginline="37" endline="383" begincolumn="8" endcolumn="1" rule="StdCyclomaticComplexity" ruleset="Code Size" package="kieker.test.monitoring.junit.core.signaturePattern" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/codesize.html#StdCyclomaticComplexity" priority="3">
+The class 'TestPatternParser' has a Standard Cyclomatic Complexity of 11 (Highest = 27).
+</violation>
+<violation beginline="135" endline="237" begincolumn="17" endcolumn="9" rule="ModifiedCyclomaticComplexity" ruleset="Code Size" package="kieker.test.monitoring.junit.core.signaturePattern" class="TestPatternParser" method="checkCombination" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/codesize.html#ModifiedCyclomaticComplexity" priority="3">
+The method 'checkCombination' has a Modified Cyclomatic Complexity of 27.
+</violation>
+<violation beginline="135" endline="237" begincolumn="17" endcolumn="9" rule="StdCyclomaticComplexity" ruleset="Code Size" package="kieker.test.monitoring.junit.core.signaturePattern" class="TestPatternParser" method="checkCombination" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/codesize.html#StdCyclomaticComplexity" priority="3">
+The method 'checkCombination' has a Standard Cyclomatic Complexity of 27.
+</violation>
+<violation beginline="241" endline="344" begincolumn="16" endcolumn="9" rule="ModifiedCyclomaticComplexity" ruleset="Code Size" package="kieker.test.monitoring.junit.core.signaturePattern" class="TestPatternParser" method="testBasic" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/codesize.html#ModifiedCyclomaticComplexity" priority="3">
+The method 'testBasic' has a Modified Cyclomatic Complexity of 14.
+</violation>
+<violation beginline="241" endline="344" begincolumn="16" endcolumn="9" rule="StdCyclomaticComplexity" ruleset="Code Size" package="kieker.test.monitoring.junit.core.signaturePattern" class="TestPatternParser" method="testBasic" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/codesize.html#StdCyclomaticComplexity" priority="3">
+The method 'testBasic' has a Standard Cyclomatic Complexity of 14.
+</violation>
+<violation beginline="303" endline="303" begincolumn="89" endcolumn="163" rule="ConsecutiveAppendsShouldReuse" ruleset="String and StringBuffer" package="kieker.test.monitoring.junit.core.signaturePattern" class="TestPatternParser" method="testBasic" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/strings.html#ConsecutiveAppendsShouldReuse" priority="3">
+StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+</violation>
+<violation beginline="304" endline="304" begincolumn="89" endcolumn="152" rule="ConsecutiveAppendsShouldReuse" ruleset="String and StringBuffer" package="kieker.test.monitoring.junit.core.signaturePattern" class="TestPatternParser" method="testBasic" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/strings.html#ConsecutiveAppendsShouldReuse" priority="3">
+StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+</violation>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/adaptiveMonitoring/sigar/TestCPUsCombinedPercSampler.java">
+<violation beginline="46" endline="120" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="kieker.test.monitoring.junit.probe.adaptiveMonitoring.sigar" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/adaptiveMonitoring/sigar/TestCPUsDetailedPercSampler.java">
+<violation beginline="46" endline="120" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="kieker.test.monitoring.junit.probe.adaptiveMonitoring.sigar" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/adaptiveMonitoring/sigar/TestMemSwapUsageSampler.java">
+<violation beginline="46" endline="109" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="kieker.test.monitoring.junit.probe.adaptiveMonitoring.sigar" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/cxf/executions/AbstractTestCXFClientServerInterceptors.java">
+<violation beginline="54" endline="185" begincolumn="17" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="kieker.test.monitoring.junit.probe.cxf.executions" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="114" endline="114" begincolumn="17" endcolumn="24" rule="GuardLogStatement" ruleset="Jakarta Commons Logging" package="kieker.test.monitoring.junit.probe.cxf.executions" class="AbstractTestCXFClientServerInterceptors" method="startServer" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/logging-jakarta-commons.html#GuardLogStatement" priority="2">
+There is log block not surrounded by if
+</violation>
+<violation beginline="114" endline="114" begincolumn="17" endcolumn="24" rule="GuardLogStatementJavaUtil" ruleset="Java Logging" package="kieker.test.monitoring.junit.probe.cxf.executions" class="AbstractTestCXFClientServerInterceptors" method="startServer" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/logging-java.html#GuardLogStatementJavaUtil" priority="2">
+There is log block not surrounded by if
+</violation>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/cxf/executions/TestCXFClientServerInterceptorsNoSessionRegisteredBefore.java">
+<violation beginline="69" endline="91" begincolumn="25" endcolumn="25" rule="MissingBreakInSwitch" ruleset="Design" package="kieker.test.monitoring.junit.probe.cxf.executions" class="TestCXFClientServerInterceptorsNoSessionRegisteredBefore" method="checkRecordList" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/design.html#MissingBreakInSwitch" priority="3">
+A switch statement does not contain a break
+</violation>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/cxf/executions/TestCXFClientServerInterceptorsSessionRegisteredBefore.java">
+<violation beginline="69" endline="91" begincolumn="25" endcolumn="25" rule="MissingBreakInSwitch" ruleset="Design" package="kieker.test.monitoring.junit.probe.cxf.executions" class="TestCXFClientServerInterceptorsSessionRegisteredBefore" method="checkRecordList" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/design.html#MissingBreakInSwitch" priority="3">
+A switch statement does not contain a break
+</violation>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/spring/executions/jetty/TestSpringMethodInterceptor.java">
+<violation beginline="135" endline="147" begincolumn="25" endcolumn="25" rule="MissingBreakInSwitch" ruleset="Design" package="kieker.test.monitoring.junit.probe.spring.executions.jetty" class="TestSpringMethodInterceptor" method="checkRecordList" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/design.html#MissingBreakInSwitch" priority="3">
+A switch statement does not contain a break
+</violation>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/util/NamedListWriter.java">
+<violation beginline="60" endline="60" begincolumn="25" endcolumn="32" rule="GuardLogStatement" ruleset="Jakarta Commons Logging" package="kieker.test.monitoring.util" class="NamedListWriter" method="NamedListWriter" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/logging-jakarta-commons.html#GuardLogStatement" priority="2">
+There is log block not surrounded by if
+</violation>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/util/signaturePattern/PatternConstructor.java">
+<violation beginline="29" endline="301" begincolumn="14" endcolumn="1" rule="ModifiedCyclomaticComplexity" ruleset="Code Size" package="kieker.test.monitoring.util.signaturePattern" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/codesize.html#ModifiedCyclomaticComplexity" priority="3">
+The class 'PatternConstructor' has a Modified Cyclomatic Complexity of 4 (Highest = 44).
+</violation>
+<violation beginline="29" endline="301" begincolumn="14" endcolumn="1" rule="StdCyclomaticComplexity" ruleset="Code Size" package="kieker.test.monitoring.util.signaturePattern" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/codesize.html#StdCyclomaticComplexity" priority="3">
+The class 'PatternConstructor' has a Standard Cyclomatic Complexity of 4 (Highest = 44).
+</violation>
+<violation beginline="70" endline="204" begincolumn="16" endcolumn="9" rule="ModifiedCyclomaticComplexity" ruleset="Code Size" package="kieker.test.monitoring.util.signaturePattern" class="PatternConstructor" method="createPatterns" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/codesize.html#ModifiedCyclomaticComplexity" priority="3">
+The method 'createPatterns' has a Modified Cyclomatic Complexity of 44.
+</violation>
+<violation beginline="70" endline="204" begincolumn="16" endcolumn="9" rule="StdCyclomaticComplexity" ruleset="Code Size" package="kieker.test.monitoring.util.signaturePattern" class="PatternConstructor" method="createPatterns" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/codesize.html#StdCyclomaticComplexity" priority="3">
+The method 'createPatterns' has a Standard Cyclomatic Complexity of 44.
+</violation>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/util/signaturePattern/SignatureConstructor.java">
+<violation beginline="30" endline="298" begincolumn="14" endcolumn="1" rule="ModifiedCyclomaticComplexity" ruleset="Code Size" package="kieker.test.monitoring.util.signaturePattern" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/codesize.html#ModifiedCyclomaticComplexity" priority="3">
+The class 'SignatureConstructor' has a Modified Cyclomatic Complexity of 3 (Highest = 31).
+</violation>
+<violation beginline="30" endline="298" begincolumn="14" endcolumn="1" rule="StdCyclomaticComplexity" ruleset="Code Size" package="kieker.test.monitoring.util.signaturePattern" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/codesize.html#StdCyclomaticComplexity" priority="3">
+The class 'SignatureConstructor' has a Standard Cyclomatic Complexity of 3 (Highest = 31).
+</violation>
+<violation beginline="68" endline="153" begincolumn="16" endcolumn="9" rule="ModifiedCyclomaticComplexity" ruleset="Code Size" package="kieker.test.monitoring.util.signaturePattern" class="SignatureConstructor" method="getSignatures" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/codesize.html#ModifiedCyclomaticComplexity" priority="3">
+The method 'getSignatures' has a Modified Cyclomatic Complexity of 31.
+</violation>
+<violation beginline="68" endline="153" begincolumn="16" endcolumn="9" rule="StdCyclomaticComplexity" ruleset="Code Size" package="kieker.test.monitoring.util.signaturePattern" class="SignatureConstructor" method="getSignatures" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/codesize.html#StdCyclomaticComplexity" priority="3">
+The method 'getSignatures' has a Standard Cyclomatic Complexity of 31.
+</violation>
+</file>
+</pmd>

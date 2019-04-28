@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kieker.test.tools.junit.writeRead.namedPipe.TestPipeReader" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-04-28T08:03:32" hostname="icedsoul-PC" time="0.008">
+  <properties/>
+  <testcase name="testNamedPipeReaderReceivesFromPipe" classname="kieker.test.tools.junit.writeRead.namedPipe.TestPipeReader" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[四月 28, 2019 4:03:32 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 28, 2019 4:03:32 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:32 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.writeRead.namedPipe.TestPipeReader.testNamedPipeReaderReceivesFromPipe()
+
+
+四月 28, 2019 4:03:32 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+]]></system-err>
+</testsuite>

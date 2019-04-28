@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kieker.test.tools.junit.tslib.TimeSeriesPointsBufferTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-04-28T08:03:31" hostname="icedsoul-PC" time="0.004">
+  <properties/>
+  <testcase name="testUnboundedBuffer" classname="kieker.test.tools.junit.tslib.TimeSeriesPointsBufferTest" time="0.002"/>
+  <testcase name="testBoundedBuffer" classname="kieker.test.tools.junit.tslib.TimeSeriesPointsBufferTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[四月 28, 2019 4:03:31 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:31 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.tslib.TimeSeriesPointsBufferTest.testUnboundedBuffer()
+
+
+四月 28, 2019 4:03:31 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:31 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.tslib.TimeSeriesPointsBufferTest.testBoundedBuffer()
+
+
+]]></system-err>
+</testsuite>

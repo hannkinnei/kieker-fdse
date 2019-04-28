@@ -1,0 +1,4083 @@
+<html xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:fn="http://www.w3.org/2005/xpath-functions">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <title>XSLT Sample</title><style type="text/css">
+					body {margin-left: 3%; font-size:10pt;font-family:Arial;color:#000000 ; }					
+					table.details tr th {font-size:10pt;font-family:Arial;font-weight:bold;background:#AC58FA}
+					table.details tr {font-size:10pt;font-family:Arial;font-weight:normal;background:#BEa1Fa}
+					table tbody	tr.alternate {background:#BAF4A7;}
+					table tbody tr.dark {background:#F4F4A7;}
+				</style></head>
+   <body>
+      <h2>Report
+         					 
+         					(2019-04-28+08:00;
+         					 16:04:07.097+08:00)
+         				
+      </h2>
+      <h3>Summary Messages</h3>
+      <table width="90%" border="0" class="details">
+         <tr>
+            <th align="left">category</th>
+            <th align="left">tool</th>
+            <th align="left">priority</th>
+            <th align="left">rule</th>
+            <th align="left">count</th>
+         </tr>
+         <tr>
+            <td colspan="5">code size</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>pmd</td>
+            <td align="left">3</td>
+            <td> <a href="http://pmd.sourceforge.net/rules/basic.html#ModifiedCyclomaticComplexity">ModifiedCyclomaticComplexity</a></td>
+            <td align="center">33</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>pmd</td>
+            <td align="left">3</td>
+            <td> <a href="http://pmd.sourceforge.net/rules/basic.html#StdCyclomaticComplexity">StdCyclomaticComplexity</a></td>
+            <td align="center">33</td>
+         </tr>
+         <tr>
+            <td colspan="5">design</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>pmd</td>
+            <td align="left">3</td>
+            <td> <a href="http://pmd.sourceforge.net/rules/basic.html#AvoidProtectedMethodInFinalClassNotExtending">AvoidProtectedMethodInFinalClassNotExtending</a></td>
+            <td align="center">1</td>
+         </tr>
+         <tr>
+            <td colspan="5">jakarta commons logging</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>pmd</td>
+            <td align="left">2</td>
+            <td> <a href="http://pmd.sourceforge.net/rules/basic.html#GuardLogStatement">GuardLogStatement</a></td>
+            <td align="center">77</td>
+         </tr>
+         <tr>
+            <td colspan="5">java logging</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>pmd</td>
+            <td align="left">2</td>
+            <td> <a href="http://pmd.sourceforge.net/rules/basic.html#GuardLogStatementJavaUtil">GuardLogStatementJavaUtil</a></td>
+            <td align="center">6</td>
+         </tr>
+         <tr>
+            <td colspan="5">performance</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>findbugs</td>
+            <td align="left">3</td>
+            <td> <a href="http://findbugs.sourceforge.net/bugDescriptions.html#SIC_INNER_SHOULD_BE_STATIC_ANON">SIC_INNER_SHOULD_BE_STATIC_ANON (SIC)</a></td>
+            <td align="center">1</td>
+         </tr>
+         <tr>
+            <td colspan="5">string and stringbuffer</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>pmd</td>
+            <td align="left">3</td>
+            <td> <a href="http://pmd.sourceforge.net/rules/basic.html#ConsecutiveAppendsShouldReuse">ConsecutiveAppendsShouldReuse</a></td>
+            <td align="center">25</td>
+         </tr>
+         <tr>
+            <td colspan="5">style</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">2</td>
+            <td>Comment matches to-do format 'TODO'.</td>
+            <td align="center">1</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">3</td>
+            <td>Missing package-info.java file.</td>
+            <td align="center">35</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">3</td>
+            <td>Expected an @return tag.</td>
+            <td align="center">4</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">3</td>
+            <td>Missing a Javadoc comment.</td>
+            <td align="center">39</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">3</td>
+            <td>Line is longer than 165 characters (found 173).</td>
+            <td align="center">1</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">3</td>
+            <td>Line is longer than 165 characters (found 194).</td>
+            <td align="center">2</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">3</td>
+            <td>Line is longer than 165 characters (found 200).</td>
+            <td align="center">1</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">3</td>
+            <td>Line is longer than 165 characters (found 184).</td>
+            <td align="center">1</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">3</td>
+            <td>Line is longer than 165 characters (found 190).</td>
+            <td align="center">1</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">3</td>
+            <td>First sentence should end with a period.</td>
+            <td align="center">2</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">3</td>
+            <td>Line is longer than 165 characters (found 243).</td>
+            <td align="center">1</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">3</td>
+            <td>Line is longer than 165 characters (found 170).</td>
+            <td align="center">2</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">3</td>
+            <td>Line is longer than 165 characters (found 280).</td>
+            <td align="center">1</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">3</td>
+            <td>Expected @param tag for 'logger'.</td>
+            <td align="center">2</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">3</td>
+            <td>Expected @param tag for 'stringRegistry'.</td>
+            <td align="center">2</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">3</td>
+            <td>Expected @param tag for 'recordFactories'.</td>
+            <td align="center">1</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">3</td>
+            <td>Line is longer than 165 characters (found 168).</td>
+            <td align="center">3</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">3</td>
+            <td>Expected @param tag for 'record'.</td>
+            <td align="center">1</td>
+         </tr>
+         <tr>
+            <td colspan="5">unused code</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>pmd</td>
+            <td align="left">3</td>
+            <td> <a href="http://pmd.sourceforge.net/rules/basic.html#UnusedPrivateMethod">UnusedPrivateMethod</a></td>
+            <td align="center">1</td>
+         </tr>
+         <tr class="dark">
+            <td colspan="4"></td>
+            <td align="center">277</td>
+         </tr>
+      </table>
+      <p></p>
+      <h3>Summary Files</h3>
+      <table width="90%" border="0" class="details">
+         <tr>
+            <th align="left" width="90pt">class file</th>
+            <th align="center" width="90pt">high</th>
+            <th align="center" width="90pt">medium</th>
+            <th align="center" width="90pt">low</th>
+            <th align="center" width="90pt">total</th>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.AnalysisController.java" title="kieker.analysis.AnalysisController.java">kieker.analysis.AnalysisController.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">6</div>
+            </td>
+            <td align="center">
+               <div class="p3">20</div>
+            </td>
+            <td align="center">
+               <div class="p3">26</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.analysisComponent.AbstractAnalysisComponent.java" title="kieker.analysis.analysisComponent.AbstractAnalysisComponent.java">kieker.analysis.analysisComponent.AbstractAnalysisComponent.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.annotation.AnalysisController.java" title="kieker.analysis.annotation.AnalysisController.java">kieker.analysis.annotation.AnalysisController.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.configuration.GlobalConfigurationRegistry.java" title="kieker.analysis.configuration.GlobalConfigurationRegistry.java">kieker.analysis.configuration.GlobalConfigurationRegistry.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.display.AbstractDisplay.java" title="kieker.analysis.display.AbstractDisplay.java">kieker.analysis.display.AbstractDisplay.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.display.MeterGauge.java" title="kieker.analysis.display.MeterGauge.java">kieker.analysis.display.MeterGauge.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">3</div>
+            </td>
+            <td align="center">
+               <div class="p3">3</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.display.PieChart.java" title="kieker.analysis.display.PieChart.java">kieker.analysis.display.PieChart.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.display.TagCloud.java" title="kieker.analysis.display.TagCloud.java">kieker.analysis.display.TagCloud.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.display.annotation.Display.java" title="kieker.analysis.display.annotation.Display.java">kieker.analysis.display.annotation.Display.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.exception.AnalysisConfigurationException.java" title="kieker.analysis.exception.AnalysisConfigurationException.java">kieker.analysis.exception.AnalysisConfigurationException.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.model.MetaModelHandler.java" title="kieker.analysis.model.MetaModelHandler.java">kieker.analysis.model.MetaModelHandler.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">5</div>
+            </td>
+            <td align="center">
+               <div class="p3">5</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.AbstractPlugin.java" title="kieker.analysis.plugin.AbstractPlugin.java">kieker.analysis.plugin.AbstractPlugin.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">5</div>
+            </td>
+            <td align="center">
+               <div class="p3">9</div>
+            </td>
+            <td align="center">
+               <div class="p3">14</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.annotation.InputPort.java" title="kieker.analysis.plugin.annotation.InputPort.java">kieker.analysis.plugin.annotation.InputPort.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.filter.AbstractFilterPlugin.java" title="kieker.analysis.plugin.filter.AbstractFilterPlugin.java">kieker.analysis.plugin.filter.AbstractFilterPlugin.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.filter.flow.EventRecordTraceReconstructionFilter EventRecordTraceReconstructionFilter$TraceBuffer.java" title="kieker.analysis.plugin.filter.flow.EventRecordTraceReconstructionFilter EventRecordTraceReconstructionFilter$TraceBuffer.java">kieker.analysis.plugin.filter.flow.EventRecordTraceReconstructionFilter EventRecordTraceReconstructionFilter$TraceBuffer.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">4</div>
+            </td>
+            <td align="center">
+               <div class="p3">10</div>
+            </td>
+            <td align="center">
+               <div class="p3">14</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.filter.flow.EventRecordTraceReconstructionFilter.java" title="kieker.analysis.plugin.filter.flow.EventRecordTraceReconstructionFilter.java">kieker.analysis.plugin.filter.flow.EventRecordTraceReconstructionFilter.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.filter.flow.ThreadEvent2TraceEventFilter.java" title="kieker.analysis.plugin.filter.flow.ThreadEvent2TraceEventFilter.java">kieker.analysis.plugin.filter.flow.ThreadEvent2TraceEventFilter.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">3</div>
+            </td>
+            <td align="center">
+               <div class="p3">3</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.filter.flow.TraceEventRecords.java" title="kieker.analysis.plugin.filter.flow.TraceEventRecords.java">kieker.analysis.plugin.filter.flow.TraceEventRecords.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">6</div>
+            </td>
+            <td align="center">
+               <div class="p3">6</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.filter.forward.AnalysisThroughputFilter.java" title="kieker.analysis.plugin.filter.forward.AnalysisThroughputFilter.java">kieker.analysis.plugin.filter.forward.AnalysisThroughputFilter.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">9</div>
+            </td>
+            <td align="center">
+               <div class="p3">9</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.filter.forward.CountingFilter.java" title="kieker.analysis.plugin.filter.forward.CountingFilter.java">kieker.analysis.plugin.filter.forward.CountingFilter.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.filter.forward.StringBufferFilter.java" title="kieker.analysis.plugin.filter.forward.StringBufferFilter.java">kieker.analysis.plugin.filter.forward.StringBufferFilter.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.filter.forward.TeeFilter.java" title="kieker.analysis.plugin.filter.forward.TeeFilter.java">kieker.analysis.plugin.filter.forward.TeeFilter.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.filter.forward.util.KiekerHashMap KiekerHashMap$Segment.java" title="kieker.analysis.plugin.filter.forward.util.KiekerHashMap KiekerHashMap$Segment.java">kieker.analysis.plugin.filter.forward.util.KiekerHashMap KiekerHashMap$Segment.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">4</div>
+            </td>
+            <td align="center">
+               <div class="p3">4</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.filter.forward.util.KiekerHashMap.java" title="kieker.analysis.plugin.filter.forward.util.KiekerHashMap.java">kieker.analysis.plugin.filter.forward.util.KiekerHashMap.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.filter.record.MonitoringThroughputFilter.java" title="kieker.analysis.plugin.filter.record.MonitoringThroughputFilter.java">kieker.analysis.plugin.filter.record.MonitoringThroughputFilter.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">4</div>
+            </td>
+            <td align="center">
+               <div class="p3">4</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.filter.select.TimestampFilter.java" title="kieker.analysis.plugin.filter.select.TimestampFilter.java">kieker.analysis.plugin.filter.select.TimestampFilter.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">3</div>
+            </td>
+            <td align="center">
+               <div class="p3">3</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.filter.sink.CPUUtilizationDisplayFilter.java" title="kieker.analysis.plugin.filter.sink.CPUUtilizationDisplayFilter.java">kieker.analysis.plugin.filter.sink.CPUUtilizationDisplayFilter.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">3</div>
+            </td>
+            <td align="center">
+               <div class="p3">3</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.filter.visualization.AbstractWebVisualizationFilterPlugin.java" title="kieker.analysis.plugin.filter.visualization.AbstractWebVisualizationFilterPlugin.java">kieker.analysis.plugin.filter.visualization.AbstractWebVisualizationFilterPlugin.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.filter.visualization.IWebVisualizationFilterPlugin.java" title="kieker.analysis.plugin.filter.visualization.IWebVisualizationFilterPlugin.java">kieker.analysis.plugin.filter.visualization.IWebVisualizationFilterPlugin.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">3</div>
+            </td>
+            <td align="center">
+               <div class="p3">3</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.filter.visualization.PlainTextWebVisualization.java" title="kieker.analysis.plugin.filter.visualization.PlainTextWebVisualization.java">kieker.analysis.plugin.filter.visualization.PlainTextWebVisualization.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.AbstractReaderPlugin.java" title="kieker.analysis.plugin.reader.AbstractReaderPlugin.java">kieker.analysis.plugin.reader.AbstractReaderPlugin.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.amqp.AmqpReader.java" title="kieker.analysis.plugin.reader.amqp.AmqpReader.java">kieker.analysis.plugin.reader.amqp.AmqpReader.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.amqp.ChunkingAmqpReader.java" title="kieker.analysis.plugin.reader.amqp.ChunkingAmqpReader.java">kieker.analysis.plugin.reader.amqp.ChunkingAmqpReader.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">2</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">3</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.database.DbReader.java" title="kieker.analysis.plugin.reader.database.DbReader.java">kieker.analysis.plugin.reader.database.DbReader.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.filesystem.AbstractLogReaderThread$1.java" title="kieker.analysis.plugin.reader.filesystem.AbstractLogReaderThread$1.java">kieker.analysis.plugin.reader.filesystem.AbstractLogReaderThread$1.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.filesystem.AbstractLogReaderThread.java" title="kieker.analysis.plugin.reader.filesystem.AbstractLogReaderThread.java">kieker.analysis.plugin.reader.filesystem.AbstractLogReaderThread.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.filesystem.AsciiLogReader.java" title="kieker.analysis.plugin.reader.filesystem.AsciiLogReader.java">kieker.analysis.plugin.reader.filesystem.AsciiLogReader.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.filesystem.AsciiLogReaderThread.java" title="kieker.analysis.plugin.reader.filesystem.AsciiLogReaderThread.java">kieker.analysis.plugin.reader.filesystem.AsciiLogReaderThread.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">10</div>
+            </td>
+            <td align="center">
+               <div class="p3">6</div>
+            </td>
+            <td align="center">
+               <div class="p3">16</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.filesystem.BinaryLogReader.java" title="kieker.analysis.plugin.reader.filesystem.BinaryLogReader.java">kieker.analysis.plugin.reader.filesystem.BinaryLogReader.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.filesystem.BinaryLogReaderThread.java" title="kieker.analysis.plugin.reader.filesystem.BinaryLogReaderThread.java">kieker.analysis.plugin.reader.filesystem.BinaryLogReaderThread.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">5</div>
+            </td>
+            <td align="center">
+               <div class="p3">4</div>
+            </td>
+            <td align="center">
+               <div class="p3">9</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.filesystem.FSDirectoryReader.java" title="kieker.analysis.plugin.reader.filesystem.FSDirectoryReader.java">kieker.analysis.plugin.reader.filesystem.FSDirectoryReader.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">21</div>
+            </td>
+            <td align="center">
+               <div class="p3">10</div>
+            </td>
+            <td align="center">
+               <div class="p3">31</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.filesystem.FSReader.java" title="kieker.analysis.plugin.reader.filesystem.FSReader.java">kieker.analysis.plugin.reader.filesystem.FSReader.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.filesystem.FSZipReader.java" title="kieker.analysis.plugin.reader.filesystem.FSZipReader.java">kieker.analysis.plugin.reader.filesystem.FSZipReader.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">18</div>
+            </td>
+            <td align="center">
+               <div class="p3">8</div>
+            </td>
+            <td align="center">
+               <div class="p3">26</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.jms.JmsReader.java" title="kieker.analysis.plugin.reader.jms.JmsReader.java">kieker.analysis.plugin.reader.jms.JmsReader.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.jmx.JmxReader.java" title="kieker.analysis.plugin.reader.jmx.JmxReader.java">kieker.analysis.plugin.reader.jmx.JmxReader.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">7</div>
+            </td>
+            <td align="center">
+               <div class="p3">7</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.kafka.KafkaReader.java" title="kieker.analysis.plugin.reader.kafka.KafkaReader.java">kieker.analysis.plugin.reader.kafka.KafkaReader.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">3</div>
+            </td>
+            <td align="center">
+               <div class="p3">3</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.list.ListReader.java" title="kieker.analysis.plugin.reader.list.ListReader.java">kieker.analysis.plugin.reader.list.ListReader.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.namedRecordPipe.PipeReader.java" title="kieker.analysis.plugin.reader.namedRecordPipe.PipeReader.java">kieker.analysis.plugin.reader.namedRecordPipe.PipeReader.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.newio.AbstractRawDataReader.java" title="kieker.analysis.plugin.reader.newio.AbstractRawDataReader.java">kieker.analysis.plugin.reader.newio.AbstractRawDataReader.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">3</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">4</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.newio.RawDataReaderPlugin.java" title="kieker.analysis.plugin.reader.newio.RawDataReaderPlugin.java">kieker.analysis.plugin.reader.newio.RawDataReaderPlugin.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">8</div>
+            </td>
+            <td align="center">
+               <div class="p3">4</div>
+            </td>
+            <td align="center">
+               <div class="p3">12</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.newio.deserializer.AbstractContainerFormatDeserializer.java" title="kieker.analysis.plugin.reader.newio.deserializer.AbstractContainerFormatDeserializer.java">kieker.analysis.plugin.reader.newio.deserializer.AbstractContainerFormatDeserializer.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.newio.deserializer.AbstractMonitoringRecordDeserializer.java" title="kieker.analysis.plugin.reader.newio.deserializer.AbstractMonitoringRecordDeserializer.java">kieker.analysis.plugin.reader.newio.deserializer.AbstractMonitoringRecordDeserializer.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.tcp.AbstractRecordTcpReader.java" title="kieker.analysis.plugin.reader.tcp.AbstractRecordTcpReader.java">kieker.analysis.plugin.reader.tcp.AbstractRecordTcpReader.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">8</div>
+            </td>
+            <td align="center">
+               <div class="p3">8</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.tcp.DualSocketTcpReader.java" title="kieker.analysis.plugin.reader.tcp.DualSocketTcpReader.java">kieker.analysis.plugin.reader.tcp.DualSocketTcpReader.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">4</div>
+            </td>
+            <td align="center">
+               <div class="p3">4</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.tcp.SingleSocketTcpReader.java" title="kieker.analysis.plugin.reader.tcp.SingleSocketTcpReader.java">kieker.analysis.plugin.reader.tcp.SingleSocketTcpReader.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.tcp.TCPReader.java" title="kieker.analysis.plugin.reader.tcp.TCPReader.java">kieker.analysis.plugin.reader.tcp.TCPReader.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.tcp.TCPStringReader.java" title="kieker.analysis.plugin.reader.tcp.TCPStringReader.java">kieker.analysis.plugin.reader.tcp.TCPStringReader.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">4</div>
+            </td>
+            <td align="center">
+               <div class="p3">4</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.tcp.util.AbstractTcpReader.java" title="kieker.analysis.plugin.reader.tcp.util.AbstractTcpReader.java">kieker.analysis.plugin.reader.tcp.util.AbstractTcpReader.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.tcp.util.SingleSocketRecordReader.java" title="kieker.analysis.plugin.reader.tcp.util.SingleSocketRecordReader.java">kieker.analysis.plugin.reader.tcp.util.SingleSocketRecordReader.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.timer.TimeReader.java" title="kieker.analysis.plugin.reader.timer.TimeReader.java">kieker.analysis.plugin.reader.timer.TimeReader.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.util.ByteBufferDeserializer.java" title="kieker.analysis.plugin.reader.util.ByteBufferDeserializer.java">kieker.analysis.plugin.reader.util.ByteBufferDeserializer.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">3</div>
+            </td>
+            <td align="center">
+               <div class="p3">3</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.plugin.reader.util.IRecordReceivedListener.java" title="kieker.analysis.plugin.reader.util.IRecordReceivedListener.java">kieker.analysis.plugin.reader.util.IRecordReceivedListener.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.repository.AbstractRepository.java" title="kieker.analysis.repository.AbstractRepository.java">kieker.analysis.repository.AbstractRepository.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#kieker.analysis.repository.annotation.Repository.java" title="kieker.analysis.repository.annotation.Repository.java">kieker.analysis.repository.annotation.Repository.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="dark">
+            <td></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">84</div>
+            </td>
+            <td align="center">
+               <div class="p3">193</div>
+            </td>
+            <td align="center">
+               <div class="p3">277</div>
+            </td>
+         </tr>
+      </table>
+      <p></p>
+      <h3>Details by Class</h3>
+      <table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.AnalysisController.java">kieker.analysis.AnalysisController.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>228</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>488</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>492</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>584</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>607</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>630</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>275</td>
+            <td>string and stringbuffer</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>276</td>
+            <td>string and stringbuffer</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>277</td>
+            <td>string and stringbuffer</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>278</td>
+            <td>string and stringbuffer</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>279</td>
+            <td>string and stringbuffer</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>280</td>
+            <td>string and stringbuffer</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>281</td>
+            <td>string and stringbuffer</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>282</td>
+            <td>string and stringbuffer</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>283</td>
+            <td>string and stringbuffer</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>284</td>
+            <td>string and stringbuffer</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>285</td>
+            <td>string and stringbuffer</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>286</td>
+            <td>string and stringbuffer</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>287</td>
+            <td>string and stringbuffer</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>288</td>
+            <td>string and stringbuffer</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>289</td>
+            <td>string and stringbuffer</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>290</td>
+            <td>string and stringbuffer</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>442</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>442</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>516</td>
+            <td>design</td>
+            <td>AvoidProtectedMethodInFinalClassNotExtending</td>
+            <td>AvoidProtectedMethodInFinalClassNotExtending</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.analysisComponent.AbstractAnalysisComponent.java">kieker.analysis.analysisComponent.AbstractAnalysisComponent.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.annotation.AnalysisController.java">kieker.analysis.annotation.AnalysisController.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.configuration.GlobalConfigurationRegistry.java">kieker.analysis.configuration.GlobalConfigurationRegistry.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>49</td>
+            <td>style</td>
+            <td>Expected an @return tag.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.display.AbstractDisplay.java">kieker.analysis.display.AbstractDisplay.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.display.MeterGauge.java">kieker.analysis.display.MeterGauge.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>78</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>82</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>86</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.display.PieChart.java">kieker.analysis.display.PieChart.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>41</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>49</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.display.TagCloud.java">kieker.analysis.display.TagCloud.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>35</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>39</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.display.annotation.Display.java">kieker.analysis.display.annotation.Display.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.exception.AnalysisConfigurationException.java">kieker.analysis.exception.AnalysisConfigurationException.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.model.MetaModelHandler.java">kieker.analysis.model.MetaModelHandler.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>78</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>78</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>287</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>287</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.AbstractPlugin.java">kieker.analysis.plugin.AbstractPlugin.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>336</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>340</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>347</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>352</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>380</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>58</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>58</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>80</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>80</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>171</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>171</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>329</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>329</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.annotation.InputPort.java">kieker.analysis.plugin.annotation.InputPort.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.filter.AbstractFilterPlugin.java">kieker.analysis.plugin.filter.AbstractFilterPlugin.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.filter.flow.EventRecordTraceReconstructionFilter EventRecordTraceReconstructionFilter$TraceBuffer.java">kieker.analysis.plugin.filter.flow.EventRecordTraceReconstructionFilter EventRecordTraceReconstructionFilter$TraceBuffer.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>380</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>405</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>519</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>525</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>86</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>86</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>221</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>221</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>332</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>332</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>362</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>362</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>412</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>412</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.filter.flow.EventRecordTraceReconstructionFilter.java">kieker.analysis.plugin.filter.flow.EventRecordTraceReconstructionFilter.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.filter.flow.ThreadEvent2TraceEventFilter.java">kieker.analysis.plugin.filter.flow.ThreadEvent2TraceEventFilter.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>54</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>58</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>147</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.filter.flow.TraceEventRecords.java">kieker.analysis.plugin.filter.flow.TraceEventRecords.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>72</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>78</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>87</td>
+            <td>string and stringbuffer</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>88</td>
+            <td>string and stringbuffer</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>89</td>
+            <td>string and stringbuffer</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>90</td>
+            <td>string and stringbuffer</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.filter.forward.AnalysisThroughputFilter.java">kieker.analysis.plugin.filter.forward.AnalysisThroughputFilter.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>60</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>69</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>75</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>90</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>80</td>
+            <td>string and stringbuffer</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>81</td>
+            <td>string and stringbuffer</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>82</td>
+            <td>string and stringbuffer</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>83</td>
+            <td>string and stringbuffer</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.filter.forward.CountingFilter.java">kieker.analysis.plugin.filter.forward.CountingFilter.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>134</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>139</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.filter.forward.StringBufferFilter.java">kieker.analysis.plugin.filter.forward.StringBufferFilter.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>71</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.filter.forward.TeeFilter.java">kieker.analysis.plugin.filter.forward.TeeFilter.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>182</td>
+            <td>string and stringbuffer</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+            <td>ConsecutiveAppendsShouldReuse</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.filter.forward.util.KiekerHashMap KiekerHashMap$Segment.java">kieker.analysis.plugin.filter.forward.util.KiekerHashMap KiekerHashMap$Segment.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>133</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>133</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>158</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>158</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.filter.forward.util.KiekerHashMap.java">kieker.analysis.plugin.filter.forward.util.KiekerHashMap.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>90</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.filter.record.MonitoringThroughputFilter.java">kieker.analysis.plugin.filter.record.MonitoringThroughputFilter.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>45</td>
+            <td>style</td>
+            <td>Line is longer than 165 characters (found 173).</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>73</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>98</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.filter.select.TimestampFilter.java">kieker.analysis.plugin.filter.select.TimestampFilter.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>138</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>150</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.filter.sink.CPUUtilizationDisplayFilter.java">kieker.analysis.plugin.filter.sink.CPUUtilizationDisplayFilter.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>71</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>88</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.filter.visualization.AbstractWebVisualizationFilterPlugin.java">kieker.analysis.plugin.filter.visualization.AbstractWebVisualizationFilterPlugin.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>30</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.filter.visualization.IWebVisualizationFilterPlugin.java">kieker.analysis.plugin.filter.visualization.IWebVisualizationFilterPlugin.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>33</td>
+            <td>style</td>
+            <td>Expected an @return tag.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>38</td>
+            <td>style</td>
+            <td>Expected an @return tag.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>43</td>
+            <td>style</td>
+            <td>Expected an @return tag.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.filter.visualization.PlainTextWebVisualization.java">kieker.analysis.plugin.filter.visualization.PlainTextWebVisualization.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>37</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.AbstractReaderPlugin.java">kieker.analysis.plugin.reader.AbstractReaderPlugin.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.amqp.AmqpReader.java">kieker.analysis.plugin.reader.amqp.AmqpReader.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>137</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.amqp.ChunkingAmqpReader.java">kieker.analysis.plugin.reader.amqp.ChunkingAmqpReader.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>118</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>122</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>66</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.database.DbReader.java">kieker.analysis.plugin.reader.database.DbReader.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.filesystem.AbstractLogReaderThread$1.java">kieker.analysis.plugin.reader.filesystem.AbstractLogReaderThread$1.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>findbugs</td>
+            <td>3</td>
+            <td>59</td>
+            <td>performance</td>
+            <td>SIC_INNER_SHOULD_BE_STATIC_ANON (SIC)</td>
+            <td>SIC_INNER_SHOULD_BE_STATIC_ANON</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.filesystem.AbstractLogReaderThread.java">kieker.analysis.plugin.reader.filesystem.AbstractLogReaderThread.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.filesystem.AsciiLogReader.java">kieker.analysis.plugin.reader.filesystem.AsciiLogReader.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>46</td>
+            <td>style</td>
+            <td>Line is longer than 165 characters (found 194).</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>47</td>
+            <td>style</td>
+            <td>Line is longer than 165 characters (found 200).</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.filesystem.AsciiLogReaderThread.java">kieker.analysis.plugin.reader.filesystem.AsciiLogReaderThread.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>95</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>95</td>
+            <td>java logging</td>
+            <td>GuardLogStatementJavaUtil</td>
+            <td>GuardLogStatementJavaUtil</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>119</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>135</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>181</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>187</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>200</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>228</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>238</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>240</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>49</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>49</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>89</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>89</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>158</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>158</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.filesystem.BinaryLogReader.java">kieker.analysis.plugin.reader.filesystem.BinaryLogReader.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>46</td>
+            <td>style</td>
+            <td>Line is longer than 165 characters (found 194).</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.filesystem.BinaryLogReaderThread.java">kieker.analysis.plugin.reader.filesystem.BinaryLogReaderThread.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>94</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>94</td>
+            <td>java logging</td>
+            <td>GuardLogStatementJavaUtil</td>
+            <td>GuardLogStatementJavaUtil</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>118</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>134</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>138</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>45</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>45</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>88</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>88</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.filesystem.FSDirectoryReader.java">kieker.analysis.plugin.reader.filesystem.FSDirectoryReader.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>103</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>106</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>121</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>121</td>
+            <td>java logging</td>
+            <td>GuardLogStatementJavaUtil</td>
+            <td>GuardLogStatementJavaUtil</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>127</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>134</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>152</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>152</td>
+            <td>java logging</td>
+            <td>GuardLogStatementJavaUtil</td>
+            <td>GuardLogStatementJavaUtil</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>157</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>175</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>191</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>229</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>235</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>248</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>276</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>286</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>319</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>336</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>357</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>360</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>372</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>51</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>51</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>90</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>90</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>146</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>146</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>213</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>213</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>306</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>306</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.filesystem.FSReader.java">kieker.analysis.plugin.reader.filesystem.FSReader.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>42</td>
+            <td>style</td>
+            <td>Line is longer than 165 characters (found 184).</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>43</td>
+            <td>style</td>
+            <td>Line is longer than 165 characters (found 190).</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.filesystem.FSZipReader.java">kieker.analysis.plugin.reader.filesystem.FSZipReader.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>97</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>133</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>133</td>
+            <td>java logging</td>
+            <td>GuardLogStatementJavaUtil</td>
+            <td>GuardLogStatementJavaUtil</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>136</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>136</td>
+            <td>java logging</td>
+            <td>GuardLogStatementJavaUtil</td>
+            <td>GuardLogStatementJavaUtil</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>138</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>184</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>201</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>222</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>225</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>237</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>255</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>261</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>274</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>301</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>311</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>331</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>347</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>51</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>51</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>88</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>88</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>173</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>173</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>241</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>241</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.jms.JmsReader.java">kieker.analysis.plugin.reader.jms.JmsReader.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.jmx.JmxReader.java">kieker.analysis.plugin.reader.jmx.JmxReader.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>69</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>69</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>147</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>147</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>217</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>217</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.kafka.KafkaReader.java">kieker.analysis.plugin.reader.kafka.KafkaReader.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>61</td>
+            <td>style</td>
+            <td>First sentence should end with a period.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>162</td>
+            <td>unused code</td>
+            <td>UnusedPrivateMethod</td>
+            <td>UnusedPrivateMethod</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.list.ListReader.java">kieker.analysis.plugin.reader.list.ListReader.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.namedRecordPipe.PipeReader.java">kieker.analysis.plugin.reader.namedRecordPipe.PipeReader.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.newio.AbstractRawDataReader.java">kieker.analysis.plugin.reader.newio.AbstractRawDataReader.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>67</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>69</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>84</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.newio.RawDataReaderPlugin.java">kieker.analysis.plugin.reader.newio.RawDataReaderPlugin.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>89</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>95</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>97</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>99</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>120</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>126</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>128</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>2</td>
+            <td>130</td>
+            <td>jakarta commons logging</td>
+            <td>GuardLogStatement</td>
+            <td>GuardLogStatement</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>68</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>105</td>
+            <td>style</td>
+            <td>Line is longer than 165 characters (found 243).</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>112</td>
+            <td>style</td>
+            <td>Line is longer than 165 characters (found 170).</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>136</td>
+            <td>style</td>
+            <td>Line is longer than 165 characters (found 280).</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.newio.deserializer.AbstractContainerFormatDeserializer.java">kieker.analysis.plugin.reader.newio.deserializer.AbstractContainerFormatDeserializer.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>83</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.newio.deserializer.AbstractMonitoringRecordDeserializer.java">kieker.analysis.plugin.reader.newio.deserializer.AbstractMonitoringRecordDeserializer.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>37</td>
+            <td>style</td>
+            <td>Line is longer than 165 characters (found 170).</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.tcp.AbstractRecordTcpReader.java">kieker.analysis.plugin.reader.tcp.AbstractRecordTcpReader.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>45</td>
+            <td>style</td>
+            <td>First sentence should end with a period.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>48</td>
+            <td>style</td>
+            <td>Expected @param tag for 'logger'.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>48</td>
+            <td>style</td>
+            <td>Expected @param tag for 'stringRegistry'.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>59</td>
+            <td>style</td>
+            <td>Expected @param tag for 'logger'.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>59</td>
+            <td>style</td>
+            <td>Expected @param tag for 'stringRegistry'.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>60</td>
+            <td>style</td>
+            <td>Expected @param tag for 'recordFactories'.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>99</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.tcp.DualSocketTcpReader.java">kieker.analysis.plugin.reader.tcp.DualSocketTcpReader.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>45</td>
+            <td>style</td>
+            <td>Line is longer than 165 characters (found 168).</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>46</td>
+            <td>style</td>
+            <td>Line is longer than 165 characters (found 168).</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>70</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>87</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.tcp.SingleSocketTcpReader.java">kieker.analysis.plugin.reader.tcp.SingleSocketTcpReader.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>39</td>
+            <td>style</td>
+            <td>Line is longer than 165 characters (found 168).</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>55</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.tcp.TCPReader.java">kieker.analysis.plugin.reader.tcp.TCPReader.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>78</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.tcp.TCPStringReader.java">kieker.analysis.plugin.reader.tcp.TCPStringReader.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>187</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>187</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>209</td>
+            <td>code size</td>
+            <td>ModifiedCyclomaticComplexity</td>
+            <td>ModifiedCyclomaticComplexity</td>
+         </tr>
+         <tr class="alternate">
+            <td>pmd</td>
+            <td>3</td>
+            <td>209</td>
+            <td>code size</td>
+            <td>StdCyclomaticComplexity</td>
+            <td>StdCyclomaticComplexity</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.tcp.util.AbstractTcpReader.java">kieker.analysis.plugin.reader.tcp.util.AbstractTcpReader.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>2</td>
+            <td>34</td>
+            <td>style</td>
+            <td>Comment matches to-do format 'TODO'.</td>
+            <td>warning</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.tcp.util.SingleSocketRecordReader.java">kieker.analysis.plugin.reader.tcp.util.SingleSocketRecordReader.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>51</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.timer.TimeReader.java">kieker.analysis.plugin.reader.timer.TimeReader.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.util.ByteBufferDeserializer.java">kieker.analysis.plugin.reader.util.ByteBufferDeserializer.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>51</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>59</td>
+            <td>style</td>
+            <td>Missing a Javadoc comment.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.plugin.reader.util.IRecordReceivedListener.java">kieker.analysis.plugin.reader.util.IRecordReceivedListener.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>32</td>
+            <td>style</td>
+            <td>Expected @param tag for 'record'.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.repository.AbstractRepository.java">kieker.analysis.repository.AbstractRepository.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="kieker.analysis.repository.annotation.Repository.java">kieker.analysis.repository.annotation.Repository.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>0</td>
+            <td>style</td>
+            <td>Missing package-info.java file.</td>
+            <td>info</td>
+         </tr>
+      </table><br></body>
+</html>

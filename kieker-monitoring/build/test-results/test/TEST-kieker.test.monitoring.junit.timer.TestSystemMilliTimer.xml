@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kieker.test.monitoring.junit.timer.TestSystemMilliTimer" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-04-28T08:00:29" hostname="icedsoul-PC" time="0.026">
+  <properties/>
+  <testcase name="testMicroseconds" classname="kieker.test.monitoring.junit.timer.TestSystemMilliTimer" time="0.004"/>
+  <testcase name="testNanoseconds" classname="kieker.test.monitoring.junit.timer.TestSystemMilliTimer" time="0.008"/>
+  <testcase name="testMilliseconds" classname="kieker.test.monitoring.junit.timer.TestSystemMilliTimer" time="0.003"/>
+  <testcase name="testDefault" classname="kieker.test.monitoring.junit.timer.TestSystemMilliTimer" time="0.007"/>
+  <testcase name="testSeconds" classname="kieker.test.monitoring.junit.timer.TestSystemMilliTimer" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[四月 28, 2019 4:00:29 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:00:29 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.monitoring.junit.timer.TestSystemMilliTimer.testMicroseconds()
+
+
+四月 28, 2019 4:00:29 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:00:29 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.monitoring.junit.timer.TestSystemMilliTimer.testNanoseconds()
+
+
+四月 28, 2019 4:00:29 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:00:29 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.monitoring.junit.timer.TestSystemMilliTimer.testMilliseconds()
+
+
+四月 28, 2019 4:00:29 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:00:29 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.monitoring.junit.timer.TestSystemMilliTimer.testDefault()
+
+
+四月 28, 2019 4:00:29 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:00:29 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.monitoring.junit.timer.TestSystemMilliTimer.testSeconds()
+
+
+]]></system-err>
+</testsuite>

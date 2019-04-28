@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kieker.monitoring.writer.filesystem.AsciiFileWriterTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2019-04-28T08:02:36" hostname="icedsoul-PC" time="0.602">
+  <properties/>
+  <testcase name="shouldCreateMultipleRecordFiles" classname="kieker.monitoring.writer.filesystem.AsciiFileWriterTest" time="0.003"/>
+  <testcase name="shouldCreateLogFolder" classname="kieker.monitoring.writer.filesystem.AsciiFileWriterTest" time="0.001"/>
+  <testcase name="testValidLogFolder" classname="kieker.monitoring.writer.filesystem.AsciiFileWriterTest" time="0.002"/>
+  <testcase name="testMaxLogFiles" classname="kieker.monitoring.writer.filesystem.AsciiFileWriterTest" time="0.057"/>
+  <testcase name="testNonDirectoryConfigPath" classname="kieker.monitoring.writer.filesystem.AsciiFileWriterTest" time="0.002"/>
+  <testcase name="shouldCreateMappingAndRecordFiles" classname="kieker.monitoring.writer.filesystem.AsciiFileWriterTest" time="0.002"/>
+  <testcase name="testMaxLogSize" classname="kieker.monitoring.writer.filesystem.AsciiFileWriterTest" time="0.527"/>
+  <testcase name="shouldCreateMultipleCompressedRecordFiles" classname="kieker.monitoring.writer.filesystem.AsciiFileWriterTest" time="0.005"/>
+  <testcase name="testEmptyConfigPath" classname="kieker.monitoring.writer.filesystem.AsciiFileWriterTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

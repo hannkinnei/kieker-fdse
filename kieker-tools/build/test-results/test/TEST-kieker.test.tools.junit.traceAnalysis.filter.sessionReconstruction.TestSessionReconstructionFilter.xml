@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kieker.test.tools.junit.traceAnalysis.filter.sessionReconstruction.TestSessionReconstructionFilter" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-04-28T08:03:50" hostname="icedsoul-PC" time="0.032">
+  <properties/>
+  <testcase name="testSimpleExecutionTraceSession" classname="kieker.test.tools.junit.traceAnalysis.filter.sessionReconstruction.TestSessionReconstructionFilter" time="0.009"/>
+  <testcase name="testExecutionTraceTwoSessions" classname="kieker.test.tools.junit.traceAnalysis.filter.sessionReconstruction.TestSessionReconstructionFilter" time="0.012"/>
+  <testcase name="testExecutionTraceSessionSplit" classname="kieker.test.tools.junit.traceAnalysis.filter.sessionReconstruction.TestSessionReconstructionFilter" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[四月 28, 2019 4:03:50 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:50 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.traceAnalysis.filter.sessionReconstruction.TestSessionReconstructionFilter.testSimpleExecutionTraceSession()
+
+
+四月 28, 2019 4:03:50 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 28, 2019 4:03:50 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:50 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.traceAnalysis.filter.sessionReconstruction.TestSessionReconstructionFilter.testExecutionTraceTwoSessions()
+
+
+四月 28, 2019 4:03:50 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 28, 2019 4:03:50 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:50 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.traceAnalysis.filter.sessionReconstruction.TestSessionReconstructionFilter.testExecutionTraceSessionSplit()
+
+
+四月 28, 2019 4:03:50 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+]]></system-err>
+</testsuite>

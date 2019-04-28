@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.2.2" timestamp="2019-04-21T15:38:01.988">
+<file name="/code/Github/kieker-1.13/kieker-common/test/kieker/test/common/junit/AbstractKiekerTest.java">
+<violation beginline="84" endline="84" begincolumn="17" endcolumn="24" rule="GuardLogStatement" ruleset="Jakarta Commons Logging" package="kieker.test.common.junit" class="AbstractKiekerTest" method="printNameOfCurrentTest" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/logging-jakarta-commons.html#GuardLogStatement" priority="2">
+There is log block not surrounded by if
+</violation>
+<violation beginline="84" endline="84" begincolumn="17" endcolumn="24" rule="GuardLogStatementJavaUtil" ruleset="Java Logging" package="kieker.test.common.junit" class="AbstractKiekerTest" method="printNameOfCurrentTest" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/logging-java.html#GuardLogStatementJavaUtil" priority="2">
+There is log block not surrounded by if
+</violation>
+<violation beginline="107" endline="107" begincolumn="33" endcolumn="41" rule="GuardLogStatement" ruleset="Jakarta Commons Logging" package="kieker.test.common.junit" class="AbstractKiekerTest" method="initTestModulePrefix" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/logging-jakarta-commons.html#GuardLogStatement" priority="2">
+There is log block not surrounded by if
+</violation>
+<violation beginline="111" endline="111" begincolumn="17" endcolumn="24" rule="GuardLogStatement" ruleset="Jakarta Commons Logging" package="kieker.test.common.junit" class="AbstractKiekerTest" method="initTestModulePrefix" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/logging-jakarta-commons.html#GuardLogStatement" priority="2">
+There is log block not surrounded by if
+</violation>
+<violation beginline="111" endline="111" begincolumn="17" endcolumn="24" rule="GuardLogStatementJavaUtil" ruleset="Java Logging" package="kieker.test.common.junit" class="AbstractKiekerTest" method="initTestModulePrefix" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/logging-java.html#GuardLogStatementJavaUtil" priority="2">
+There is log block not surrounded by if
+</violation>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-common/test/kieker/test/common/junit/record/TestRecordSerialization.java">
+<violation beginline="42" endline="153" begincolumn="8" endcolumn="1" rule="ModifiedCyclomaticComplexity" ruleset="Code Size" package="kieker.test.common.junit.record" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/codesize.html#ModifiedCyclomaticComplexity" priority="3">
+The class 'TestRecordSerialization' has a Modified Cyclomatic Complexity of 3 (Highest = 11).
+</violation>
+<violation beginline="42" endline="153" begincolumn="8" endcolumn="1" rule="StdCyclomaticComplexity" ruleset="Code Size" package="kieker.test.common.junit.record" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/codesize.html#StdCyclomaticComplexity" priority="3">
+The class 'TestRecordSerialization' has a Standard Cyclomatic Complexity of 3 (Highest = 11).
+</violation>
+<violation beginline="58" endline="58" begincolumn="25" endcolumn="32" rule="GuardLogStatement" ruleset="Jakarta Commons Logging" package="kieker.test.common.junit.record" class="TestRecordSerialization" method="test" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/logging-jakarta-commons.html#GuardLogStatement" priority="2">
+There is log block not surrounded by if
+</violation>
+<violation beginline="58" endline="58" begincolumn="25" endcolumn="32" rule="GuardLogStatementJavaUtil" ruleset="Java Logging" package="kieker.test.common.junit.record" class="TestRecordSerialization" method="test" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/logging-java.html#GuardLogStatementJavaUtil" priority="2">
+There is log block not surrounded by if
+</violation>
+<violation beginline="78" endline="114" begincolumn="24" endcolumn="9" rule="ModifiedCyclomaticComplexity" ruleset="Code Size" package="kieker.test.common.junit.record" class="TestRecordSerialization" method="prepareAndFillTestArray" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/codesize.html#ModifiedCyclomaticComplexity" priority="3">
+The method 'prepareAndFillTestArray' has a Modified Cyclomatic Complexity of 11.
+</violation>
+<violation beginline="78" endline="114" begincolumn="24" endcolumn="9" rule="StdCyclomaticComplexity" ruleset="Code Size" package="kieker.test.common.junit.record" class="TestRecordSerialization" method="prepareAndFillTestArray" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/codesize.html#StdCyclomaticComplexity" priority="3">
+The method 'prepareAndFillTestArray' has a Standard Cyclomatic Complexity of 11.
+</violation>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-common/test/kieker/test/common/junit/record/TestRecordsUsingCorrectBinarySize.java">
+<violation beginline="36" endline="87" begincolumn="8" endcolumn="1" rule="ModifiedCyclomaticComplexity" ruleset="Code Size" package="kieker.test.common.junit.record" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/codesize.html#ModifiedCyclomaticComplexity" priority="3">
+The class 'TestRecordsUsingCorrectBinarySize' has a Modified Cyclomatic Complexity of 5 (Highest = 11).
+</violation>
+<violation beginline="36" endline="87" begincolumn="8" endcolumn="1" rule="StdCyclomaticComplexity" ruleset="Code Size" package="kieker.test.common.junit.record" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/codesize.html#StdCyclomaticComplexity" priority="3">
+The class 'TestRecordsUsingCorrectBinarySize' has a Standard Cyclomatic Complexity of 5 (Highest = 11).
+</violation>
+<violation beginline="51" endline="51" begincolumn="25" endcolumn="32" rule="GuardLogStatement" ruleset="Jakarta Commons Logging" package="kieker.test.common.junit.record" class="TestRecordsUsingCorrectBinarySize" method="test" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/logging-jakarta-commons.html#GuardLogStatement" priority="2">
+There is log block not surrounded by if
+</violation>
+<violation beginline="51" endline="51" begincolumn="25" endcolumn="32" rule="GuardLogStatementJavaUtil" ruleset="Java Logging" package="kieker.test.common.junit.record" class="TestRecordsUsingCorrectBinarySize" method="test" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/logging-java.html#GuardLogStatementJavaUtil" priority="2">
+There is log block not surrounded by if
+</violation>
+<violation beginline="56" endline="85" begincolumn="17" endcolumn="9" rule="ModifiedCyclomaticComplexity" ruleset="Code Size" package="kieker.test.common.junit.record" class="TestRecordsUsingCorrectBinarySize" method="isSizeCorrect" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/codesize.html#ModifiedCyclomaticComplexity" priority="3">
+The method 'isSizeCorrect' has a Modified Cyclomatic Complexity of 11.
+</violation>
+<violation beginline="56" endline="85" begincolumn="17" endcolumn="9" rule="StdCyclomaticComplexity" ruleset="Code Size" package="kieker.test.common.junit.record" class="TestRecordsUsingCorrectBinarySize" method="isSizeCorrect" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/codesize.html#StdCyclomaticComplexity" priority="3">
+The method 'isSizeCorrect' has a Standard Cyclomatic Complexity of 11.
+</violation>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-common/test/kieker/test/common/junit/record/controlflow/TestOperationExecutionRecordEquals.java">
+<violation beginline="31" endline="122" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="kieker.test.common.junit.record.controlflow" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+</file>
+</pmd>

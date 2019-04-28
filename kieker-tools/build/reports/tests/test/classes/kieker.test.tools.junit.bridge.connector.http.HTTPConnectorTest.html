@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class kieker.test.tools.junit.bridge.connector.http.HTTPConnectorTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class kieker.test.tools.junit.bridge.connector.http.HTTPConnectorTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/kieker.test.tools.junit.bridge.connector.http.html">kieker.test.tools.junit.bridge.connector.http</a> &gt; HTTPConnectorTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">7</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.110s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testInsufficientValues</td>
+<td>0.070s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMalformedJSON</td>
+<td>0.070s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMissingClass</td>
+<td>0.070s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMissingTimestamp</td>
+<td>0.069s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMissingValues</td>
+<td>0.080s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testNonExistingClass</td>
+<td>0.683s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testValidRecord</td>
+<td>0.068s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>四月 28, 2019 4:03:22 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:22 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.bridge.connector.http.HTTPConnectorTest.testNonExistingClass()
+
+
+SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+四月 28, 2019 4:03:23 下午 kieker.tools.bridge.connector.http.HTTPConnector$MonitoringReceiverServlet doPost
+警告: Could not deserialize monitoring record
+kieker.common.exception.MonitoringRecordException: Failed to get record type of name nonExistingClass
+	at kieker.common.record.AbstractMonitoringRecord.classForName(AbstractMonitoringRecord.java:345)
+	at kieker.tools.bridge.connector.http.HTTPConnector$MonitoringReceiverServlet.doPost(HTTPConnector.java:160)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:754)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:229)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:427)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:984)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1045)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:861)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:236)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: nonExistingClass
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at kieker.common.record.AbstractMonitoringRecord.classForName(AbstractMonitoringRecord.java:342)
+	... 24 more
+
+四月 28, 2019 4:03:23 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:23 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.bridge.connector.http.HTTPConnectorTest.testMalformedJSON()
+
+
+四月 28, 2019 4:03:23 下午 kieker.tools.bridge.connector.http.HTTPConnector$MonitoringReceiverServlet doPost
+警告: Invalid data received
+java.lang.IllegalStateException: Expected one of ',}'
+	at org.eclipse.jetty.util.ajax.JSON.seekTo(JSON.java:1273)
+	at org.eclipse.jetty.util.ajax.JSON.parseObject(JSON.java:912)
+	at org.eclipse.jetty.util.ajax.JSON.parse(JSON.java:842)
+	at org.eclipse.jetty.util.ajax.JSON.parse(JSON.java:702)
+	at org.eclipse.jetty.util.ajax.JSON.parse(JSON.java:194)
+	at kieker.tools.bridge.connector.http.HTTPConnector$MonitoringReceiverServlet.doPost(HTTPConnector.java:143)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:754)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:229)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:427)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:984)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1045)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:861)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:236)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:748)
+
+四月 28, 2019 4:03:23 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:23 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.bridge.connector.http.HTTPConnectorTest.testInsufficientValues()
+
+
+四月 28, 2019 4:03:23 下午 kieker.tools.bridge.connector.http.HTTPConnector$MonitoringReceiverServlet doPost
+警告: Could not deserialize monitoring record
+kieker.common.exception.MonitoringRecordException: Failed to instantiate new monitoring record of type kieker.common.record.jvm.UptimeRecord
+	at kieker.common.record.AbstractMonitoringRecord.createFromStringArray(AbstractMonitoringRecord.java:470)
+	at kieker.tools.bridge.connector.http.HTTPConnector$MonitoringReceiverServlet.doPost(HTTPConnector.java:162)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:754)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:229)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:427)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:984)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1045)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:861)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:236)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Expected 4 record fields, but found 3
+	at kieker.common.record.AbstractMonitoringRecord.fromStringArrayToTypedArray(AbstractMonitoringRecord.java:272)
+	at kieker.common.record.AbstractMonitoringRecord.createFromStringArray(AbstractMonitoringRecord.java:458)
+	... 24 more
+
+四月 28, 2019 4:03:23 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:23 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.bridge.connector.http.HTTPConnectorTest.testMissingClass()
+
+
+四月 28, 2019 4:03:23 下午 kieker.tools.bridge.connector.http.HTTPConnector$MonitoringReceiverServlet doPost
+警告: Invalid data received
+四月 28, 2019 4:03:23 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:23 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.bridge.connector.http.HTTPConnectorTest.testMissingValues()
+
+
+四月 28, 2019 4:03:23 下午 kieker.tools.bridge.connector.http.HTTPConnector$MonitoringReceiverServlet doPost
+警告: Invalid data received
+四月 28, 2019 4:03:23 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:23 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.bridge.connector.http.HTTPConnectorTest.testMissingTimestamp()
+
+
+四月 28, 2019 4:03:23 下午 kieker.tools.bridge.connector.http.HTTPConnector$MonitoringReceiverServlet doPost
+警告: Invalid data received
+四月 28, 2019 4:03:23 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:23 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.bridge.connector.http.HTTPConnectorTest.testValidRecord()
+
+
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.0.1</a> at 2019-4-28 16:04:00</p>
+</div>
+</div>
+</body>
+</html>

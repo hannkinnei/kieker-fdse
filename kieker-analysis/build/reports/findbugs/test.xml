@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1555832155781" analysisTimestamp="1555832155909" release="">
+  <Project projectName="">
+    <Jar>/code/Github/kieker-1.13/kieker-analysis/build/classes/java/test</Jar>
+    <AuxClasspathEntry>/code/Github/kieker-1.13/kieker-analysis/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>/code/Github/kieker-1.13/lib/static-analysis/findbugs-3.0.1/lib/asm-debug-all-5.0.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/code/Github/kieker-1.13/lib/static-analysis/findbugs-3.0.1/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/code/Github/kieker-1.13/lib/static-analysis/findbugs-3.0.1/lib/bcel-6.0-SNAPSHOT.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/code/Github/kieker-1.13/lib/static-analysis/findbugs-3.0.1/lib/jdepend-2.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/code/Github/kieker-1.13/lib/static-analysis/findbugs-3.0.1/lib/findbugs-3.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/code/Github/kieker-1.13/lib/static-analysis/findbugs-3.0.1/lib/commons-lang-2.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/code/Github/kieker-1.13/lib/static-analysis/findbugs-3.0.1/lib/dom4j-1.6.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/code/Github/kieker-1.13/lib/static-analysis/findbugs-3.0.1/lib/jcip-annotations.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/code/Github/kieker-1.13/lib/static-analysis/findbugs-3.0.1/lib/jFormatString.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/code/Github/kieker-1.13/lib/static-analysis/findbugs-3.0.1/lib/annotations.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/code/Github/kieker-1.13/lib/static-analysis/findbugs-3.0.1/lib/ant.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/code/Github/kieker-1.13/lib/static-analysis/findbugs-3.0.1/lib/yjp-controller-api-redist.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/code/Github/kieker-1.13/lib/static-analysis/findbugs-3.0.1/lib/jaxen-1.1.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/code/Github/kieker-1.13/lib/javax.jms-1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/code/Github/kieker-1.13/lib/org.eclipse.emf.common_2.10.0.v20140514-1158.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/code/Github/kieker-1.13/lib/org.eclipse.emf.ecore.xmi_2.10.0.v20140514-1158.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/code/Github/kieker-1.13/lib/org.eclipse.emf.ecore_2.10.0.v20140514-1158.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/code/Github/kieker-1.13/kieker-common/build/libs/kieker-common-1.13.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/code/Github/kieker-1.13/kieker-common/build/libs/kieker-common-1.13-test.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/icedsoul/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/icedsoul/.gradle/caches/modules-2/files-2.1/com.rabbitmq/amqp-client/4.2.1/f33581400db00ef4f069a5b28c9392d862d9a735/amqp-client-4.2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/icedsoul/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/0.11.0.1/3145da6edad54b6f8fe5e5f2e17bf54775baff2/kafka-clients-0.11.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/icedsoul/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/icedsoul/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/20.0/89507701249388e1ed5ddcf8c41f4ce1be7831ef/guava-20.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/icedsoul/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/2.27.0/835fc3283b481f4758b8ef464cd560c649c08b00/mockito-core-2.27.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/icedsoul/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/icedsoul/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-library/1.3/4785a3c21320980282f9f33d0d1264a69040538f/hamcrest-library-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/icedsoul/.gradle/caches/modules-2/files-2.1/net.jpountz.lz4/lz4/1.3.0/c708bb2590c0652a642236ef45d9f99ff842a2ce/lz4-1.3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/icedsoul/.gradle/caches/modules-2/files-2.1/org.xerial.snappy/snappy-java/1.1.2.6/48d92871ca286a47f230feb375f0bbffa83b85f6/snappy-java-1.1.2.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/icedsoul/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.9.10/211a2b4d3df1eeef2a6cacf78d74a1f725e7a840/byte-buddy-1.9.10.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/icedsoul/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.9.10/9674aba5ee793e54b864952b001166848da0f26b/byte-buddy-agent-1.9.10.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/icedsoul/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/2.6/639033469776fd37c08358c6b92a4761feb2af4b/objenesis-2.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/icedsoul/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar</AuxClasspathEntry>
+    <SrcDir>/code/Github/kieker-1.13/kieker-analysis/test/kieker/test/analysis/util/AssertHelper.java</SrcDir>
+    <SrcDir>/code/Github/kieker-1.13/kieker-analysis/test/kieker/test/analysis/util/repository/SimpleRepository.java</SrcDir>
+    <SrcDir>/code/Github/kieker-1.13/kieker-analysis/test/kieker/test/analysis/util/plugin/filter/SimpleForwardFilterWithRepository.java</SrcDir>
+    <SrcDir>/code/Github/kieker-1.13/kieker-analysis/test/kieker/test/analysis/util/plugin/filter/flow/BookstoreEventRecordFactory.java</SrcDir>
+    <SrcDir>/code/Github/kieker-1.13/kieker-analysis/test/kieker/test/analysis/junit/configuration/OnlineConfigurationTest.java</SrcDir>
+    <SrcDir>/code/Github/kieker-1.13/kieker-analysis/test/kieker/test/analysis/junit/plugin/TestPluginShutdown.java</SrcDir>
+    <SrcDir>/code/Github/kieker-1.13/kieker-analysis/test/kieker/test/analysis/junit/plugin/TestPlugin.java</SrcDir>
+    <SrcDir>/code/Github/kieker-1.13/kieker-analysis/test/kieker/test/analysis/junit/plugin/TestGlobalConfiguration.java</SrcDir>
+    <SrcDir>/code/Github/kieker-1.13/kieker-analysis/test/kieker/test/analysis/junit/plugin/reader/timer/TimeReaderTest.java</SrcDir>
+    <SrcDir>/code/Github/kieker-1.13/kieker-analysis/test/kieker/test/analysis/junit/plugin/reader/newio/deserializer/BinaryDeserializerTest.java</SrcDir>
+    <SrcDir>/code/Github/kieker-1.13/kieker-analysis/test/kieker/test/analysis/junit/plugin/reader/TestNoInputPortsForReader.java</SrcDir>
+    <SrcDir>/code/Github/kieker-1.13/kieker-analysis/test/kieker/test/analysis/junit/plugin/reader/filesystem/TestLegacyExecutionRecordReader.java</SrcDir>
+    <SrcDir>/code/Github/kieker-1.13/kieker-analysis/test/kieker/test/analysis/junit/plugin/filter/trace/TestTraceIdFilter.java</SrcDir>
+    <SrcDir>/code/Github/kieker-1.13/kieker-analysis/test/kieker/test/analysis/junit/plugin/filter/visualization/TestNoOutputPortsForVisualizations.java</SrcDir>
+    <SrcDir>/code/Github/kieker-1.13/kieker-analysis/test/kieker/test/analysis/junit/plugin/filter/select/TypeFilterTest.java</SrcDir>
+    <SrcDir>/code/Github/kieker-1.13/kieker-analysis/test/kieker/test/analysis/junit/plugin/filter/select/TestTimestampFilter.java</SrcDir>
+    <SrcDir>/code/Github/kieker-1.13/kieker-analysis/test/kieker/test/analysis/junit/plugin/filter/record/AbstractTestRealtimeRecordDelayFilter.java</SrcDir>
+    <SrcDir>/code/Github/kieker-1.13/kieker-analysis/test/kieker/test/analysis/junit/plugin/filter/record/TestMonitoringThroughputFilter.java</SrcDir>
+    <SrcDir>/code/Github/kieker-1.13/kieker-analysis/test/kieker/test/analysis/junit/plugin/filter/record/TestRealtimeRecordDelayFilterNoAcceleration.java</SrcDir>
+    <SrcDir>/code/Github/kieker-1.13/kieker-analysis/test/kieker/test/analysis/junit/plugin/filter/record/TestRealtimeRecordDelayFilterAccelerationSlowdown.java</SrcDir>
+    <SrcDir>/code/Github/kieker-1.13/kieker-analysis/test/kieker/test/analysis/junit/plugin/filter/record/TestRealtimeRecordDelayFilterAccelerationFaster.java</SrcDir>
+    <SrcDir>/code/Github/kieker-1.13/kieker-analysis/test/kieker/test/analysis/junit/plugin/filter/flow/TestEventRecordTraceReconstructionFilter.java</SrcDir>
+    <SrcDir>/code/Github/kieker-1.13/kieker-analysis/test/kieker/test/analysis/junit/plugin/filter/forward/TestTeeFilter.java</SrcDir>
+    <SrcDir>/code/Github/kieker-1.13/kieker-analysis/test/kieker/test/analysis/junit/plugin/filter/forward/TestCountingFilter.java</SrcDir>
+    <SrcDir>/code/Github/kieker-1.13/kieker-analysis/test/kieker/test/analysis/junit/plugin/filter/forward/TestStringBufferFilter.java</SrcDir>
+    <SrcDir>/code/Github/kieker-1.13/kieker-analysis/test/kieker/test/analysis/junit/plugin/TestPluginConfigurationRetention.java</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 21 Apr 2019 15:35:55 +0800" total_classes="31" referenced_classes="200" total_bugs="0" total_size="1321" num_packages="16" java_version="1.8.0_201" vm_version="25.201-b09" cpu_seconds="18.58" clock_seconds="7.31" peak_mbytes="197.09" alloc_mbytes="1700.00" gc_seconds="0.26">
+    <PackageStats package="kieker.test.analysis.junit.configuration" total_bugs="0" total_types="2" total_size="39">
+      <ClassStats class="kieker.test.analysis.junit.configuration.OnlineConfigurationTest" sourceFile="OnlineConfigurationTest.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="kieker.test.analysis.junit.configuration.OnlineConfigurationTest$UpdateableFilter" sourceFile="OnlineConfigurationTest.java" interface="false" size="16" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="kieker.test.analysis.junit.plugin" total_bugs="0" total_types="7" total_size="262">
+      <ClassStats class="kieker.test.analysis.junit.plugin.TestGlobalConfiguration" sourceFile="TestGlobalConfiguration.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="kieker.test.analysis.junit.plugin.TestGlobalConfiguration$PropertyFilter" sourceFile="TestGlobalConfiguration.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="kieker.test.analysis.junit.plugin.TestPlugin" sourceFile="TestPlugin.java" interface="false" size="56" bugs="0"/>
+      <ClassStats class="kieker.test.analysis.junit.plugin.TestPluginConfigurationRetention" sourceFile="TestPluginConfigurationRetention.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="kieker.test.analysis.junit.plugin.TestPluginShutdown" sourceFile="TestPluginShutdown.java" interface="false" size="101" bugs="0"/>
+      <ClassStats class="kieker.test.analysis.junit.plugin.TestPluginShutdown$ShutdownFilter" sourceFile="TestPluginShutdown.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="kieker.test.analysis.junit.plugin.TestPluginShutdown$ShutdownReader" sourceFile="TestPluginShutdown.java" interface="false" size="14" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="kieker.test.analysis.junit.plugin.filter.flow" total_bugs="0" total_types="1" total_size="154">
+      <ClassStats class="kieker.test.analysis.junit.plugin.filter.flow.TestEventRecordTraceReconstructionFilter" sourceFile="TestEventRecordTraceReconstructionFilter.java" interface="false" size="154" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="kieker.test.analysis.junit.plugin.filter.forward" total_bugs="0" total_types="3" total_size="205">
+      <ClassStats class="kieker.test.analysis.junit.plugin.filter.forward.TestCountingFilter" sourceFile="TestCountingFilter.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="kieker.test.analysis.junit.plugin.filter.forward.TestStringBufferFilter" sourceFile="TestStringBufferFilter.java" interface="false" size="120" bugs="0"/>
+      <ClassStats class="kieker.test.analysis.junit.plugin.filter.forward.TestTeeFilter" sourceFile="TestTeeFilter.java" interface="false" size="41" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="kieker.test.analysis.junit.plugin.filter.record" total_bugs="0" total_types="5" total_size="177">
+      <ClassStats class="kieker.test.analysis.junit.plugin.filter.record.AbstractTestRealtimeRecordDelayFilter" sourceFile="AbstractTestRealtimeRecordDelayFilter.java" interface="false" size="80" bugs="0"/>
+      <ClassStats class="kieker.test.analysis.junit.plugin.filter.record.TestMonitoringThroughputFilter" sourceFile="TestMonitoringThroughputFilter.java" interface="false" size="70" bugs="0"/>
+      <ClassStats class="kieker.test.analysis.junit.plugin.filter.record.TestRealtimeRecordDelayFilterAccelerationFaster" sourceFile="TestRealtimeRecordDelayFilterAccelerationFaster.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="kieker.test.analysis.junit.plugin.filter.record.TestRealtimeRecordDelayFilterAccelerationSlowdown" sourceFile="TestRealtimeRecordDelayFilterAccelerationSlowdown.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="kieker.test.analysis.junit.plugin.filter.record.TestRealtimeRecordDelayFilterNoAcceleration" sourceFile="TestRealtimeRecordDelayFilterNoAcceleration.java" interface="false" size="9" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="kieker.test.analysis.junit.plugin.filter.select" total_bugs="0" total_types="3" total_size="129">
+      <ClassStats class="kieker.test.analysis.junit.plugin.filter.select.TestTimestampFilter" sourceFile="TestTimestampFilter.java" interface="false" size="82" bugs="0"/>
+      <ClassStats class="kieker.test.analysis.junit.plugin.filter.select.TestTimestampFilter$1" sourceFile="TestTimestampFilter.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="kieker.test.analysis.junit.plugin.filter.select.TypeFilterTest" sourceFile="TypeFilterTest.java" interface="false" size="31" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="kieker.test.analysis.junit.plugin.filter.trace" total_bugs="0" total_types="1" total_size="81">
+      <ClassStats class="kieker.test.analysis.junit.plugin.filter.trace.TestTraceIdFilter" sourceFile="TestTraceIdFilter.java" interface="false" size="81" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="kieker.test.analysis.junit.plugin.filter.visualization" total_bugs="0" total_types="1" total_size="20">
+      <ClassStats class="kieker.test.analysis.junit.plugin.filter.visualization.TestNoOutputPortsForVisualizations" sourceFile="TestNoOutputPortsForVisualizations.java" interface="false" size="20" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="kieker.test.analysis.junit.plugin.reader" total_bugs="0" total_types="1" total_size="21">
+      <ClassStats class="kieker.test.analysis.junit.plugin.reader.TestNoInputPortsForReader" sourceFile="TestNoInputPortsForReader.java" interface="false" size="21" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="kieker.test.analysis.junit.plugin.reader.filesystem" total_bugs="0" total_types="1" total_size="29">
+      <ClassStats class="kieker.test.analysis.junit.plugin.reader.filesystem.TestLegacyExecutionRecordReader" sourceFile="TestLegacyExecutionRecordReader.java" interface="false" size="29" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="kieker.test.analysis.junit.plugin.reader.newio.deserializer" total_bugs="0" total_types="1" total_size="19">
+      <ClassStats class="kieker.test.analysis.junit.plugin.reader.newio.deserializer.BinaryDeserializerTest" sourceFile="BinaryDeserializerTest.java" interface="false" size="19" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="kieker.test.analysis.junit.plugin.reader.timer" total_bugs="0" total_types="1" total_size="65">
+      <ClassStats class="kieker.test.analysis.junit.plugin.reader.timer.TimeReaderTest" sourceFile="TimeReaderTest.java" interface="false" size="65" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="kieker.test.analysis.util" total_bugs="0" total_types="1" total_size="7">
+      <ClassStats class="kieker.test.analysis.util.AssertHelper" sourceFile="AssertHelper.java" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="kieker.test.analysis.util.plugin.filter" total_bugs="0" total_types="1" total_size="14">
+      <ClassStats class="kieker.test.analysis.util.plugin.filter.SimpleForwardFilterWithRepository" sourceFile="SimpleForwardFilterWithRepository.java" interface="false" size="14" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="kieker.test.analysis.util.plugin.filter.flow" total_bugs="0" total_types="1" total_size="91">
+      <ClassStats class="kieker.test.analysis.util.plugin.filter.flow.BookstoreEventRecordFactory" sourceFile="BookstoreEventRecordFactory.java" interface="false" size="91" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="kieker.test.analysis.util.repository" total_bugs="0" total_types="1" total_size="8">
+      <ClassStats class="kieker.test.analysis.util.repository.SimpleRepository" sourceFile="SimpleRepository.java" interface="false" size="8" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1435" invocations="954" avgMicrosecondsPerInvocation="1504" maxMicrosecondsPerInvocation="82141" standardDeviationMircosecondsPerInvocation="7410"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory" totalMilliseconds="524" invocations="49" avgMicrosecondsPerInvocation="10704" maxMicrosecondsPerInvocation="129047" standardDeviationMircosecondsPerInvocation="27159"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="419" invocations="159" avgMicrosecondsPerInvocation="2641" maxMicrosecondsPerInvocation="173355" standardDeviationMircosecondsPerInvocation="15386"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="409" invocations="947" avgMicrosecondsPerInvocation="431" maxMicrosecondsPerInvocation="20044" standardDeviationMircosecondsPerInvocation="1221"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="253" invocations="200" avgMicrosecondsPerInvocation="1266" maxMicrosecondsPerInvocation="32889" standardDeviationMircosecondsPerInvocation="3041"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="224" invocations="200" avgMicrosecondsPerInvocation="1122" maxMicrosecondsPerInvocation="18966" standardDeviationMircosecondsPerInvocation="2129"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="210" invocations="491" avgMicrosecondsPerInvocation="428" maxMicrosecondsPerInvocation="9412" standardDeviationMircosecondsPerInvocation="847"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="202" invocations="151" avgMicrosecondsPerInvocation="1337" maxMicrosecondsPerInvocation="170432" standardDeviationMircosecondsPerInvocation="13811"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="187" invocations="151" avgMicrosecondsPerInvocation="1239" maxMicrosecondsPerInvocation="12494" standardDeviationMircosecondsPerInvocation="1876"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="168" invocations="151" avgMicrosecondsPerInvocation="1116" maxMicrosecondsPerInvocation="13788" standardDeviationMircosecondsPerInvocation="1683"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="167" invocations="309" avgMicrosecondsPerInvocation="543" maxMicrosecondsPerInvocation="103726" standardDeviationMircosecondsPerInvocation="5898"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="157" invocations="152" avgMicrosecondsPerInvocation="1035" maxMicrosecondsPerInvocation="11301" standardDeviationMircosecondsPerInvocation="1876"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="149" invocations="151" avgMicrosecondsPerInvocation="989" maxMicrosecondsPerInvocation="58543" standardDeviationMircosecondsPerInvocation="4759"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="129" invocations="151" avgMicrosecondsPerInvocation="857" maxMicrosecondsPerInvocation="12510" standardDeviationMircosecondsPerInvocation="1462"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="126" invocations="200" avgMicrosecondsPerInvocation="633" maxMicrosecondsPerInvocation="76158" standardDeviationMircosecondsPerInvocation="5384"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="95" invocations="140" avgMicrosecondsPerInvocation="679" maxMicrosecondsPerInvocation="6534" standardDeviationMircosecondsPerInvocation="1036"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

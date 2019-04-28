@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kieker.test.common.junit.util.filesystem.TestFSUtils" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-04-21T07:38:04" hostname="icedsoul-PC" time="0.006">
+  <properties/>
+  <testcase name="testDecodeNewline" classname="kieker.test.common.junit.util.filesystem.TestFSUtils" time="0.0"/>
+  <testcase name="testEncodeDecodeNewline" classname="kieker.test.common.junit.util.filesystem.TestFSUtils" time="0.002"/>
+  <testcase name="testEncodeNewline" classname="kieker.test.common.junit.util.filesystem.TestFSUtils" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[四月 21, 2019 3:38:04 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 21, 2019 3:38:04 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.common.junit.util.filesystem.TestFSUtils.testDecodeNewline()
+
+
+四月 21, 2019 3:38:04 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 21, 2019 3:38:04 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.common.junit.util.filesystem.TestFSUtils.testEncodeDecodeNewline()
+
+
+四月 21, 2019 3:38:04 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 21, 2019 3:38:04 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.common.junit.util.filesystem.TestFSUtils.testEncodeNewline()
+
+
+]]></system-err>
+</testsuite>

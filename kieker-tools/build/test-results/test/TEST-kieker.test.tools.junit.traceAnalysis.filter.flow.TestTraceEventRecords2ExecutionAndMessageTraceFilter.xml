@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kieker.test.tools.junit.traceAnalysis.filter.flow.TestTraceEventRecords2ExecutionAndMessageTraceFilter" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-04-28T08:03:49" hostname="icedsoul-PC" time="0.033">
+  <properties/>
+  <testcase name="testValidSyncTraceSimpleEntryCallCallExit" classname="kieker.test.tools.junit.traceAnalysis.filter.flow.TestTraceEventRecords2ExecutionAndMessageTraceFilter" time="0.008"/>
+  <testcase name="testValidTraceWithBeforeAndAfterOperationEventsAndAdditionalCallEventsAndGap" classname="kieker.test.tools.junit.traceAnalysis.filter.flow.TestTraceEventRecords2ExecutionAndMessageTraceFilter" time="0.003"/>
+  <testcase name="testValidSyncTraceSimpleCallCall" classname="kieker.test.tools.junit.traceAnalysis.filter.flow.TestTraceEventRecords2ExecutionAndMessageTraceFilter" time="0.002"/>
+  <testcase name="testValidSyncTraceSimpleEntryCallExit" classname="kieker.test.tools.junit.traceAnalysis.filter.flow.TestTraceEventRecords2ExecutionAndMessageTraceFilter" time="0.005"/>
+  <testcase name="testValidTraceWithBeforeAndAfterOperationEvents" classname="kieker.test.tools.junit.traceAnalysis.filter.flow.TestTraceEventRecords2ExecutionAndMessageTraceFilter" time="0.003"/>
+  <testcase name="testValidTraceWithBeforeAndAfterOperationEventsAndAdditionalCallEvents" classname="kieker.test.tools.junit.traceAnalysis.filter.flow.TestTraceEventRecords2ExecutionAndMessageTraceFilter" time="0.003"/>
+  <testcase name="testValidSyncTraceSimpleEntryCallReturnCallCallExit" classname="kieker.test.tools.junit.traceAnalysis.filter.flow.TestTraceEventRecords2ExecutionAndMessageTraceFilter" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[四月 28, 2019 4:03:49 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:49 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.traceAnalysis.filter.flow.TestTraceEventRecords2ExecutionAndMessageTraceFilter.testValidSyncTraceSimpleEntryCallCallExit()
+
+
+四月 28, 2019 4:03:49 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 28, 2019 4:03:49 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:49 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.traceAnalysis.filter.flow.TestTraceEventRecords2ExecutionAndMessageTraceFilter.testValidTraceWithBeforeAndAfterOperationEventsAndAdditionalCallEventsAndGap()
+
+
+四月 28, 2019 4:03:49 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 28, 2019 4:03:49 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:49 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.traceAnalysis.filter.flow.TestTraceEventRecords2ExecutionAndMessageTraceFilter.testValidSyncTraceSimpleCallCall()
+
+
+四月 28, 2019 4:03:49 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 28, 2019 4:03:49 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:49 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.traceAnalysis.filter.flow.TestTraceEventRecords2ExecutionAndMessageTraceFilter.testValidSyncTraceSimpleEntryCallExit()
+
+
+四月 28, 2019 4:03:49 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 28, 2019 4:03:49 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:49 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.traceAnalysis.filter.flow.TestTraceEventRecords2ExecutionAndMessageTraceFilter.testValidTraceWithBeforeAndAfterOperationEvents()
+
+
+四月 28, 2019 4:03:49 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 28, 2019 4:03:49 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:49 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.traceAnalysis.filter.flow.TestTraceEventRecords2ExecutionAndMessageTraceFilter.testValidTraceWithBeforeAndAfterOperationEventsAndAdditionalCallEvents()
+
+
+四月 28, 2019 4:03:49 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 28, 2019 4:03:49 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:49 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.traceAnalysis.filter.flow.TestTraceEventRecords2ExecutionAndMessageTraceFilter.testValidSyncTraceSimpleEntryCallReturnCallCallExit()
+
+
+四月 28, 2019 4:03:49 下午 kieker.tools.traceAnalysis.filter.flow.TraceEventRecords2ExecutionAndMessageTraceFilter (TraceEventRecords2ExecutionAndMessageTraceFilter-155) inputTraceEvents
+警告: Events of type 'SplitEvent' are currently not handled and ignored.
+四月 28, 2019 4:03:49 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+]]></system-err>
+</testsuite>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kieker.test.analysis.junit.plugin.filter.select.TestTimestampFilter" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-04-21T07:36:43" hostname="icedsoul-PC" time="0.029">
+  <properties/>
+  <testcase name="testRecordOnLeftBorderPasses" classname="kieker.test.analysis.junit.plugin.filter.select.TestTimestampFilter" time="0.013"/>
+  <testcase name="testRecordOnRightBorderPasses" classname="kieker.test.analysis.junit.plugin.filter.select.TestTimestampFilter" time="0.004"/>
+  <testcase name="testEventBeforeIgnored" classname="kieker.test.analysis.junit.plugin.filter.select.TestTimestampFilter" time="0.007"/>
+  <testcase name="testRecordTinToutWithinRangePassed" classname="kieker.test.analysis.junit.plugin.filter.select.TestTimestampFilter" time="0.003"/>
+  <testcase name="testEventAfterIgnored" classname="kieker.test.analysis.junit.plugin.filter.select.TestTimestampFilter" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[四月 21, 2019 3:36:43 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 21, 2019 3:36:43 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.analysis.junit.plugin.filter.select.TestTimestampFilter.testRecordOnLeftBorderPasses()
+
+
+四月 21, 2019 3:36:43 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 21, 2019 3:36:43 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 21, 2019 3:36:43 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.analysis.junit.plugin.filter.select.TestTimestampFilter.testRecordOnRightBorderPasses()
+
+
+四月 21, 2019 3:36:43 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 21, 2019 3:36:43 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 21, 2019 3:36:43 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.analysis.junit.plugin.filter.select.TestTimestampFilter.testEventBeforeIgnored()
+
+
+四月 21, 2019 3:36:43 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 21, 2019 3:36:43 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 21, 2019 3:36:43 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.analysis.junit.plugin.filter.select.TestTimestampFilter.testRecordTinToutWithinRangePassed()
+
+
+四月 21, 2019 3:36:43 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 21, 2019 3:36:43 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 21, 2019 3:36:43 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.analysis.junit.plugin.filter.select.TestTimestampFilter.testEventAfterIgnored()
+
+
+四月 21, 2019 3:36:43 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+]]></system-err>
+</testsuite>

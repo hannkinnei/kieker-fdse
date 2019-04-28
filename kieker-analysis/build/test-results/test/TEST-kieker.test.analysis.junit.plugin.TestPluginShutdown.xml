@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kieker.test.analysis.junit.plugin.TestPluginShutdown" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-04-21T07:36:14" hostname="icedsoul-PC" time="0.058">
+  <properties/>
+  <testcase name="testLongWayShortWay" classname="kieker.test.analysis.junit.plugin.TestPluginShutdown" time="0.006"/>
+  <testcase name="testLoop" classname="kieker.test.analysis.junit.plugin.TestPluginShutdown" time="0.009"/>
+  <testcase name="testOnlyReader" classname="kieker.test.analysis.junit.plugin.TestPluginShutdown" time="0.004"/>
+  <testcase name="testChainOfFilters" classname="kieker.test.analysis.junit.plugin.TestPluginShutdown" time="0.013"/>
+  <testcase name="testReaderWithUnconnectedFilter" classname="kieker.test.analysis.junit.plugin.TestPluginShutdown" time="0.009"/>
+  <testcase name="testReaderWithConnectedFilter" classname="kieker.test.analysis.junit.plugin.TestPluginShutdown" time="0.008"/>
+  <testcase name="testTwoReadersOneFilter" classname="kieker.test.analysis.junit.plugin.TestPluginShutdown" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[四月 21, 2019 3:36:14 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 21, 2019 3:36:14 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.analysis.junit.plugin.TestPluginShutdown.testLongWayShortWay()
+
+
+四月 21, 2019 3:36:14 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 21, 2019 3:36:14 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 21, 2019 3:36:14 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.analysis.junit.plugin.TestPluginShutdown.testLoop()
+
+
+四月 21, 2019 3:36:14 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 21, 2019 3:36:14 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 21, 2019 3:36:14 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.analysis.junit.plugin.TestPluginShutdown.testOnlyReader()
+
+
+四月 21, 2019 3:36:14 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 21, 2019 3:36:14 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 21, 2019 3:36:14 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.analysis.junit.plugin.TestPluginShutdown.testChainOfFilters()
+
+
+四月 21, 2019 3:36:14 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 21, 2019 3:36:14 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 21, 2019 3:36:14 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.analysis.junit.plugin.TestPluginShutdown.testReaderWithUnconnectedFilter()
+
+
+四月 21, 2019 3:36:14 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 21, 2019 3:36:14 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 21, 2019 3:36:14 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.analysis.junit.plugin.TestPluginShutdown.testReaderWithConnectedFilter()
+
+
+四月 21, 2019 3:36:15 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 21, 2019 3:36:15 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 21, 2019 3:36:15 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.analysis.junit.plugin.TestPluginShutdown.testTwoReadersOneFilter()
+
+
+四月 21, 2019 3:36:15 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+]]></system-err>
+</testsuite>

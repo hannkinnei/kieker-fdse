@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kieker.monitoring.writer.MonitoringWriterThreadTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-04-28T08:02:36" hostname="icedsoul-PC" time="0.005">
+  <properties/>
+  <testcase name="testBlocking" classname="kieker.monitoring.writer.MonitoringWriterThreadTest" time="0.001"/>
+  <testcase name="testTermination" classname="kieker.monitoring.writer.MonitoringWriterThreadTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[四月 28, 2019 4:02:36 下午 kieker.monitoring.writer.dump.DumpWriter onStarting
+信息: kieker.monitoring.writer.dump.DumpWriter has been started.
+四月 28, 2019 4:02:36 下午 kieker.monitoring.writer.dump.DumpWriter onTerminating
+信息: kieker.monitoring.writer.dump.DumpWriter has shut down.
+四月 28, 2019 4:02:36 下午 kieker.monitoring.writer.dump.DumpWriter onStarting
+信息: kieker.monitoring.writer.dump.DumpWriter has been started.
+四月 28, 2019 4:02:36 下午 kieker.monitoring.writer.dump.DumpWriter onTerminating
+信息: kieker.monitoring.writer.dump.DumpWriter has shut down.
+]]></system-err>
+</testsuite>

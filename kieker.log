@@ -1,0 +1,1046 @@
+JDK
+#
+# Configuration
+--inputdirs: /code/Github/Shopping/trace/kieker-20190423-115534-38060457063832-UTC--KIEKER-SINGLETON
+--outputdir: /code/Github/Shopping/v
+--output-filename-prefix: 
+--verbose: false
+--debug: false
+--plot-Deployment-Sequence-Diagrams: false
+--plot-Assembly-Sequence-Diagrams: false
+--plot-Deployment-Component-Dependency-Graph: false
+--plot-Assembly-Component-Dependency-Graph: false
+--plot-Container-Dependency-Graph: false
+--plot-Deployment-Operation-Dependency-Graph: true
+--plot-Assembly-Operation-Dependency-Graph: true
+--plot-Aggregated-Deployment-Call-Tree: false
+--plot-Aggregated-Assembly-Call-Tree: false
+--plot-Call-Trees: false
+--print-Message-Traces: false
+--print-Execution-Traces: false
+--print-invalid-Execution-Traces: false
+--print-System-Model: false
+--print-Deployment-Equivalence-Classes: false
+--print-Assembly-Equivalence-Classes: false
+--select-traces: <select all>
+--filter-traces: <filter none>
+--ignore-invalid-traces: false
+--repair-event-based-traces: false
+--max-trace-duration: 600000 ms
+--ignore-executions-before-date: Thu, 1 Jan 1970 00:00:00.000 +0000 (UTC) (Thu, 1 Jan 1970 08:00:00.000 +0800 (local time))
+--ignore-executions-after-date: Fri, 11 Apr 2262 23:47:16.854 +0000 (UTC) (Sat, 12 Apr 2262 07:47:16.854 +0800 (local time))
+--short-labels: false
+--include-self-loops: false
+--ignore-assumed-calls: false
+--traceColoring: 
+--addDescriptions: 
+--help: false
+Registered repository 'SystemModelRepository-1' (System model repository)
+Registered reader kieker.analysis.plugin.reader.filesystem.FSReader@311d617d
+Registered plugin kieker.analysis.plugin.filter.forward.StringBufferFilter@14899482
+Registered plugin kieker.analysis.plugin.filter.flow.ThreadEvent2TraceEventFilter@1f89ab83
+Registered plugin kieker.analysis.plugin.filter.select.TimestampFilter@299a06ac
+Registered plugin kieker.analysis.plugin.filter.select.TraceIdFilter@5577140b
+Registered plugin kieker.tools.traceAnalysis.filter.executionRecordTransformation.ExecutionRecordTransformationFilter@43556938
+Registered plugin kieker.tools.traceAnalysis.filter.traceReconstruction.TraceReconstructionFilter@5679c6c6
+Registered plugin kieker.analysis.plugin.filter.flow.EventRecordTraceReconstructionFilter@3339ad8e
+Registered plugin kieker.tools.traceAnalysis.filter.flow.EventRecordTraceCounter@424c0bc4
+Registered plugin kieker.tools.traceAnalysis.filter.flow.TraceEventRecords2ExecutionAndMessageTraceFilter@8807e25
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.dependencyGraph.OperationDependencyGraphAllocationFilter@7bfcd12c
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.dependencyGraph.OperationDependencyGraphAssemblyFilter@46f5f779
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.GraphWriterPlugin@2d6a9952
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.GraphWriterPlugin@22a71081
+Registered plugin kieker.tools.traceAnalysis.filter.systemModel.SystemModel2FileFilter@629f0666
+Read line: $0=kieker.common.record.misc.KiekerMetadataRecord
+Read line: $1=kieker.common.record.controlflow.OperationExecutionRecord
+< Loading /code/Github/Shopping/trace/kieker-20190423-115534-38060457063832-UTC--KIEKER-SINGLETON/kieker-20190423-115534075-UTC-001.dat
+Kieker metadata: version='1.13', controllerName='KIEKER-SINGLETON', hostname='icedsoul-PC', experimentId='1', debugMode='false', timeOffset='0', timeUnit='NANOSECONDS', numberOfRecords='0'
+Terminating analysis.
+Shutting down reader.
+
+#
+# Plugin: SystemModel2FileFilter-9
+Wrote HTML output of system model to file '/code/Github/Shopping/v/system-entities.html'
+
+#
+# Plugin: OperationDependencyGraphAllocationFilter-7
+Trace processing summary: 38 total; 38 succeeded; 0 failed.
+
+#
+# Plugin: OperationDependencyGraphAssemblyFilter-8
+Trace processing summary: 38 total; 38 succeeded; 0 failed.
+Saved analysis configuration to file '/code/Github/Shopping/v/traceAnalysis.kax'
+
+#
+# Plugin: Trace reconstruction (execution records -> execution traces)
+Trace processing summary: 38 total; 38 succeeded; 0 failed.
+First timestamp: 1556020541556514331 (Tue, 23 Apr 2019 11:55:41.556 +0000 (UTC),Tue, 23 Apr 2019 19:55:41.556 +0800 (local time))
+Last timestamp: 1556020661545041990 (Tue, 23 Apr 2019 11:57:41.545 +0000 (UTC),Tue, 23 Apr 2019 19:57:41.545 +0800 (local time))
+
+#
+# Plugin: Trace reconstruction (event records -> event record traces)
+Trace processing summary: 0 total; 0 succeeded; 0 failed.
+
+#
+# Plugin: Trace reconstruction (event record traces -> execution traces)
+Trace processing summary: 0 total; 0 succeeded; 0 failed.
+See 'kieker.log' for details
+JDK
+#
+# Configuration
+--inputdirs: /code/Github/Shopping/trace/kieker-20190423-125516-41642635295552-UTC--KIEKER-SINGLETON
+--outputdir: /code/Github/Shopping/v
+--output-filename-prefix: 
+--verbose: false
+--debug: false
+--plot-Deployment-Sequence-Diagrams: false
+--plot-Assembly-Sequence-Diagrams: false
+--plot-Deployment-Component-Dependency-Graph: false
+--plot-Assembly-Component-Dependency-Graph: false
+--plot-Container-Dependency-Graph: false
+--plot-Deployment-Operation-Dependency-Graph: true
+--plot-Assembly-Operation-Dependency-Graph: true
+--plot-Aggregated-Deployment-Call-Tree: false
+--plot-Aggregated-Assembly-Call-Tree: false
+--plot-Call-Trees: false
+--print-Message-Traces: false
+--print-Execution-Traces: false
+--print-invalid-Execution-Traces: false
+--print-System-Model: false
+--print-Deployment-Equivalence-Classes: false
+--print-Assembly-Equivalence-Classes: false
+--select-traces: <select all>
+--filter-traces: <filter none>
+--ignore-invalid-traces: false
+--repair-event-based-traces: false
+--max-trace-duration: 600000 ms
+--ignore-executions-before-date: Thu, 1 Jan 1970 00:00:00.000 +0000 (UTC) (Thu, 1 Jan 1970 08:00:00.000 +0800 (local time))
+--ignore-executions-after-date: Fri, 11 Apr 2262 23:47:16.854 +0000 (UTC) (Sat, 12 Apr 2262 07:47:16.854 +0800 (local time))
+--short-labels: false
+--include-self-loops: false
+--ignore-assumed-calls: false
+--traceColoring: 
+--addDescriptions: 
+--help: false
+Registered repository 'SystemModelRepository-1' (System model repository)
+Registered reader kieker.analysis.plugin.reader.filesystem.FSReader@ed17bee
+Registered plugin kieker.analysis.plugin.filter.forward.StringBufferFilter@2aae9190
+Registered plugin kieker.analysis.plugin.filter.flow.ThreadEvent2TraceEventFilter@61064425
+Registered plugin kieker.analysis.plugin.filter.select.TimestampFilter@6bc168e5
+Registered plugin kieker.analysis.plugin.filter.select.TraceIdFilter@67f89fa3
+Registered plugin kieker.tools.traceAnalysis.filter.executionRecordTransformation.ExecutionRecordTransformationFilter@7a46a697
+Registered plugin kieker.tools.traceAnalysis.filter.traceReconstruction.TraceReconstructionFilter@19e1023e
+Registered plugin kieker.analysis.plugin.filter.flow.EventRecordTraceReconstructionFilter@6d1e7682
+Registered plugin kieker.tools.traceAnalysis.filter.flow.EventRecordTraceCounter@16b4a017
+Registered plugin kieker.tools.traceAnalysis.filter.flow.TraceEventRecords2ExecutionAndMessageTraceFilter@2a098129
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.dependencyGraph.OperationDependencyGraphAllocationFilter@24273305
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.dependencyGraph.OperationDependencyGraphAssemblyFilter@18e8568
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.GraphWriterPlugin@3930015a
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.GraphWriterPlugin@629f0666
+Registered plugin kieker.tools.traceAnalysis.filter.systemModel.SystemModel2FileFilter@1ff8b8f
+Read line: $0=kieker.common.record.misc.KiekerMetadataRecord
+Read line: $1=kieker.common.record.controlflow.OperationExecutionRecord
+< Loading /code/Github/Shopping/trace/kieker-20190423-125516-41642635295552-UTC--KIEKER-SINGLETON/kieker-20190423-125516264-UTC-001.dat
+Kieker metadata: version='1.13', controllerName='KIEKER-SINGLETON', hostname='icedsoul-PC', experimentId='1', debugMode='false', timeOffset='0', timeUnit='NANOSECONDS', numberOfRecords='0'
+Terminating analysis.
+Shutting down reader.
+
+#
+# Plugin: SystemModel2FileFilter-9
+Wrote HTML output of system model to file '/code/Github/Shopping/v/system-entities.html'
+
+#
+# Plugin: OperationDependencyGraphAllocationFilter-7
+Trace processing summary: 131 total; 131 succeeded; 0 failed.
+
+#
+# Plugin: OperationDependencyGraphAssemblyFilter-8
+Trace processing summary: 131 total; 131 succeeded; 0 failed.
+Saved analysis configuration to file '/code/Github/Shopping/v/traceAnalysis.kax'
+
+#
+# Plugin: Trace reconstruction (execution records -> execution traces)
+Trace processing summary: 131 total; 131 succeeded; 0 failed.
+First timestamp: 1556024127513919646 (Tue, 23 Apr 2019 12:55:27.513 +0000 (UTC),Tue, 23 Apr 2019 20:55:27.513 +0800 (local time))
+Last timestamp: 1556024258680179524 (Tue, 23 Apr 2019 12:57:38.680 +0000 (UTC),Tue, 23 Apr 2019 20:57:38.680 +0800 (local time))
+
+#
+# Plugin: Trace reconstruction (event records -> event record traces)
+Trace processing summary: 0 total; 0 succeeded; 0 failed.
+
+#
+# Plugin: Trace reconstruction (event record traces -> execution traces)
+Trace processing summary: 0 total; 0 succeeded; 0 failed.
+See 'kieker.log' for details
+JDK
+#
+# Configuration
+--inputdirs: /code/Github/Shopping/trace/kieker-20190424-014606-44718925641942-UTC--KIEKER-SINGLETON
+--outputdir: /code/Github/Shopping/v
+--output-filename-prefix: 
+--verbose: false
+--debug: false
+--plot-Deployment-Sequence-Diagrams: false
+--plot-Assembly-Sequence-Diagrams: false
+--plot-Deployment-Component-Dependency-Graph: false
+--plot-Assembly-Component-Dependency-Graph: false
+--plot-Container-Dependency-Graph: false
+--plot-Deployment-Operation-Dependency-Graph: true
+--plot-Assembly-Operation-Dependency-Graph: true
+--plot-Aggregated-Deployment-Call-Tree: false
+--plot-Aggregated-Assembly-Call-Tree: false
+--plot-Call-Trees: false
+--print-Message-Traces: false
+--print-Execution-Traces: false
+--print-invalid-Execution-Traces: false
+--print-System-Model: false
+--print-Deployment-Equivalence-Classes: false
+--print-Assembly-Equivalence-Classes: false
+--select-traces: <select all>
+--filter-traces: <filter none>
+--ignore-invalid-traces: false
+--repair-event-based-traces: false
+--max-trace-duration: 600000 ms
+--ignore-executions-before-date: Thu, 1 Jan 1970 00:00:00.000 +0000 (UTC) (Thu, 1 Jan 1970 08:00:00.000 +0800 (local time))
+--ignore-executions-after-date: Fri, 11 Apr 2262 23:47:16.854 +0000 (UTC) (Sat, 12 Apr 2262 07:47:16.854 +0800 (local time))
+--short-labels: false
+--include-self-loops: false
+--ignore-assumed-calls: false
+--traceColoring: 
+--addDescriptions: 
+--help: false
+Registered repository 'SystemModelRepository-1' (System model repository)
+Registered reader kieker.analysis.plugin.reader.filesystem.FSReader@ed17bee
+Registered plugin kieker.analysis.plugin.filter.forward.StringBufferFilter@2aae9190
+Registered plugin kieker.analysis.plugin.filter.flow.ThreadEvent2TraceEventFilter@61064425
+Registered plugin kieker.analysis.plugin.filter.select.TimestampFilter@6bc168e5
+Registered plugin kieker.analysis.plugin.filter.select.TraceIdFilter@67f89fa3
+Registered plugin kieker.tools.traceAnalysis.filter.executionRecordTransformation.ExecutionRecordTransformationFilter@7a46a697
+Registered plugin kieker.tools.traceAnalysis.filter.traceReconstruction.TraceReconstructionFilter@19e1023e
+Registered plugin kieker.analysis.plugin.filter.flow.EventRecordTraceReconstructionFilter@6d1e7682
+Registered plugin kieker.tools.traceAnalysis.filter.flow.EventRecordTraceCounter@16b4a017
+Registered plugin kieker.tools.traceAnalysis.filter.flow.TraceEventRecords2ExecutionAndMessageTraceFilter@2a098129
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.dependencyGraph.OperationDependencyGraphAllocationFilter@24273305
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.dependencyGraph.OperationDependencyGraphAssemblyFilter@18e8568
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.GraphWriterPlugin@3930015a
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.GraphWriterPlugin@629f0666
+Registered plugin kieker.tools.traceAnalysis.filter.systemModel.SystemModel2FileFilter@1ff8b8f
+Read line: $0=kieker.common.record.misc.KiekerMetadataRecord
+Read line: $1=kieker.common.record.controlflow.OperationExecutionRecord
+< Loading /code/Github/Shopping/trace/kieker-20190424-014606-44718925641942-UTC--KIEKER-SINGLETON/kieker-20190424-014606575-UTC-001.dat
+Kieker metadata: version='1.13', controllerName='KIEKER-SINGLETON', hostname='icedsoul-PC', experimentId='1', debugMode='false', timeOffset='0', timeUnit='NANOSECONDS', numberOfRecords='0'
+Terminating analysis.
+Shutting down reader.
+
+#
+# Plugin: SystemModel2FileFilter-9
+Wrote HTML output of system model to file '/code/Github/Shopping/v/system-entities.html'
+
+#
+# Plugin: OperationDependencyGraphAllocationFilter-7
+Trace processing summary: 160 total; 160 succeeded; 0 failed.
+
+#
+# Plugin: OperationDependencyGraphAssemblyFilter-8
+Trace processing summary: 160 total; 160 succeeded; 0 failed.
+Saved analysis configuration to file '/code/Github/Shopping/v/traceAnalysis.kax'
+
+#
+# Plugin: Trace reconstruction (execution records -> execution traces)
+Trace processing summary: 160 total; 160 succeeded; 0 failed.
+First timestamp: 1556070381113639590 (Wed, 24 Apr 2019 01:46:21.113 +0000 (UTC),Wed, 24 Apr 2019 09:46:21.113 +0800 (local time))
+Last timestamp: 1556070482927482038 (Wed, 24 Apr 2019 01:48:02.927 +0000 (UTC),Wed, 24 Apr 2019 09:48:02.927 +0800 (local time))
+
+#
+# Plugin: Trace reconstruction (event records -> event record traces)
+Trace processing summary: 0 total; 0 succeeded; 0 failed.
+
+#
+# Plugin: Trace reconstruction (event record traces -> execution traces)
+Trace processing summary: 0 total; 0 succeeded; 0 failed.
+See 'kieker.log' for details
+JDK
+JDK
+JDK
+#
+# Configuration
+--inputdirs: /code/Github/Shopping/trace/kieker-20190424-014606-44718925641942-UTC--KIEKER-SINGLETON
+--outputdir: /code/Github/Shopping/v
+--output-filename-prefix: 
+--verbose: false
+--debug: false
+--plot-Deployment-Sequence-Diagrams: false
+--plot-Assembly-Sequence-Diagrams: false
+--plot-Deployment-Component-Dependency-Graph: false
+--plot-Assembly-Component-Dependency-Graph: false
+--plot-Container-Dependency-Graph: false
+--plot-Deployment-Operation-Dependency-Graph: true
+--plot-Assembly-Operation-Dependency-Graph: true
+--plot-Aggregated-Deployment-Call-Tree: false
+--plot-Aggregated-Assembly-Call-Tree: false
+--plot-Call-Trees: false
+--print-Message-Traces: false
+--print-Execution-Traces: false
+--print-invalid-Execution-Traces: false
+--print-System-Model: false
+--print-Deployment-Equivalence-Classes: false
+--print-Assembly-Equivalence-Classes: false
+--select-traces: <select all>
+--filter-traces: <filter none>
+--ignore-invalid-traces: false
+--repair-event-based-traces: false
+--max-trace-duration: 600000 ms
+--ignore-executions-before-date: Thu, 1 Jan 1970 00:00:00.000 +0000 (UTC) (Thu, 1 Jan 1970 08:00:00.000 +0800 (local time))
+--ignore-executions-after-date: Fri, 11 Apr 2262 23:47:16.854 +0000 (UTC) (Sat, 12 Apr 2262 07:47:16.854 +0800 (local time))
+--short-labels: false
+--include-self-loops: false
+--ignore-assumed-calls: false
+--traceColoring: 
+--addDescriptions: 
+--help: false
+Registered repository 'SystemModelRepository-1' (System model repository)
+Registered reader kieker.analysis.plugin.reader.filesystem.FSReader@ed17bee
+Registered plugin kieker.analysis.plugin.filter.forward.StringBufferFilter@2aae9190
+Registered plugin kieker.analysis.plugin.filter.flow.ThreadEvent2TraceEventFilter@61064425
+Registered plugin kieker.analysis.plugin.filter.select.TimestampFilter@6bc168e5
+Registered plugin kieker.analysis.plugin.filter.select.TraceIdFilter@67f89fa3
+Registered plugin kieker.tools.traceAnalysis.filter.executionRecordTransformation.ExecutionRecordTransformationFilter@7a46a697
+Registered plugin kieker.tools.traceAnalysis.filter.traceReconstruction.TraceReconstructionFilter@19e1023e
+Registered plugin kieker.analysis.plugin.filter.flow.EventRecordTraceReconstructionFilter@6d1e7682
+Registered plugin kieker.tools.traceAnalysis.filter.flow.EventRecordTraceCounter@16b4a017
+Registered plugin kieker.tools.traceAnalysis.filter.flow.TraceEventRecords2ExecutionAndMessageTraceFilter@2a098129
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.dependencyGraph.OperationDependencyGraphAllocationFilter@24273305
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.dependencyGraph.OperationDependencyGraphAssemblyFilter@18e8568
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.GraphWriterPlugin@3930015a
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.GraphWriterPlugin@629f0666
+Registered plugin kieker.tools.traceAnalysis.filter.systemModel.SystemModel2FileFilter@1ff8b8f
+Read line: $0=kieker.common.record.misc.KiekerMetadataRecord
+Read line: $1=kieker.common.record.controlflow.OperationExecutionRecord
+< Loading /code/Github/Shopping/trace/kieker-20190424-014606-44718925641942-UTC--KIEKER-SINGLETON/kieker-20190424-014606575-UTC-001.dat
+Kieker metadata: version='1.13', controllerName='KIEKER-SINGLETON', hostname='icedsoul-PC', experimentId='1', debugMode='false', timeOffset='0', timeUnit='NANOSECONDS', numberOfRecords='0'
+Terminating analysis.
+Shutting down reader.
+
+#
+# Plugin: SystemModel2FileFilter-9
+Wrote HTML output of system model to file '/code/Github/Shopping/v/system-entities.html'
+
+#
+# Plugin: OperationDependencyGraphAllocationFilter-7
+Trace processing summary: 160 total; 160 succeeded; 0 failed.
+
+#
+# Plugin: OperationDependencyGraphAssemblyFilter-8
+Trace processing summary: 160 total; 160 succeeded; 0 failed.
+Saved analysis configuration to file '/code/Github/Shopping/v/traceAnalysis.kax'
+
+#
+# Plugin: Trace reconstruction (execution records -> execution traces)
+Trace processing summary: 160 total; 160 succeeded; 0 failed.
+First timestamp: 1556070381113639590 (Wed, 24 Apr 2019 01:46:21.113 +0000 (UTC),Wed, 24 Apr 2019 09:46:21.113 +0800 (local time))
+Last timestamp: 1556070482927482038 (Wed, 24 Apr 2019 01:48:02.927 +0000 (UTC),Wed, 24 Apr 2019 09:48:02.927 +0800 (local time))
+
+#
+# Plugin: Trace reconstruction (event records -> event record traces)
+Trace processing summary: 0 total; 0 succeeded; 0 failed.
+
+#
+# Plugin: Trace reconstruction (event record traces -> execution traces)
+Trace processing summary: 0 total; 0 succeeded; 0 failed.
+See 'kieker.log' for details
+JDK
+#
+# Configuration
+--inputdirs: /code/Github/Shopping/trace/kieker-20190424-042903-52110556992550-UTC--KIEKER-SINGLETON
+--outputdir: /code/Github/Shopping/v
+--output-filename-prefix: 
+--verbose: false
+--debug: false
+--plot-Deployment-Sequence-Diagrams: false
+--plot-Assembly-Sequence-Diagrams: false
+--plot-Deployment-Component-Dependency-Graph: false
+--plot-Assembly-Component-Dependency-Graph: false
+--plot-Container-Dependency-Graph: false
+--plot-Deployment-Operation-Dependency-Graph: true
+--plot-Assembly-Operation-Dependency-Graph: true
+--plot-Aggregated-Deployment-Call-Tree: false
+--plot-Aggregated-Assembly-Call-Tree: false
+--plot-Call-Trees: false
+--print-Message-Traces: false
+--print-Execution-Traces: false
+--print-invalid-Execution-Traces: false
+--print-System-Model: false
+--print-Deployment-Equivalence-Classes: false
+--print-Assembly-Equivalence-Classes: false
+--select-traces: <select all>
+--filter-traces: <filter none>
+--ignore-invalid-traces: false
+--repair-event-based-traces: false
+--max-trace-duration: 600000 ms
+--ignore-executions-before-date: Thu, 1 Jan 1970 00:00:00.000 +0000 (UTC) (Thu, 1 Jan 1970 08:00:00.000 +0800 (local time))
+--ignore-executions-after-date: Fri, 11 Apr 2262 23:47:16.854 +0000 (UTC) (Sat, 12 Apr 2262 07:47:16.854 +0800 (local time))
+--short-labels: false
+--include-self-loops: false
+--ignore-assumed-calls: false
+--traceColoring: 
+--addDescriptions: 
+--help: false
+Registered repository 'SystemModelRepository-1' (System model repository)
+Registered reader kieker.analysis.plugin.reader.filesystem.FSReader@ed17bee
+Registered plugin kieker.analysis.plugin.filter.forward.StringBufferFilter@2aae9190
+Registered plugin kieker.analysis.plugin.filter.flow.ThreadEvent2TraceEventFilter@61064425
+Registered plugin kieker.analysis.plugin.filter.select.TimestampFilter@6bc168e5
+Registered plugin kieker.analysis.plugin.filter.select.TraceIdFilter@67f89fa3
+Registered plugin kieker.tools.traceAnalysis.filter.executionRecordTransformation.ExecutionRecordTransformationFilter@7a46a697
+Registered plugin kieker.tools.traceAnalysis.filter.traceReconstruction.TraceReconstructionFilter@19e1023e
+Registered plugin kieker.analysis.plugin.filter.flow.EventRecordTraceReconstructionFilter@6d1e7682
+Registered plugin kieker.tools.traceAnalysis.filter.flow.EventRecordTraceCounter@16b4a017
+Registered plugin kieker.tools.traceAnalysis.filter.flow.TraceEventRecords2ExecutionAndMessageTraceFilter@2a098129
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.dependencyGraph.OperationDependencyGraphAllocationFilter@24273305
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.dependencyGraph.OperationDependencyGraphAssemblyFilter@18e8568
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.GraphWriterPlugin@3930015a
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.GraphWriterPlugin@629f0666
+Registered plugin kieker.tools.traceAnalysis.filter.systemModel.SystemModel2FileFilter@1ff8b8f
+Read line: $0=kieker.common.record.misc.KiekerMetadataRecord
+Read line: $1=kieker.common.record.controlflow.OperationExecutionRecord
+< Loading /code/Github/Shopping/trace/kieker-20190424-042903-52110556992550-UTC--KIEKER-SINGLETON/kieker-20190424-042903537-UTC-001.dat
+Kieker metadata: version='1.13', controllerName='KIEKER-SINGLETON', hostname='icedsoul-PC', experimentId='1', debugMode='false', timeOffset='0', timeUnit='NANOSECONDS', numberOfRecords='0'
+Terminating analysis.
+Shutting down reader.
+
+#
+# Plugin: SystemModel2FileFilter-9
+Wrote HTML output of system model to file '/code/Github/Shopping/v/system-entities.html'
+
+#
+# Plugin: OperationDependencyGraphAllocationFilter-7
+Trace processing summary: 21 total; 21 succeeded; 0 failed.
+
+#
+# Plugin: OperationDependencyGraphAssemblyFilter-8
+Trace processing summary: 21 total; 21 succeeded; 0 failed.
+Saved analysis configuration to file '/code/Github/Shopping/v/traceAnalysis.kax'
+
+#
+# Plugin: Trace reconstruction (execution records -> execution traces)
+Trace processing summary: 21 total; 21 succeeded; 0 failed.
+First timestamp: 1556080147879756566 (Wed, 24 Apr 2019 04:29:07.879 +0000 (UTC),Wed, 24 Apr 2019 12:29:07.879 +0800 (local time))
+Last timestamp: 1556080392114058140 (Wed, 24 Apr 2019 04:33:12.114 +0000 (UTC),Wed, 24 Apr 2019 12:33:12.114 +0800 (local time))
+
+#
+# Plugin: Trace reconstruction (event records -> event record traces)
+Trace processing summary: 0 total; 0 succeeded; 0 failed.
+
+#
+# Plugin: Trace reconstruction (event record traces -> execution traces)
+Trace processing summary: 0 total; 0 succeeded; 0 failed.
+See 'kieker.log' for details
+JDK
+#
+# Configuration
+--inputdirs: /code/Github/Shopping/trace/kieker-20190424-042903-52110556992550-UTC--KIEKER-SINGLETON
+--outputdir: /code/Github/Shopping/v
+--output-filename-prefix: 
+--verbose: false
+--debug: false
+--plot-Deployment-Sequence-Diagrams: false
+--plot-Assembly-Sequence-Diagrams: false
+--plot-Deployment-Component-Dependency-Graph: false
+--plot-Assembly-Component-Dependency-Graph: false
+--plot-Container-Dependency-Graph: false
+--plot-Deployment-Operation-Dependency-Graph: true
+--plot-Assembly-Operation-Dependency-Graph: true
+--plot-Aggregated-Deployment-Call-Tree: false
+--plot-Aggregated-Assembly-Call-Tree: false
+--plot-Call-Trees: false
+--print-Message-Traces: false
+--print-Execution-Traces: false
+--print-invalid-Execution-Traces: false
+--print-System-Model: false
+--print-Deployment-Equivalence-Classes: false
+--print-Assembly-Equivalence-Classes: false
+--select-traces: <select all>
+--filter-traces: <filter none>
+--ignore-invalid-traces: false
+--repair-event-based-traces: false
+--max-trace-duration: 600000 ms
+--ignore-executions-before-date: Thu, 1 Jan 1970 00:00:00.000 +0000 (UTC) (Thu, 1 Jan 1970 08:00:00.000 +0800 (local time))
+--ignore-executions-after-date: Fri, 11 Apr 2262 23:47:16.854 +0000 (UTC) (Sat, 12 Apr 2262 07:47:16.854 +0800 (local time))
+--short-labels: false
+--include-self-loops: false
+--ignore-assumed-calls: false
+--traceColoring: 
+--addDescriptions: 
+--help: false
+Registered repository 'SystemModelRepository-1' (System model repository)
+Registered reader kieker.analysis.plugin.reader.filesystem.FSReader@ed17bee
+Registered plugin kieker.analysis.plugin.filter.forward.StringBufferFilter@2aae9190
+Registered plugin kieker.analysis.plugin.filter.flow.ThreadEvent2TraceEventFilter@61064425
+Registered plugin kieker.analysis.plugin.filter.select.TimestampFilter@6bc168e5
+Registered plugin kieker.analysis.plugin.filter.select.TraceIdFilter@67f89fa3
+Registered plugin kieker.tools.traceAnalysis.filter.executionRecordTransformation.ExecutionRecordTransformationFilter@7a46a697
+Registered plugin kieker.tools.traceAnalysis.filter.traceReconstruction.TraceReconstructionFilter@19e1023e
+Registered plugin kieker.analysis.plugin.filter.flow.EventRecordTraceReconstructionFilter@6d1e7682
+Registered plugin kieker.tools.traceAnalysis.filter.flow.EventRecordTraceCounter@16b4a017
+Registered plugin kieker.tools.traceAnalysis.filter.flow.TraceEventRecords2ExecutionAndMessageTraceFilter@2a098129
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.dependencyGraph.OperationDependencyGraphAllocationFilter@24273305
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.dependencyGraph.OperationDependencyGraphAssemblyFilter@18e8568
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.GraphWriterPlugin@3930015a
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.GraphWriterPlugin@629f0666
+Registered plugin kieker.tools.traceAnalysis.filter.systemModel.SystemModel2FileFilter@1ff8b8f
+Read line: $0=kieker.common.record.misc.KiekerMetadataRecord
+Read line: $1=kieker.common.record.controlflow.OperationExecutionRecord
+< Loading /code/Github/Shopping/trace/kieker-20190424-042903-52110556992550-UTC--KIEKER-SINGLETON/kieker-20190424-042903537-UTC-001.dat
+Kieker metadata: version='1.13', controllerName='KIEKER-SINGLETON', hostname='icedsoul-PC', experimentId='1', debugMode='false', timeOffset='0', timeUnit='NANOSECONDS', numberOfRecords='0'
+Terminating analysis.
+Shutting down reader.
+
+#
+# Plugin: SystemModel2FileFilter-9
+Wrote HTML output of system model to file '/code/Github/Shopping/v/system-entities.html'
+
+#
+# Plugin: OperationDependencyGraphAllocationFilter-7
+Trace processing summary: 21 total; 21 succeeded; 0 failed.
+
+#
+# Plugin: OperationDependencyGraphAssemblyFilter-8
+Trace processing summary: 21 total; 21 succeeded; 0 failed.
+Saved analysis configuration to file '/code/Github/Shopping/v/traceAnalysis.kax'
+
+#
+# Plugin: Trace reconstruction (execution records -> execution traces)
+Trace processing summary: 21 total; 21 succeeded; 0 failed.
+First timestamp: 1556080147879756566 (Wed, 24 Apr 2019 04:29:07.879 +0000 (UTC),Wed, 24 Apr 2019 12:29:07.879 +0800 (local time))
+Last timestamp: 1556080392114058140 (Wed, 24 Apr 2019 04:33:12.114 +0000 (UTC),Wed, 24 Apr 2019 12:33:12.114 +0800 (local time))
+
+#
+# Plugin: Trace reconstruction (event records -> event record traces)
+Trace processing summary: 0 total; 0 succeeded; 0 failed.
+
+#
+# Plugin: Trace reconstruction (event record traces -> execution traces)
+Trace processing summary: 0 total; 0 succeeded; 0 failed.
+See 'kieker.log' for details
+JDK
+#
+# Configuration
+--inputdirs: /code/Github/Shopping/trace/kieker-20190424-055435-57242763325020-UTC--KIEKER-SINGLETON
+--outputdir: /code/Github/Shopping/v
+--output-filename-prefix: 
+--verbose: false
+--debug: false
+--plot-Deployment-Sequence-Diagrams: false
+--plot-Assembly-Sequence-Diagrams: false
+--plot-Deployment-Component-Dependency-Graph: false
+--plot-Assembly-Component-Dependency-Graph: false
+--plot-Container-Dependency-Graph: false
+--plot-Deployment-Operation-Dependency-Graph: true
+--plot-Assembly-Operation-Dependency-Graph: true
+--plot-Aggregated-Deployment-Call-Tree: false
+--plot-Aggregated-Assembly-Call-Tree: false
+--plot-Call-Trees: false
+--print-Message-Traces: false
+--print-Execution-Traces: false
+--print-invalid-Execution-Traces: false
+--print-System-Model: false
+--print-Deployment-Equivalence-Classes: false
+--print-Assembly-Equivalence-Classes: false
+--select-traces: <select all>
+--filter-traces: <filter none>
+--ignore-invalid-traces: false
+--repair-event-based-traces: false
+--max-trace-duration: 600000 ms
+--ignore-executions-before-date: Thu, 1 Jan 1970 00:00:00.000 +0000 (UTC) (Thu, 1 Jan 1970 08:00:00.000 +0800 (local time))
+--ignore-executions-after-date: Fri, 11 Apr 2262 23:47:16.854 +0000 (UTC) (Sat, 12 Apr 2262 07:47:16.854 +0800 (local time))
+--short-labels: false
+--include-self-loops: false
+--ignore-assumed-calls: false
+--traceColoring: 
+--addDescriptions: 
+--help: false
+Registered repository 'SystemModelRepository-1' (System model repository)
+Registered reader kieker.analysis.plugin.reader.filesystem.FSReader@ed17bee
+Registered plugin kieker.analysis.plugin.filter.forward.StringBufferFilter@2aae9190
+Registered plugin kieker.analysis.plugin.filter.flow.ThreadEvent2TraceEventFilter@61064425
+Registered plugin kieker.analysis.plugin.filter.select.TimestampFilter@6bc168e5
+Registered plugin kieker.analysis.plugin.filter.select.TraceIdFilter@67f89fa3
+Registered plugin kieker.tools.traceAnalysis.filter.executionRecordTransformation.ExecutionRecordTransformationFilter@7a46a697
+Registered plugin kieker.tools.traceAnalysis.filter.traceReconstruction.TraceReconstructionFilter@19e1023e
+Registered plugin kieker.analysis.plugin.filter.flow.EventRecordTraceReconstructionFilter@6d1e7682
+Registered plugin kieker.tools.traceAnalysis.filter.flow.EventRecordTraceCounter@16b4a017
+Registered plugin kieker.tools.traceAnalysis.filter.flow.TraceEventRecords2ExecutionAndMessageTraceFilter@2a098129
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.dependencyGraph.OperationDependencyGraphAllocationFilter@24273305
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.dependencyGraph.OperationDependencyGraphAssemblyFilter@18e8568
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.GraphWriterPlugin@3930015a
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.GraphWriterPlugin@629f0666
+Registered plugin kieker.tools.traceAnalysis.filter.systemModel.SystemModel2FileFilter@1ff8b8f
+Read line: $0=kieker.common.record.misc.KiekerMetadataRecord
+Read line: $1=kieker.common.record.controlflow.OperationExecutionRecord
+< Loading /code/Github/Shopping/trace/kieker-20190424-055435-57242763325020-UTC--KIEKER-SINGLETON/kieker-20190424-055435318-UTC-001.dat
+Kieker metadata: version='1.13', controllerName='KIEKER-SINGLETON', hostname='icedsoul-PC', experimentId='1', debugMode='false', timeOffset='0', timeUnit='NANOSECONDS', numberOfRecords='0'
+Terminating analysis.
+Shutting down reader.
+
+#
+# Plugin: SystemModel2FileFilter-9
+Wrote HTML output of system model to file '/code/Github/Shopping/v/system-entities.html'
+
+#
+# Plugin: OperationDependencyGraphAllocationFilter-7
+Trace processing summary: 73 total; 73 succeeded; 0 failed.
+
+#
+# Plugin: OperationDependencyGraphAssemblyFilter-8
+Trace processing summary: 73 total; 73 succeeded; 0 failed.
+Saved analysis configuration to file '/code/Github/Shopping/v/traceAnalysis.kax'
+
+#
+# Plugin: Trace reconstruction (execution records -> execution traces)
+Trace processing summary: 73 total; 73 succeeded; 0 failed.
+First timestamp: 1556085280341114233 (Wed, 24 Apr 2019 05:54:40.341 +0000 (UTC),Wed, 24 Apr 2019 13:54:40.341 +0800 (local time))
+Last timestamp: 1556085398156560129 (Wed, 24 Apr 2019 05:56:38.156 +0000 (UTC),Wed, 24 Apr 2019 13:56:38.156 +0800 (local time))
+
+#
+# Plugin: Trace reconstruction (event records -> event record traces)
+Trace processing summary: 0 total; 0 succeeded; 0 failed.
+
+#
+# Plugin: Trace reconstruction (event record traces -> execution traces)
+Trace processing summary: 0 total; 0 succeeded; 0 failed.
+See 'kieker.log' for details
+JDK
+#
+# Configuration
+--inputdirs: /code/Github/Shopping/trace/kieker-20190424-042903-52110556992550-UTC--KIEKER-SINGLETON
+--outputdir: /code/Github/Shopping/v
+--output-filename-prefix: 
+--verbose: false
+--debug: false
+--plot-Deployment-Sequence-Diagrams: false
+--plot-Assembly-Sequence-Diagrams: false
+--plot-Deployment-Component-Dependency-Graph: false
+--plot-Assembly-Component-Dependency-Graph: false
+--plot-Container-Dependency-Graph: false
+--plot-Deployment-Operation-Dependency-Graph: true
+--plot-Assembly-Operation-Dependency-Graph: true
+--plot-Aggregated-Deployment-Call-Tree: false
+--plot-Aggregated-Assembly-Call-Tree: false
+--plot-Call-Trees: false
+--print-Message-Traces: false
+--print-Execution-Traces: false
+--print-invalid-Execution-Traces: false
+--print-System-Model: false
+--print-Deployment-Equivalence-Classes: false
+--print-Assembly-Equivalence-Classes: false
+--select-traces: <select all>
+--filter-traces: <filter none>
+--ignore-invalid-traces: false
+--repair-event-based-traces: false
+--max-trace-duration: 600000 ms
+--ignore-executions-before-date: Thu, 1 Jan 1970 00:00:00.000 +0000 (UTC) (Thu, 1 Jan 1970 08:00:00.000 +0800 (local time))
+--ignore-executions-after-date: Fri, 11 Apr 2262 23:47:16.854 +0000 (UTC) (Sat, 12 Apr 2262 07:47:16.854 +0800 (local time))
+--short-labels: false
+--include-self-loops: false
+--ignore-assumed-calls: false
+--traceColoring: 
+--addDescriptions: 
+--help: false
+Registered repository 'SystemModelRepository-1' (System model repository)
+Registered reader kieker.analysis.plugin.reader.filesystem.FSReader@ed17bee
+Registered plugin kieker.analysis.plugin.filter.forward.StringBufferFilter@2aae9190
+Registered plugin kieker.analysis.plugin.filter.flow.ThreadEvent2TraceEventFilter@61064425
+Registered plugin kieker.analysis.plugin.filter.select.TimestampFilter@6bc168e5
+Registered plugin kieker.analysis.plugin.filter.select.TraceIdFilter@67f89fa3
+Registered plugin kieker.tools.traceAnalysis.filter.executionRecordTransformation.ExecutionRecordTransformationFilter@7a46a697
+Registered plugin kieker.tools.traceAnalysis.filter.traceReconstruction.TraceReconstructionFilter@19e1023e
+Registered plugin kieker.analysis.plugin.filter.flow.EventRecordTraceReconstructionFilter@6d1e7682
+Registered plugin kieker.tools.traceAnalysis.filter.flow.EventRecordTraceCounter@16b4a017
+Registered plugin kieker.tools.traceAnalysis.filter.flow.TraceEventRecords2ExecutionAndMessageTraceFilter@2a098129
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.dependencyGraph.OperationDependencyGraphAllocationFilter@24273305
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.dependencyGraph.OperationDependencyGraphAssemblyFilter@18e8568
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.GraphWriterPlugin@3930015a
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.GraphWriterPlugin@629f0666
+Registered plugin kieker.tools.traceAnalysis.filter.systemModel.SystemModel2FileFilter@1ff8b8f
+Read line: $0=kieker.common.record.misc.KiekerMetadataRecord
+Read line: $1=kieker.common.record.controlflow.OperationExecutionRecord
+< Loading /code/Github/Shopping/trace/kieker-20190424-042903-52110556992550-UTC--KIEKER-SINGLETON/kieker-20190424-042903537-UTC-001.dat
+Kieker metadata: version='1.13', controllerName='KIEKER-SINGLETON', hostname='icedsoul-PC', experimentId='1', debugMode='false', timeOffset='0', timeUnit='NANOSECONDS', numberOfRecords='0'
+Terminating analysis.
+Shutting down reader.
+
+#
+# Plugin: SystemModel2FileFilter-9
+Wrote HTML output of system model to file '/code/Github/Shopping/v/system-entities.html'
+
+#
+# Plugin: OperationDependencyGraphAllocationFilter-7
+Trace processing summary: 21 total; 21 succeeded; 0 failed.
+
+#
+# Plugin: OperationDependencyGraphAssemblyFilter-8
+Trace processing summary: 21 total; 21 succeeded; 0 failed.
+Saved analysis configuration to file '/code/Github/Shopping/v/traceAnalysis.kax'
+
+#
+# Plugin: Trace reconstruction (execution records -> execution traces)
+Trace processing summary: 21 total; 21 succeeded; 0 failed.
+First timestamp: 1556080147879756566 (Wed, 24 Apr 2019 04:29:07.879 +0000 (UTC),Wed, 24 Apr 2019 12:29:07.879 +0800 (local time))
+Last timestamp: 1556080392114058140 (Wed, 24 Apr 2019 04:33:12.114 +0000 (UTC),Wed, 24 Apr 2019 12:33:12.114 +0800 (local time))
+
+#
+# Plugin: Trace reconstruction (event records -> event record traces)
+Trace processing summary: 0 total; 0 succeeded; 0 failed.
+
+#
+# Plugin: Trace reconstruction (event record traces -> execution traces)
+Trace processing summary: 0 total; 0 succeeded; 0 failed.
+See 'kieker.log' for details
+JDK
+#
+# Configuration
+--inputdirs: /code/micoservice/jeesite/trace-data/kieker-20190424-081034-65401547324935-UTC--KIEKER-SINGLETON
+--outputdir: /code/micoservice/jeesite/test
+--output-filename-prefix: 
+--verbose: false
+--debug: false
+--plot-Deployment-Sequence-Diagrams: false
+--plot-Assembly-Sequence-Diagrams: false
+--plot-Deployment-Component-Dependency-Graph: false
+--plot-Assembly-Component-Dependency-Graph: false
+--plot-Container-Dependency-Graph: false
+--plot-Deployment-Operation-Dependency-Graph: true
+--plot-Assembly-Operation-Dependency-Graph: true
+--plot-Aggregated-Deployment-Call-Tree: false
+--plot-Aggregated-Assembly-Call-Tree: false
+--plot-Call-Trees: false
+--print-Message-Traces: false
+--print-Execution-Traces: false
+--print-invalid-Execution-Traces: false
+--print-System-Model: false
+--print-Deployment-Equivalence-Classes: false
+--print-Assembly-Equivalence-Classes: false
+--select-traces: <select all>
+--filter-traces: <filter none>
+--ignore-invalid-traces: false
+--repair-event-based-traces: false
+--max-trace-duration: 600000 ms
+--ignore-executions-before-date: Thu, 1 Jan 1970 00:00:00.000 +0000 (UTC) (Thu, 1 Jan 1970 08:00:00.000 +0800 (local time))
+--ignore-executions-after-date: Fri, 11 Apr 2262 23:47:16.854 +0000 (UTC) (Sat, 12 Apr 2262 07:47:16.854 +0800 (local time))
+--short-labels: false
+--include-self-loops: false
+--ignore-assumed-calls: false
+--traceColoring: 
+--addDescriptions: 
+--help: false
+Registered repository 'SystemModelRepository-1' (System model repository)
+Registered reader kieker.analysis.plugin.reader.filesystem.FSReader@ed17bee
+Registered plugin kieker.analysis.plugin.filter.forward.StringBufferFilter@2aae9190
+Registered plugin kieker.analysis.plugin.filter.flow.ThreadEvent2TraceEventFilter@61064425
+Registered plugin kieker.analysis.plugin.filter.select.TimestampFilter@6bc168e5
+Registered plugin kieker.analysis.plugin.filter.select.TraceIdFilter@67f89fa3
+Registered plugin kieker.tools.traceAnalysis.filter.executionRecordTransformation.ExecutionRecordTransformationFilter@7a46a697
+Registered plugin kieker.tools.traceAnalysis.filter.traceReconstruction.TraceReconstructionFilter@19e1023e
+Registered plugin kieker.analysis.plugin.filter.flow.EventRecordTraceReconstructionFilter@6d1e7682
+Registered plugin kieker.tools.traceAnalysis.filter.flow.EventRecordTraceCounter@16b4a017
+Registered plugin kieker.tools.traceAnalysis.filter.flow.TraceEventRecords2ExecutionAndMessageTraceFilter@2a098129
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.dependencyGraph.OperationDependencyGraphAllocationFilter@24273305
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.dependencyGraph.OperationDependencyGraphAssemblyFilter@18e8568
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.GraphWriterPlugin@3930015a
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.GraphWriterPlugin@629f0666
+Registered plugin kieker.tools.traceAnalysis.filter.systemModel.SystemModel2FileFilter@1ff8b8f
+Read line: $0=kieker.common.record.misc.KiekerMetadataRecord
+Read line: $1=kieker.common.record.controlflow.OperationExecutionRecord
+< Loading /code/micoservice/jeesite/trace-data/kieker-20190424-081034-65401547324935-UTC--KIEKER-SINGLETON/kieker-20190424-081034114-UTC-001.dat
+Kieker metadata: version='1.13', controllerName='KIEKER-SINGLETON', hostname='icedsoul-PC', experimentId='1', debugMode='false', timeOffset='0', timeUnit='NANOSECONDS', numberOfRecords='0'
+Terminating analysis.
+Shutting down reader.
+
+#
+# Plugin: SystemModel2FileFilter-9
+Wrote HTML output of system model to file '/code/micoservice/jeesite/test/system-entities.html'
+
+#
+# Plugin: OperationDependencyGraphAllocationFilter-7
+Trace processing summary: 691 total; 691 succeeded; 0 failed.
+
+#
+# Plugin: OperationDependencyGraphAssemblyFilter-8
+Trace processing summary: 691 total; 691 succeeded; 0 failed.
+Saved analysis configuration to file '/code/micoservice/jeesite/test/traceAnalysis.kax'
+
+#
+# Plugin: Trace reconstruction (execution records -> execution traces)
+Trace processing summary: 691 total; 691 succeeded; 0 failed.
+First timestamp: 1556093438782392675 (Wed, 24 Apr 2019 08:10:38.782 +0000 (UTC),Wed, 24 Apr 2019 16:10:38.782 +0800 (local time))
+Last timestamp: 1556093526636372436 (Wed, 24 Apr 2019 08:12:06.636 +0000 (UTC),Wed, 24 Apr 2019 16:12:06.636 +0800 (local time))
+
+#
+# Plugin: Trace reconstruction (event records -> event record traces)
+Trace processing summary: 0 total; 0 succeeded; 0 failed.
+
+#
+# Plugin: Trace reconstruction (event record traces -> execution traces)
+Trace processing summary: 0 total; 0 succeeded; 0 failed.
+See 'kieker.log' for details
+JDK
+#
+# Configuration
+--inputdirs: /code/Github/Shopping/trace/kieker-20190424-090620-68747845588830-UTC--KIEKER-SINGLETON
+--outputdir: /code/Github/Shopping/v
+--output-filename-prefix: 
+--verbose: false
+--debug: false
+--plot-Deployment-Sequence-Diagrams: false
+--plot-Assembly-Sequence-Diagrams: false
+--plot-Deployment-Component-Dependency-Graph: false
+--plot-Assembly-Component-Dependency-Graph: false
+--plot-Container-Dependency-Graph: false
+--plot-Deployment-Operation-Dependency-Graph: true
+--plot-Assembly-Operation-Dependency-Graph: true
+--plot-Aggregated-Deployment-Call-Tree: false
+--plot-Aggregated-Assembly-Call-Tree: false
+--plot-Call-Trees: false
+--print-Message-Traces: false
+--print-Execution-Traces: false
+--print-invalid-Execution-Traces: false
+--print-System-Model: false
+--print-Deployment-Equivalence-Classes: false
+--print-Assembly-Equivalence-Classes: false
+--select-traces: <select all>
+--filter-traces: <filter none>
+--ignore-invalid-traces: false
+--repair-event-based-traces: false
+--max-trace-duration: 600000 ms
+--ignore-executions-before-date: Thu, 1 Jan 1970 00:00:00.000 +0000 (UTC) (Thu, 1 Jan 1970 08:00:00.000 +0800 (local time))
+--ignore-executions-after-date: Fri, 11 Apr 2262 23:47:16.854 +0000 (UTC) (Sat, 12 Apr 2262 07:47:16.854 +0800 (local time))
+--short-labels: false
+--include-self-loops: false
+--ignore-assumed-calls: false
+--traceColoring: 
+--addDescriptions: 
+--help: false
+Registered repository 'SystemModelRepository-1' (System model repository)
+Registered reader kieker.analysis.plugin.reader.filesystem.FSReader@ed17bee
+Registered plugin kieker.analysis.plugin.filter.forward.StringBufferFilter@2aae9190
+Registered plugin kieker.analysis.plugin.filter.flow.ThreadEvent2TraceEventFilter@61064425
+Registered plugin kieker.analysis.plugin.filter.select.TimestampFilter@6bc168e5
+Registered plugin kieker.analysis.plugin.filter.select.TraceIdFilter@67f89fa3
+Registered plugin kieker.tools.traceAnalysis.filter.executionRecordTransformation.ExecutionRecordTransformationFilter@7a46a697
+Registered plugin kieker.tools.traceAnalysis.filter.traceReconstruction.TraceReconstructionFilter@19e1023e
+Registered plugin kieker.analysis.plugin.filter.flow.EventRecordTraceReconstructionFilter@6d1e7682
+Registered plugin kieker.tools.traceAnalysis.filter.flow.EventRecordTraceCounter@16b4a017
+Registered plugin kieker.tools.traceAnalysis.filter.flow.TraceEventRecords2ExecutionAndMessageTraceFilter@2a098129
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.dependencyGraph.OperationDependencyGraphAllocationFilter@24273305
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.dependencyGraph.OperationDependencyGraphAssemblyFilter@18e8568
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.GraphWriterPlugin@3930015a
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.GraphWriterPlugin@629f0666
+Registered plugin kieker.tools.traceAnalysis.filter.systemModel.SystemModel2FileFilter@1ff8b8f
+Read line: $0=kieker.common.record.misc.KiekerMetadataRecord
+Read line: $1=kieker.common.record.controlflow.OperationExecutionRecord
+< Loading /code/Github/Shopping/trace/kieker-20190424-090620-68747845588830-UTC--KIEKER-SINGLETON/kieker-20190424-090620400-UTC-001.dat
+Kieker metadata: version='1.13', controllerName='KIEKER-SINGLETON', hostname='icedsoul-PC', experimentId='1', debugMode='false', timeOffset='0', timeUnit='NANOSECONDS', numberOfRecords='0'
+Terminating analysis.
+Shutting down reader.
+
+#
+# Plugin: SystemModel2FileFilter-9
+Wrote HTML output of system model to file '/code/Github/Shopping/v/system-entities.html'
+
+#
+# Plugin: OperationDependencyGraphAllocationFilter-7
+Trace processing summary: 243 total; 243 succeeded; 0 failed.
+
+#
+# Plugin: OperationDependencyGraphAssemblyFilter-8
+Trace processing summary: 243 total; 243 succeeded; 0 failed.
+Saved analysis configuration to file '/code/Github/Shopping/v/traceAnalysis.kax'
+
+#
+# Plugin: Trace reconstruction (execution records -> execution traces)
+Trace processing summary: 243 total; 243 succeeded; 0 failed.
+First timestamp: 1556096789793714604 (Wed, 24 Apr 2019 09:06:29.793 +0000 (UTC),Wed, 24 Apr 2019 17:06:29.793 +0800 (local time))
+Last timestamp: 1556097402924844496 (Wed, 24 Apr 2019 09:16:42.924 +0000 (UTC),Wed, 24 Apr 2019 17:16:42.924 +0800 (local time))
+
+#
+# Plugin: Trace reconstruction (event records -> event record traces)
+Trace processing summary: 0 total; 0 succeeded; 0 failed.
+
+#
+# Plugin: Trace reconstruction (event record traces -> execution traces)
+Trace processing summary: 0 total; 0 succeeded; 0 failed.
+See 'kieker.log' for details
+JDK
+#
+# Configuration
+--inputdirs: /code/Github/Shopping/trace/kieker-20190424-092825-70072585270717-UTC--KIEKER-SINGLETON
+--outputdir: /code/Github/Shopping/v
+--output-filename-prefix: 
+--verbose: false
+--debug: false
+--plot-Deployment-Sequence-Diagrams: false
+--plot-Assembly-Sequence-Diagrams: false
+--plot-Deployment-Component-Dependency-Graph: false
+--plot-Assembly-Component-Dependency-Graph: false
+--plot-Container-Dependency-Graph: false
+--plot-Deployment-Operation-Dependency-Graph: true
+--plot-Assembly-Operation-Dependency-Graph: true
+--plot-Aggregated-Deployment-Call-Tree: false
+--plot-Aggregated-Assembly-Call-Tree: false
+--plot-Call-Trees: false
+--print-Message-Traces: false
+--print-Execution-Traces: false
+--print-invalid-Execution-Traces: false
+--print-System-Model: false
+--print-Deployment-Equivalence-Classes: false
+--print-Assembly-Equivalence-Classes: false
+--select-traces: <select all>
+--filter-traces: <filter none>
+--ignore-invalid-traces: false
+--repair-event-based-traces: false
+--max-trace-duration: 600000 ms
+--ignore-executions-before-date: Thu, 1 Jan 1970 00:00:00.000 +0000 (UTC) (Thu, 1 Jan 1970 08:00:00.000 +0800 (local time))
+--ignore-executions-after-date: Fri, 11 Apr 2262 23:47:16.854 +0000 (UTC) (Sat, 12 Apr 2262 07:47:16.854 +0800 (local time))
+--short-labels: false
+--include-self-loops: false
+--ignore-assumed-calls: false
+--traceColoring: 
+--addDescriptions: 
+--help: false
+Registered repository 'SystemModelRepository-1' (System model repository)
+Registered reader kieker.analysis.plugin.reader.filesystem.FSReader@ed17bee
+Registered plugin kieker.analysis.plugin.filter.forward.StringBufferFilter@2aae9190
+Registered plugin kieker.analysis.plugin.filter.flow.ThreadEvent2TraceEventFilter@61064425
+Registered plugin kieker.analysis.plugin.filter.select.TimestampFilter@6bc168e5
+Registered plugin kieker.analysis.plugin.filter.select.TraceIdFilter@67f89fa3
+Registered plugin kieker.tools.traceAnalysis.filter.executionRecordTransformation.ExecutionRecordTransformationFilter@7a46a697
+Registered plugin kieker.tools.traceAnalysis.filter.traceReconstruction.TraceReconstructionFilter@19e1023e
+Registered plugin kieker.analysis.plugin.filter.flow.EventRecordTraceReconstructionFilter@6d1e7682
+Registered plugin kieker.tools.traceAnalysis.filter.flow.EventRecordTraceCounter@16b4a017
+Registered plugin kieker.tools.traceAnalysis.filter.flow.TraceEventRecords2ExecutionAndMessageTraceFilter@2a098129
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.dependencyGraph.OperationDependencyGraphAllocationFilter@24273305
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.dependencyGraph.OperationDependencyGraphAssemblyFilter@18e8568
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.GraphWriterPlugin@3930015a
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.GraphWriterPlugin@629f0666
+Registered plugin kieker.tools.traceAnalysis.filter.systemModel.SystemModel2FileFilter@1ff8b8f
+Read line: $0=kieker.common.record.misc.KiekerMetadataRecord
+Read line: $1=kieker.common.record.controlflow.OperationExecutionRecord
+< Loading /code/Github/Shopping/trace/kieker-20190424-092825-70072585270717-UTC--KIEKER-SINGLETON/kieker-20190424-092825139-UTC-001.dat
+Kieker metadata: version='1.13', controllerName='KIEKER-SINGLETON', hostname='icedsoul-PC', experimentId='1', debugMode='false', timeOffset='0', timeUnit='NANOSECONDS', numberOfRecords='0'
+Terminating analysis.
+Shutting down reader.
+
+#
+# Plugin: SystemModel2FileFilter-9
+Wrote HTML output of system model to file '/code/Github/Shopping/v/system-entities.html'
+
+#
+# Plugin: OperationDependencyGraphAllocationFilter-7
+Trace processing summary: 254 total; 254 succeeded; 0 failed.
+
+#
+# Plugin: OperationDependencyGraphAssemblyFilter-8
+Trace processing summary: 254 total; 254 succeeded; 0 failed.
+Saved analysis configuration to file '/code/Github/Shopping/v/traceAnalysis.kax'
+
+#
+# Plugin: Trace reconstruction (execution records -> execution traces)
+Trace processing summary: 254 total; 254 succeeded; 0 failed.
+First timestamp: 1556098109378109056 (Wed, 24 Apr 2019 09:28:29.378 +0000 (UTC),Wed, 24 Apr 2019 17:28:29.378 +0800 (local time))
+Last timestamp: 1556098712348819937 (Wed, 24 Apr 2019 09:38:32.348 +0000 (UTC),Wed, 24 Apr 2019 17:38:32.348 +0800 (local time))
+
+#
+# Plugin: Trace reconstruction (event records -> event record traces)
+Trace processing summary: 0 total; 0 succeeded; 0 failed.
+
+#
+# Plugin: Trace reconstruction (event record traces -> execution traces)
+Trace processing summary: 0 total; 0 succeeded; 0 failed.
+See 'kieker.log' for details
+JDK
+#
+# Configuration
+--inputdirs: /code/Github/Shopping/trace/kieker-20190424-100942-72549936223785-UTC--KIEKER-SINGLETON
+--outputdir: /code/Github/Shopping/v
+--output-filename-prefix: 
+--verbose: false
+--debug: false
+--plot-Deployment-Sequence-Diagrams: false
+--plot-Assembly-Sequence-Diagrams: false
+--plot-Deployment-Component-Dependency-Graph: false
+--plot-Assembly-Component-Dependency-Graph: false
+--plot-Container-Dependency-Graph: false
+--plot-Deployment-Operation-Dependency-Graph: true
+--plot-Assembly-Operation-Dependency-Graph: true
+--plot-Aggregated-Deployment-Call-Tree: false
+--plot-Aggregated-Assembly-Call-Tree: false
+--plot-Call-Trees: false
+--print-Message-Traces: false
+--print-Execution-Traces: false
+--print-invalid-Execution-Traces: false
+--print-System-Model: false
+--print-Deployment-Equivalence-Classes: false
+--print-Assembly-Equivalence-Classes: false
+--select-traces: <select all>
+--filter-traces: <filter none>
+--ignore-invalid-traces: false
+--repair-event-based-traces: false
+--max-trace-duration: 600000 ms
+--ignore-executions-before-date: Thu, 1 Jan 1970 00:00:00.000 +0000 (UTC) (Thu, 1 Jan 1970 08:00:00.000 +0800 (local time))
+--ignore-executions-after-date: Fri, 11 Apr 2262 23:47:16.854 +0000 (UTC) (Sat, 12 Apr 2262 07:47:16.854 +0800 (local time))
+--short-labels: false
+--include-self-loops: false
+--ignore-assumed-calls: false
+--traceColoring: 
+--addDescriptions: 
+--help: false
+Registered repository 'SystemModelRepository-1' (System model repository)
+Registered reader kieker.analysis.plugin.reader.filesystem.FSReader@ed17bee
+Registered plugin kieker.analysis.plugin.filter.forward.StringBufferFilter@2aae9190
+Registered plugin kieker.analysis.plugin.filter.flow.ThreadEvent2TraceEventFilter@61064425
+Registered plugin kieker.analysis.plugin.filter.select.TimestampFilter@6bc168e5
+Registered plugin kieker.analysis.plugin.filter.select.TraceIdFilter@67f89fa3
+Registered plugin kieker.tools.traceAnalysis.filter.executionRecordTransformation.ExecutionRecordTransformationFilter@7a46a697
+Registered plugin kieker.tools.traceAnalysis.filter.traceReconstruction.TraceReconstructionFilter@19e1023e
+Registered plugin kieker.analysis.plugin.filter.flow.EventRecordTraceReconstructionFilter@6d1e7682
+Registered plugin kieker.tools.traceAnalysis.filter.flow.EventRecordTraceCounter@16b4a017
+Registered plugin kieker.tools.traceAnalysis.filter.flow.TraceEventRecords2ExecutionAndMessageTraceFilter@2a098129
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.dependencyGraph.OperationDependencyGraphAllocationFilter@24273305
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.dependencyGraph.OperationDependencyGraphAssemblyFilter@18e8568
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.GraphWriterPlugin@3930015a
+Registered plugin kieker.tools.traceAnalysis.filter.visualization.GraphWriterPlugin@629f0666
+Registered plugin kieker.tools.traceAnalysis.filter.systemModel.SystemModel2FileFilter@1ff8b8f
+Read line: $0=kieker.common.record.misc.KiekerMetadataRecord
+Read line: $1=kieker.common.record.controlflow.OperationExecutionRecord
+< Loading /code/Github/Shopping/trace/kieker-20190424-100942-72549936223785-UTC--KIEKER-SINGLETON/kieker-20190424-100942489-UTC-001.dat
+Kieker metadata: version='1.13', controllerName='KIEKER-SINGLETON', hostname='icedsoul-PC', experimentId='1', debugMode='false', timeOffset='0', timeUnit='NANOSECONDS', numberOfRecords='0'
+Terminating analysis.
+Shutting down reader.
+
+#
+# Plugin: SystemModel2FileFilter-9
+Wrote HTML output of system model to file '/code/Github/Shopping/v/system-entities.html'
+
+#
+# Plugin: OperationDependencyGraphAllocationFilter-7
+Trace processing summary: 295 total; 295 succeeded; 0 failed.
+
+#
+# Plugin: OperationDependencyGraphAssemblyFilter-8
+Trace processing summary: 295 total; 295 succeeded; 0 failed.
+Saved analysis configuration to file '/code/Github/Shopping/v/traceAnalysis.kax'
+
+#
+# Plugin: Trace reconstruction (execution records -> execution traces)
+Trace processing summary: 295 total; 295 succeeded; 0 failed.
+First timestamp: 1556100586398578166 (Wed, 24 Apr 2019 10:09:46.398 +0000 (UTC),Wed, 24 Apr 2019 18:09:46.398 +0800 (local time))
+Last timestamp: 1556100930584649096 (Wed, 24 Apr 2019 10:15:30.584 +0000 (UTC),Wed, 24 Apr 2019 18:15:30.584 +0800 (local time))
+
+#
+# Plugin: Trace reconstruction (event records -> event record traces)
+Trace processing summary: 0 total; 0 succeeded; 0 failed.
+
+#
+# Plugin: Trace reconstruction (event record traces -> execution traces)
+Trace processing summary: 0 total; 0 succeeded; 0 failed.
+See 'kieker.log' for details

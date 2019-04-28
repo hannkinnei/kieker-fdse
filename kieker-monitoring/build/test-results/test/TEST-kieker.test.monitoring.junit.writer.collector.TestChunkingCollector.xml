@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kieker.test.monitoring.junit.writer.collector.TestChunkingCollector" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-04-28T08:00:29" hostname="icedsoul-PC" time="1.063">
+  <properties/>
+  <testcase name="testChunkingSizeAndTime" classname="kieker.test.monitoring.junit.writer.collector.TestChunkingCollector" time="1.063"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[四月 28, 2019 4:00:29 下午 kieker.common.configuration.Configuration getIntProperty
+警告: Error parsing configuration property 'kieker.monitoring.writer.collector.ChunkingCollector.queueSize', found value '', using default value 16384
+四月 28, 2019 4:00:29 下午 kieker.common.configuration.Configuration getIntProperty
+警告: Error parsing configuration property 'kieker.monitoring.writer.collector.ChunkingCollector.taskRunInterval', found value '', using default value 20
+四月 28, 2019 4:00:29 下午 kieker.monitoring.writer.collector.ChunkingCollector createQueue
+严重: Error instantiating queue type . Using default queue type instead.
+java.lang.ClassNotFoundException: 
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at kieker.monitoring.writer.collector.ChunkingCollector.createQueue(ChunkingCollector.java:149)
+	at kieker.monitoring.writer.collector.ChunkingCollector.<init>(ChunkingCollector.java:123)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at kieker.monitoring.core.controller.ControllerFactory.instantiate(ControllerFactory.java:103)
+	at kieker.monitoring.core.controller.ControllerFactory.createAndInitialize(ControllerFactory.java:76)
+	at kieker.monitoring.core.controller.AbstractController.createAndInitialize(AbstractController.java:116)
+	at kieker.monitoring.core.controller.WriterController.<init>(WriterController.java:102)
+	at kieker.monitoring.core.controller.MonitoringController.<init>(MonitoringController.java:63)
+	at kieker.monitoring.core.controller.MonitoringController.createInstance(MonitoringController.java:82)
+	at kieker.test.monitoring.junit.writer.collector.TestChunkingCollector.createController(TestChunkingCollector.java:119)
+	at kieker.test.monitoring.junit.writer.collector.TestChunkingCollector.testChunkingSizeAndTime(TestChunkingCollector.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+
+四月 28, 2019 4:00:29 下午 kieker.common.configuration.Configuration getIntProperty
+警告: Error parsing configuration property 'kieker.monitoring.writer.collector.ChunkingCollector.chunkSize', found value '', using default value 16
+四月 28, 2019 4:00:29 下午 kieker.common.configuration.Configuration getIntProperty
+警告: Error parsing configuration property 'kieker.monitoring.writer.collector.ChunkingCollector.outputBufferSize', found value '', using default value 65536
+四月 28, 2019 4:00:29 下午 kieker.monitoring.core.controller.StateController enableMonitoring
+信息: Enabling monitoring
+四月 28, 2019 4:00:29 下午 kieker.monitoring.core.controller.MonitoringController createInstance
+信息: Current State of kieker.monitoring (1.13) Status: 'enabled'
+	Name: 'KIEKER'; Hostname: 'icedsoul-PC'; experimentID: '1'
+JMXController: JMX disabled
+TimeSource: 'kieker.monitoring.timer.SystemNanoTimer'
+	Time in nanoseconds (with nanoseconds precision) since Thu Jan 01 08:00:00 CST 1970'
+ProbeController: disabled
+WriterController:
+	Queue type: org.jctools.queues.MpscArrayQueue
+	Queue capacity: 10000
+	Insert behavior (a.k.a. QueueFullBehavior): class kieker.monitoring.queue.behavior.BlockOnFailedInsertBehavior
+		numBlocked: 0
+Writer: 'kieker.monitoring.writer.collector.ChunkingCollector'
+	Configuration:
+		kieker.monitoring.writer.collector.ChunkingCollector.serializer='kieker.monitoring.writer.serializer.StringSerializer'
+		kieker.monitoring.writer.collector.ChunkingCollector.deferredWriteDelay='500'
+		kieker.monitoring.writer.collector.ChunkingCollector.writer='kieker.test.monitoring.junit.writer.collector.TestRawDataWriter'
+
+	Automatic assignment of logging timestamps: 'true'
+Sampling Controller: Periodic Sensor available: Poolsize: '0'; Scheduled Tasks: '0'
+四月 28, 2019 4:00:30 下午 kieker.monitoring.core.controller.MonitoringController terminateMonitoring
+信息: Terminating monitoring...
+四月 28, 2019 4:00:30 下午 kieker.monitoring.core.controller.MonitoringController cleanup
+信息: Shutting down Monitoring Controller (KIEKER)
+]]></system-err>
+</testsuite>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class kieker.test.tools.junit.writeRead.explorviz.BasicExplorVizExportWriterTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class kieker.test.tools.junit.writeRead.explorviz.BasicExplorVizExportWriterTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/kieker.test.tools.junit.writeRead.explorviz.html">kieker.test.tools.junit.writeRead.explorviz</a> &gt; BasicExplorVizExportWriterTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.159s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testExplorvizCommunication</td>
+<td>0.159s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>四月 28, 2019 4:03:31 下午 kieker.test.tools.junit.writeRead.explorviz.ExplorVizReader (ExplorVizReader-1) read
+信息: Listening on 0.0.0.0/0.0.0.0:10555
+四月 28, 2019 4:03:31 下午 kieker.test.tools.junit.writeRead.explorviz.ExplorVizReader (ExplorVizReader-1) read
+信息: Waiting for a (single) connection test...
+四月 28, 2019 4:03:31 下午 kieker.test.tools.junit.writeRead.explorviz.ExplorVizReader (ExplorVizReader-1) read
+信息: Waiting for the actual data connection...
+四月 28, 2019 4:03:31 下午 kieker.monitoring.writer.explorviz.ExplorVizTcpWriter &lt;init&gt;
+信息: Initialized socket channel for writing to 127.0.0.1:10555
+四月 28, 2019 4:03:31 下午 kieker.monitoring.core.controller.StateController enableMonitoring
+信息: Enabling monitoring
+四月 28, 2019 4:03:31 下午 kieker.monitoring.core.configuration.ConfigurationFactory createSingletonConfiguration
+信息: Loading properties from properties file in classpath: 'META-INF/kieker.monitoring.properties'
+四月 28, 2019 4:03:31 下午 kieker.monitoring.core.configuration.ConfigurationFactory loadConfigurationFromResource
+警告: File 'META-INF/kieker.monitoring.properties' not found in classpath
+四月 28, 2019 4:03:31 下午 kieker.monitoring.core.controller.MonitoringController createInstance
+信息: Current State of kieker.monitoring (1.13) Status: 'enabled'
+	Name: 'KIEKER'; Hostname: 'icedsoul-PC'; experimentID: '1'
+JMXController: JMX disabled
+TimeSource: 'kieker.monitoring.timer.SystemNanoTimer'
+	Time in nanoseconds (with nanoseconds precision) since Thu Jan 01 08:00:00 CST 1970'
+ProbeController: disabled
+WriterController:
+	Queue type: org.jctools.queues.MpscArrayQueue
+	Queue capacity: 10000
+	Insert behavior (a.k.a. QueueFullBehavior): class kieker.monitoring.queue.behavior.BlockOnFailedInsertBehavior
+		numBlocked: 0
+Writer: 'kieker.monitoring.writer.explorviz.ExplorVizTcpWriter'
+	Configuration:
+		kieker.monitoring.writer.explorviz.ExplorVizTcpWriter.bufferSize='65535'
+		kieker.monitoring.writer.explorviz.ExplorVizTcpWriter.flush='false'
+		kieker.monitoring.writer.explorviz.ExplorVizTcpWriter.hostname='127.0.0.1'
+		kieker.monitoring.writer.explorviz.ExplorVizTcpWriter.port='10555'
+
+	Automatic assignment of logging timestamps: 'true'
+Sampling Controller: Periodic Sensor available: Poolsize: '0'; Scheduled Tasks: '0'
+四月 28, 2019 4:03:31 下午 kieker.monitoring.core.controller.MonitoringController terminateMonitoring
+信息: Terminating monitoring...
+四月 28, 2019 4:03:31 下午 kieker.monitoring.core.controller.MonitoringController cleanup
+信息: Shutting down Monitoring Controller (KIEKER)
+四月 28, 2019 4:03:31 下午 kieker.monitoring.core.controller.StateController enableMonitoring
+信息: Enabling monitoring
+四月 28, 2019 4:03:31 下午 kieker.monitoring.core.controller.MonitoringController createInstance
+信息: Current State of kieker.monitoring (1.13) Status: 'enabled'
+	Name: 'KIEKER-SINGLETON'; Hostname: 'icedsoul-PC'; experimentID: '1'
+JMXController: JMX disabled
+TimeSource: 'kieker.monitoring.timer.SystemNanoTimer'
+	Time in nanoseconds (with nanoseconds precision) since Thu Jan 01 08:00:00 CST 1970'
+ProbeController: disabled
+WriterController:
+	Queue type: org.jctools.queues.MpscArrayQueue
+	Queue capacity: 10000
+	Insert behavior (a.k.a. QueueFullBehavior): class kieker.monitoring.queue.behavior.BlockOnFailedInsertBehavior
+		numBlocked: 0
+Writer: 'kieker.monitoring.writer.filesystem.AsciiFileWriter'
+	Configuration:
+		kieker.monitoring.writer.filesystem.AsciiFileWriter.customStoragePath=''
+		kieker.monitoring.writer.filesystem.AsciiFileWriter.maxLogFiles='-1'
+		kieker.monitoring.writer.filesystem.AsciiFileWriter.flush='false'
+		kieker.monitoring.writer.filesystem.AsciiFileWriter.maxLogSize='-1'
+		kieker.monitoring.writer.filesystem.AsciiFileWriter.flushMapfile='true'
+		kieker.monitoring.writer.filesystem.AsciiFileWriter.maxEntriesInFile='25000'
+		kieker.monitoring.writer.filesystem.AsciiFileWriter.shouldCompress='false'
+	Internal properties:
+		Log location: /code/Github/kieker-1.13/kieker-tools/build/kieker-20190428-080331-164452518071268-UTC--KIEKER-SINGLETON
+
+	Automatic assignment of logging timestamps: 'true'
+Sampling Controller: Periodic Sensor available: Poolsize: '0'; Scheduled Tasks: '0'
+四月 28, 2019 4:03:31 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.0.1</a> at 2019-4-28 16:04:00</p>
+</div>
+</div>
+</body>
+</html>

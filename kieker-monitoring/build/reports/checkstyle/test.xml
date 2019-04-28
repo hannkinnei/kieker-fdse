@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="6.0">
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/Await.java">
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="40" column="54" severity="info" message="Expected @param tag for &apos;thread&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="40" column="74" severity="info" message="Expected @param tag for &apos;state&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="40" column="111" severity="info" message="Expected @throws tag for &apos;InterruptedException&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="58" column="61" severity="info" message="Expected @param tag for &apos;hostname&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="58" column="81" severity="info" message="Expected @param tag for &apos;port&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="58" column="117" severity="info" message="Expected @throws tag for &apos;InterruptedException&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/monitoring/core/controller/WriterControllerTest.java">
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="45" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="49" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="57" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/monitoring/probe/spring/executions/jetty/UrlUtil.java">
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="35" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/monitoring/writer/MonitoringWriterThreadTest.java">
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="55" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="59" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="82" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/monitoring/writer/filesystem/AsciiFileWriterTest.java">
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="47" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="51" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="63" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="76" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="102" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="129" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="156" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="188" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="223" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="232" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="242" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/monitoring/writer/filesystem/BinaryFileWriterTest.java">
+<error line="48" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="52" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="65" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="78" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="100" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="123" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="146" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="177" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="211" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="220" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="230" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="240" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="248" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/monitoring/writer/filesystem/FilesystemTestUtil.java">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/monitoring/writer/namedRecordPipe/TestPipeWriter.java">
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="38" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="50" column="65" severity="info" message="Expected @throws tag for &apos;InterruptedException&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/core/configuration/TestConfigurationFactoryMethods.java">
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/core/controller/TestAutoSetLoggingTimestamp.java">
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="43" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="52" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/core/controller/TestControllerConstruction.java">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/core/controller/TestJMXInterface.java">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/core/controller/TestMonitoringControllerRecordsPassedInMonitoringStates.java">
+<error line="44" column="63" severity="info" message="Expected @throws tag for &apos;InterruptedException&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="67" column="66" severity="info" message="Expected @throws tag for &apos;InterruptedException&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="89" column="68" severity="info" message="Expected @throws tag for &apos;InterruptedException&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/core/controller/TestMonitoringControllerStateTransitions.java">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/core/controller/TestProbeController.java">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/core/sampler/TestPeriodicSampling.java">
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="42" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/core/signaturePattern/TestPatternParser.java">
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="46" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="239" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="346" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/adaptiveMonitoring/cxf/TestCXFClientServerInterceptors.java">
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="82" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="127" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="167" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/adaptiveMonitoring/mxbean/AbstractJVMSamplerTest.java">
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="55" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="57" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="59" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="65" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/adaptiveMonitoring/mxbean/TestClassLoadingSampler.java">
+<error line="39" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/adaptiveMonitoring/mxbean/TestCompilationSampler.java">
+<error line="39" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/adaptiveMonitoring/mxbean/TestGCSampler.java">
+<error line="39" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/adaptiveMonitoring/mxbean/TestMemorySampler.java">
+<error line="39" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/adaptiveMonitoring/mxbean/TestThreadsStatusSampler.java">
+<error line="39" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/adaptiveMonitoring/mxbean/TestUptimeSampler.java">
+<error line="39" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/adaptiveMonitoring/sigar/TestCPUsCombinedPercSampler.java">
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="52" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="59" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/adaptiveMonitoring/sigar/TestCPUsDetailedPercSampler.java">
+<error line="52" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="59" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/adaptiveMonitoring/sigar/TestMemSwapUsageSampler.java">
+<error line="52" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="59" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/adaptiveMonitoring/spring/TestSpringMethodInterceptor.java">
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="71" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="98" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="105" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="139" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/cxf/executions/AbstractTestCXFClientServerInterceptors.java">
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="82" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="156" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="171" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/cxf/executions/TestCXFClientServerInterceptorsNoSessionRegisteredBefore.java">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/cxf/executions/TestCXFClientServerInterceptorsSessionRegisteredBefore.java">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/cxf/executions/bookstore/BookstoreImpl.java">
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/cxf/executions/bookstore/IBookstore.java">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/spring/executions/AbstractTestSpringMethodInterceptor.java">
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="77" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="89" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="97" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="301" column="9" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/spring/executions/TestSpringMethodInterceptorInterceptorIsEntryPoint.java">
+<error line="28" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/spring/executions/TestSpringMethodInterceptorInterceptorIsNotEntryPoint.java">
+<error line="28" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/spring/executions/jetty/TestSpringMethodInterceptor.java">
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="67" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="71" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="98" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="105" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="158" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/spring/executions/jetty/bookstore/Book.java">
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/spring/executions/jetty/bookstore/Bookstore.java">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/spring/executions/jetty/bookstore/BookstoreController.java">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/spring/executions/jetty/bookstore/CRM.java">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/spring/executions/jetty/bookstore/Catalog.java">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/spring/executions/jetty/webapp/WEB-INF/lib/com.sun.el-1.0.0.v201105211818.jar">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/spring/executions/jetty/webapp/WEB-INF/lib/javax.el-2.1.0.v201105211819.jar">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/spring/executions/jetty/webapp/WEB-INF/lib/javax.servlet.jsp-2.1.0.v201105211820.jar">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/spring/executions/jetty/webapp/WEB-INF/lib/javax.servlet.jsp.jstl-1.2.0.v201105211821.jar">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/spring/executions/jetty/webapp/WEB-INF/lib/org.apache.jasper.glassfish-2.1.0.v201110031002.jar">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/spring/executions/jetty/webapp/WEB-INF/lib/org.apache.taglibs.standard.glassfish-1.2.0.v201112081803.jar">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/spring/executions/jetty/webapp/WEB-INF/lib/org.eclipse.jdt.core-3.7.1.jar">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/spring/executions/jetty/webapp/WEB-INF/spring/root-context.xml">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/spring/executions/jetty/webapp/WEB-INF/spring/servlet-context.xml">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/spring/executions/jetty/webapp/WEB-INF/views/home.jsp">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/spring/executions/jetty/webapp/WEB-INF/views/search.jsp">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/spring/executions/jetty/webapp/WEB-INF/web.xml">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/probe/spring/executions/jetty/webapp/jetty.xml">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/timer/AbstractTestTimeSource.java">
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="34" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/timer/TestSystemMilliTimer.java">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/timer/TestSystemNanoTimer.java">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/writer/collector/TestChunkingCollector.java">
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="49" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="62" column="63" severity="info" message="Expected @throws tag for &apos;InterruptedException&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/writer/collector/TestRawDataStorage.java">
+<error line="62" column="71" severity="info" message="Expected @throws tag for &apos;IOException&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/writer/collector/TestRawDataWriter.java">
+<error line="39" severity="info" message="First sentence should end with a period." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+<error line="45" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/junit/writer/serializer/BinarySerializerTest.java">
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="46" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="50" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="86" column="5" severity="info" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/util/DefaultConfigurationFactory.java">
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/util/DummyRecordCountWriter.java">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/util/NamedListWriter.java">
+<error line="105" column="52" severity="info" message="Expected @param tag for &apos;list&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="105" column="68" severity="info" message="Expected @param tag for &apos;listSize&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="105" column="88" severity="info" message="Expected @param tag for &apos;timeoutInMs&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="105" column="108" severity="info" message="Expected @throws tag for &apos;InterruptedException&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/util/NamedPipeFactory.java">
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/util/signaturePattern/PatternConstructor.java">
+<error line="0" severity="info" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="209" severity="info" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="209" column="65" severity="info" message="Expected @param tag for &apos;visibility&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="217" severity="info" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="217" column="74" severity="info" message="Expected @param tag for &apos;abstractNonAbstract&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="225" severity="info" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="225" column="70" severity="info" message="Expected @param tag for &apos;staticNonStatic&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="233" severity="info" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="233" column="68" severity="info" message="Expected @param tag for &apos;finalNonFinal&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="241" severity="info" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="241" column="82" severity="info" message="Expected @param tag for &apos;synchronizedNonSynchronized&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="249" severity="info" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="249" column="70" severity="info" message="Expected @param tag for &apos;nativeNonNative&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="257" severity="info" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="257" column="65" severity="info" message="Expected @param tag for &apos;returnType&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="265" severity="info" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="265" column="66" severity="info" message="Expected @param tag for &apos;fqClassName&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="273" severity="info" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="273" column="68" severity="info" message="Expected @param tag for &apos;operationName&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="281" severity="info" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="281" column="68" severity="info" message="Expected @param tag for &apos;parameterList&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="289" severity="info" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="289" column="65" severity="info" message="Expected @param tag for &apos;throwsList&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="297" severity="info" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="297" column="65" severity="info" message="Expected @param tag for &apos;whitespace&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/code/Github/kieker-1.13/kieker-monitoring/test/kieker/test/monitoring/util/signaturePattern/SignatureConstructor.java">
+</file>
+</checkstyle>

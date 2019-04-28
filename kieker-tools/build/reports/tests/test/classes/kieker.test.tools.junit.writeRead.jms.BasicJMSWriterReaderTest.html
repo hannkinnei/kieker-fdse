@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class kieker.test.tools.junit.writeRead.jms.BasicJMSWriterReaderTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class kieker.test.tools.junit.writeRead.jms.BasicJMSWriterReaderTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/kieker.test.tools.junit.writeRead.jms.html">kieker.test.tools.junit.writeRead.jms</a> &gt; BasicJMSWriterReaderTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">3.016s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testReadReturnsTrue</td>
+<td>0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSimpleLog</td>
+<td>3.006s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>四月 28, 2019 4:03:46 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:46 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.writeRead.jms.BasicJMSWriterReaderTest.testReadReturnsTrue()
+
+
+四月 28, 2019 4:03:46 下午 kieker.analysis.plugin.reader.jms.JmsReader (JmsReader-19) terminate
+信息: Shutdown of JmsReader requested.
+四月 28, 2019 4:03:46 下午 kieker.analysis.plugin.reader.jms.JmsReader (JmsReader-19) read
+信息: Listening to destination:kieker.test.tools.junit.writeRead.jms.FakeDestination@5e1aa1e3 at tcp://127.0.0.1:61616/ !
+***
+
+
+四月 28, 2019 4:03:46 下午 kieker.analysis.plugin.reader.jms.JmsReader (JmsReader-19) read
+信息: JmsReader started and waits for incoming monitoring events!
+四月 28, 2019 4:03:46 下午 kieker.analysis.plugin.reader.jms.JmsReader (JmsReader-19) read
+信息: Woke up by shutdown
+四月 28, 2019 4:03:46 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:46 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.tools.junit.writeRead.jms.BasicJMSWriterReaderTest.testSimpleLog()
+
+
+四月 28, 2019 4:03:46 下午 kieker.monitoring.core.controller.StateController enableMonitoring
+信息: Enabling monitoring
+四月 28, 2019 4:03:46 下午 kieker.monitoring.core.controller.MonitoringController createInstance
+信息: Current State of kieker.monitoring (1.13) Status: 'enabled'
+	Name: 'KIEKER'; Hostname: 'icedsoul-PC'; experimentID: '1'
+JMXController: JMX disabled
+TimeSource: 'kieker.monitoring.timer.SystemNanoTimer'
+	Time in nanoseconds (with nanoseconds precision) since Thu Jan 01 08:00:00 CST 1970'
+ProbeController: disabled
+WriterController:
+	Queue type: org.jctools.queues.MpscArrayQueue
+	Queue capacity: 10000
+	Insert behavior (a.k.a. QueueFullBehavior): class kieker.monitoring.queue.behavior.BlockOnFailedInsertBehavior
+		numBlocked: 0
+Writer: 'kieker.monitoring.writer.jms.JmsWriter'
+	Configuration:
+		kieker.monitoring.writer.jms.JmsWriter.Topic='queue1'
+		kieker.monitoring.writer.jms.JmsWriter.MessageTimeToLive='10000'
+		kieker.monitoring.writer.jms.JmsWriter.FactoryLookupName='ConnectionFactory'
+		kieker.monitoring.writer.jms.JmsWriter.ProviderUrl='tcp://127.0.0.1:61616/'
+		kieker.monitoring.writer.jms.JmsWriter.ContextFactoryType='kieker.test.tools.junit.writeRead.jms.FakeInitialContextFactory'; Session: 'kieker.test.tools.junit.writeRead.jms.FakeSession@3764148b'; Connection: 'kieker.test.tools.junit.writeRead.jms.FakeConnection@7121a4e0'; MessageProducer: 'kieker.test.tools.junit.writeRead.jms.FakeMessageProducer@2d1895b8'
+
+	Automatic assignment of logging timestamps: 'true'
+Sampling Controller: Periodic Sensor available: Poolsize: '0'; Scheduled Tasks: '0'
+四月 28, 2019 4:03:46 下午 kieker.analysis.plugin.reader.jms.JmsReader (JmsReader-19) onMessage
+严重: deliverRecord returned false
+四月 28, 2019 4:03:47 下午 kieker.analysis.plugin.reader.jms.JmsReader (JmsReader-20) read
+信息: Listening to destination:kieker.test.tools.junit.writeRead.jms.FakeDestination@5db445ad at tcp://127.0.0.1:61616/ !
+***
+
+
+四月 28, 2019 4:03:47 下午 kieker.analysis.plugin.reader.jms.JmsReader (JmsReader-20) read
+信息: JmsReader started and waits for incoming monitoring events!
+四月 28, 2019 4:03:49 下午 kieker.monitoring.core.controller.StateController disableMonitoring
+信息: Disabling monitoring
+四月 28, 2019 4:03:49 下午 kieker.monitoring.core.controller.MonitoringController terminateMonitoring
+信息: Terminating monitoring...
+四月 28, 2019 4:03:49 下午 kieker.monitoring.core.controller.MonitoringController cleanup
+信息: Shutting down Monitoring Controller (KIEKER)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.0.1</a> at 2019-4-28 16:04:00</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kieker.tools.bridge.TestServiceContainer" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-04-28T08:03:58" hostname="icedsoul-PC" time="0.195">
+  <properties/>
+  <testcase name="testServiceConnectorInterface" classname="kieker.tools.bridge.TestServiceContainer" time="0.195"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[四月 28, 2019 4:03:58 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:58 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.tools.bridge.TestServiceContainer.testServiceConnectorInterface()
+
+
+四月 28, 2019 4:03:58 下午 kieker.monitoring.core.controller.StateController enableMonitoring
+信息: Enabling monitoring
+四月 28, 2019 4:03:58 下午 kieker.monitoring.core.controller.MonitoringController createInstance
+信息: Current State of kieker.monitoring (1.13) Status: 'enabled'
+	Name: 'KIEKER'; Hostname: 'icedsoul-PC'; experimentID: '1'
+JMXController: JMX disabled
+TimeSource: 'kieker.monitoring.timer.SystemNanoTimer'
+	Time in nanoseconds (with nanoseconds precision) since Thu Jan 01 08:00:00 CST 1970'
+ProbeController: disabled
+WriterController:
+	Queue type: org.jctools.queues.MpscArrayQueue
+	Queue capacity: 10000
+	Insert behavior (a.k.a. QueueFullBehavior): class kieker.monitoring.queue.behavior.BlockOnFailedInsertBehavior
+		numBlocked: 0
+Writer: 'kieker.monitoring.writer.filesystem.AsciiFileWriter'
+	Configuration:
+		kieker.monitoring.writer.filesystem.AsciiFileWriter.customStoragePath='/code/Github/kieker-1.13/kieker-tools/build/junit4445880388494851215'
+		kieker.monitoring.writer.filesystem.AsciiFileWriter.maxLogFiles='400'
+		kieker.monitoring.writer.filesystem.AsciiFileWriter.flush='false'
+		kieker.monitoring.writer.filesystem.AsciiFileWriter.maxLogSize='-1'
+		kieker.monitoring.writer.filesystem.AsciiFileWriter.flushMapfile='true'
+		kieker.monitoring.writer.filesystem.AsciiFileWriter.maxEntriesInFile='1'
+		kieker.monitoring.writer.filesystem.AsciiFileWriter.shouldCompress='false'
+	Internal properties:
+		Log location: /code/Github/kieker-1.13/kieker-tools/build/junit4445880388494851215/kieker-20190428-080358-164479865055652-UTC--KIEKER
+
+	Automatic assignment of logging timestamps: 'true'
+Sampling Controller: Periodic Sensor available: Poolsize: '0'; Scheduled Tasks: '0'
+四月 28, 2019 4:03:58 下午 kieker.monitoring.core.controller.MonitoringController terminateMonitoring
+信息: Terminating monitoring...
+四月 28, 2019 4:03:58 下午 kieker.monitoring.core.controller.MonitoringController cleanup
+信息: Shutting down Monitoring Controller (KIEKER)
+]]></system-err>
+</testsuite>

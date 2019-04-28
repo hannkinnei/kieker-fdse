@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kieker.test.tools.junit.bridge.TestJMSClientConnector" tests="1" skipped="1" failures="0" errors="0" timestamp="2019-04-28T08:03:24" hostname="icedsoul-PC" time="0.0">
+  <properties/>
+  <testcase name="testJMSClientConnector" classname="kieker.test.tools.junit.bridge.TestJMSClientConnector" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kieker.tools.opad.record.junit.TestGeneratedAggregationWindow" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-04-28T08:03:59" hostname="icedsoul-PC" time="0.003">
+  <properties/>
+  <testcase name="testToArray" classname="kieker.tools.opad.record.junit.TestGeneratedAggregationWindow" time="0.001"/>
+  <testcase name="testBuffer" classname="kieker.tools.opad.record.junit.TestGeneratedAggregationWindow" time="0.0"/>
+  <testcase name="testEquality" classname="kieker.tools.opad.record.junit.TestGeneratedAggregationWindow" time="0.001"/>
+  <testcase name="testUnequality" classname="kieker.tools.opad.record.junit.TestGeneratedAggregationWindow" time="0.0"/>
+  <testcase name="testParameterConstruction" classname="kieker.tools.opad.record.junit.TestGeneratedAggregationWindow" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[四月 28, 2019 4:03:59 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:59 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.tools.opad.record.junit.TestGeneratedAggregationWindow.testToArray()
+
+
+四月 28, 2019 4:03:59 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:59 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.tools.opad.record.junit.TestGeneratedAggregationWindow.testBuffer()
+
+
+四月 28, 2019 4:03:59 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:59 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.tools.opad.record.junit.TestGeneratedAggregationWindow.testEquality()
+
+
+四月 28, 2019 4:03:59 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:59 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.tools.opad.record.junit.TestGeneratedAggregationWindow.testUnequality()
+
+
+四月 28, 2019 4:03:59 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:03:59 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.tools.opad.record.junit.TestGeneratedAggregationWindow.testParameterConstruction()
+
+
+]]></system-err>
+</testsuite>

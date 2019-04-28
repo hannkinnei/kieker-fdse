@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kieker.test.analysis.junit.plugin.filter.record.TestRealtimeRecordDelayFilterAccelerationSlowdown" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-04-21T07:37:18" hostname="icedsoul-PC" time="20.009">
+  <properties/>
+  <testcase name="testNormal" classname="kieker.test.analysis.junit.plugin.filter.record.TestRealtimeRecordDelayFilterAccelerationSlowdown" time="20.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[四月 21, 2019 3:37:18 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 21, 2019 3:37:18 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.analysis.junit.plugin.filter.record.TestRealtimeRecordDelayFilterAccelerationSlowdown.testNormal()
+
+
+四月 21, 2019 3:37:38 下午 kieker.analysis.plugin.reader.timer.TimeReader (TimeReader-124) terminate
+信息: Shutdown of TimeReader requested.
+四月 21, 2019 3:37:38 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 21, 2019 3:37:38 下午 kieker.analysis.plugin.filter.record.RealtimeRecordDelayFilter (RealtimeRecordDelayFilter-126) terminate
+信息: Awaiting termination delay of 4 seconds ...
+]]></system-err>
+</testsuite>

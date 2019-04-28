@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kieker.test.tools.junit.writeRead.jmx.BasicJMXWriterReaderTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-04-28T08:03:44" hostname="icedsoul-PC" time="1.533">
+  <properties/>
+  <testcase name="testCommunication" classname="kieker.test.tools.junit.writeRead.jmx.BasicJMXWriterReaderTest" time="1.533"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[四月 28, 2019 4:03:45 下午 kieker.monitoring.core.controller.StateController enableMonitoring
+信息: Enabling monitoring
+四月 28, 2019 4:03:45 下午 kieker.monitoring.core.controller.MonitoringController createInstance
+信息: Current State of kieker.monitoring (1.13) Status: 'enabled'
+	Name: 'KIEKER'; Hostname: 'icedsoul-PC'; experimentID: '1'
+JMXController: JMX enabled (Domain: 'kieker.monitoring')
+	MonitoringController MBean available: 'kieker.monitoring:type=MonitoringController'
+	JMX remote access available:
+		Service URL: 'service:jmx:rmi://icedsoul-PC/jndi/rmi://icedsoul-PC:59999/jmxrmi'
+		No current remote connections
+TimeSource: 'kieker.monitoring.timer.SystemNanoTimer'
+	Time in nanoseconds (with nanoseconds precision) since Thu Jan 01 08:00:00 CST 1970'
+ProbeController: disabled
+WriterController:
+	Queue type: org.jctools.queues.MpscArrayQueue
+	Queue capacity: 10000
+	Insert behavior (a.k.a. QueueFullBehavior): class kieker.monitoring.queue.behavior.BlockOnFailedInsertBehavior
+		numBlocked: 0
+Writer: 'kieker.monitoring.writer.jmx.JmxWriter'
+	Configuration:
+		kieker.monitoring.writer.jmx.JmxWriter.logname='MonitoringLog'
+		kieker.monitoring.writer.jmx.JmxWriter.domain=''
+
+	Automatic assignment of logging timestamps: 'true'
+Sampling Controller: Periodic Sensor available: Poolsize: '0'; Scheduled Tasks: '0'
+四月 28, 2019 4:03:45 下午 kieker.monitoring.core.controller.JMXController handleNotification
+信息: New JMX remote connection initialized. Connection ID: rmi://127.0.0.1  1
+四月 28, 2019 4:03:45 下午 kieker.analysis.plugin.reader.jmx.JmxReader (JmxReader-17) read
+信息: Connected to JMX Server, ID: rmi://127.0.0.1  1
+四月 28, 2019 4:03:46 下午 kieker.monitoring.core.controller.JMXController handleNotification
+信息: New JMX remote connection initialized. Connection ID: rmi://127.0.0.1  2
+四月 28, 2019 4:03:46 下午 kieker.monitoring.core.controller.JMXController handleNotification
+信息: JMX remote connection closed. Connection ID: rmi://127.0.0.1  2
+四月 28, 2019 4:03:46 下午 kieker.monitoring.core.controller.JMXController handleNotification
+信息: New JMX remote connection initialized. Connection ID: rmi://127.0.0.1  3
+四月 28, 2019 4:03:46 下午 kieker.monitoring.core.controller.StateController disableMonitoring
+信息: Disabling monitoring
+四月 28, 2019 4:03:46 下午 kieker.monitoring.core.controller.JMXController handleNotification
+信息: JMX remote connection closed. Connection ID: rmi://127.0.0.1  3
+四月 28, 2019 4:03:46 下午 kieker.monitoring.core.controller.MonitoringController terminateMonitoring
+信息: Terminating monitoring...
+四月 28, 2019 4:03:46 下午 kieker.monitoring.core.controller.MonitoringController cleanup
+信息: Shutting down Monitoring Controller (KIEKER)
+四月 28, 2019 4:03:46 下午 ClientCommunicatorAdmin restart
+警告: Failed to restart: java.io.IOException: Failed to get a RMI stub: javax.naming.CommunicationException [Root exception is java.rmi.UnmarshalException: error unmarshalling return; nested exception is: 
+	java.io.WriteAbortedException: writing aborted; java.io.NotSerializableException: javax.management.remote.rmi.RMIJRMPServerImpl$ExportedWrapper]
+四月 28, 2019 4:03:46 下午 kieker.analysis.plugin.reader.jmx.JmxReader (JmxReader-17) handleNotification
+信息: JMX connection closed.
+四月 28, 2019 4:03:46 下午 kieker.analysis.plugin.reader.jmx.JmxReader (JmxReader-17) read
+信息: Shutting down JmxReader
+四月 28, 2019 4:03:46 下午 kieker.analysis.AnalysisController terminate
+信息: Terminating analysis.
+四月 28, 2019 4:03:46 下午 kieker.analysis.plugin.reader.jmx.JmxReader (JmxReader-17) terminate
+信息: Shutdown of JmxReader requested.
+]]></system-err>
+</testsuite>

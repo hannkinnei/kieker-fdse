@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kieker.test.monitoring.junit.core.controller.TestControllerConstruction" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-04-28T08:02:19" hostname="icedsoul-PC" time="0.011">
+  <properties/>
+  <testcase name="testConstructionFromConfig" classname="kieker.test.monitoring.junit.core.controller.TestControllerConstruction" time="0.009"/>
+  <testcase name="testSingletonGetterOnlyOneInstance" classname="kieker.test.monitoring.junit.core.controller.TestControllerConstruction" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[四月 28, 2019 4:02:19 下午 kieker.monitoring.writer.dump.DumpWriter onTerminating
+信息: kieker.monitoring.writer.dump.DumpWriter has shut down.
+四月 28, 2019 4:02:19 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:02:19 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.monitoring.junit.core.controller.TestControllerConstruction.testConstructionFromConfig()
+
+
+四月 28, 2019 4:02:19 下午 kieker.monitoring.writer.dump.DumpWriter onStarting
+信息: kieker.monitoring.writer.dump.DumpWriter has been started.
+四月 28, 2019 4:02:19 下午 kieker.monitoring.core.controller.StateController enableMonitoring
+信息: Enabling monitoring
+四月 28, 2019 4:02:19 下午 kieker.monitoring.core.controller.MonitoringController createInstance
+信息: Current State of kieker.monitoring (1.13) Status: 'enabled'
+	Name: 'Kieker-Test'; Hostname: 'icedsoul-PC'; experimentID: '1'
+JMXController: JMX disabled
+TimeSource: 'kieker.monitoring.timer.SystemNanoTimer'
+	Time in nanoseconds (with nanoseconds precision) since Thu Jan 01 08:00:00 CST 1970'
+ProbeController: disabled
+WriterController:
+	Queue type: org.jctools.queues.MpscArrayQueue
+	Queue capacity: 10000
+	Insert behavior (a.k.a. QueueFullBehavior): class kieker.monitoring.queue.behavior.BlockOnFailedInsertBehavior
+		numBlocked: 0
+Writer: 'kieker.monitoring.writer.dump.DumpWriter'
+	Configuration:
+		kieker.monitoring.writer.dump.DumpWriter.test='true'
+
+	Automatic assignment of logging timestamps: 'true'
+Sampling Controller: Periodic Sensor available: Poolsize: '0'; Scheduled Tasks: '0'
+四月 28, 2019 4:02:19 下午 kieker.monitoring.core.controller.MonitoringController terminateMonitoring
+信息: Terminating monitoring...
+四月 28, 2019 4:02:19 下午 kieker.monitoring.core.controller.MonitoringController cleanup
+信息: Shutting down Monitoring Controller (Kieker-Test)
+四月 28, 2019 4:02:19 下午 kieker.monitoring.writer.dump.DumpWriter onTerminating
+信息: kieker.monitoring.writer.dump.DumpWriter has shut down.
+四月 28, 2019 4:02:19 下午 kieker.monitoring.writer.dump.DumpWriter onStarting
+信息: kieker.monitoring.writer.dump.DumpWriter has been started.
+四月 28, 2019 4:02:19 下午 kieker.monitoring.core.controller.MonitoringController createInstance
+信息: Current State of kieker.monitoring (1.13) Status: 'disabled'
+	Name: 'Kieker-Test'; Hostname: 'icedsoul-PC'; experimentID: '1'
+JMXController: JMX disabled
+TimeSource: 'kieker.monitoring.timer.SystemNanoTimer'
+	Time in nanoseconds (with nanoseconds precision) since Thu Jan 01 08:00:00 CST 1970'
+ProbeController: disabled
+WriterController:
+	Queue type: org.jctools.queues.MpscArrayQueue
+	Queue capacity: 10000
+	Insert behavior (a.k.a. QueueFullBehavior): class kieker.monitoring.queue.behavior.BlockOnFailedInsertBehavior
+		numBlocked: 0
+Writer: 'kieker.monitoring.writer.dump.DumpWriter'
+	Configuration:
+		kieker.monitoring.writer.dump.DumpWriter.test='true'
+
+	Automatic assignment of logging timestamps: 'true'
+Sampling Controller: Periodic Sensor available: Poolsize: '0'; Scheduled Tasks: '0'
+四月 28, 2019 4:02:19 下午 kieker.monitoring.core.controller.MonitoringController terminateMonitoring
+信息: Terminating monitoring...
+四月 28, 2019 4:02:19 下午 kieker.monitoring.core.controller.MonitoringController cleanup
+信息: Shutting down Monitoring Controller (Kieker-Test)
+四月 28, 2019 4:02:19 下午 kieker.test.common.junit.AbstractKiekerTest initTestModulePrefix
+信息: Prefix for test resources is ./
+四月 28, 2019 4:02:19 下午 kieker.test.common.junit.AbstractKiekerTest printNameOfCurrentTest
+信息: Executing test: kieker.test.monitoring.junit.core.controller.TestControllerConstruction.testSingletonGetterOnlyOneInstance()
+
+
+]]></system-err>
+</testsuite>
