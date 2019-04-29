@@ -17,7 +17,7 @@ import static kieker.tools.scenario.CommonUtils.readFromResource;
  */
 public class ScenarioServlet extends HttpServlet {
 
-    private static String path = "resource/scenario/";
+    private static String path = "resource/scenario";
     private ScenarioRegistry SCENARIO_REGISTRY = ScenarioRegistry.INSTANCE;
 
     public ScenarioServlet(){
@@ -39,7 +39,7 @@ public class ScenarioServlet extends HttpServlet {
             String text = readFromResource(file);
             Map<String, String[]> param = request.getParameterMap();
             if(param.size() <= 0) {
-                if (text == null) {
+                if (text == null || text == "") {
                     response.sendRedirect(uri + "/index.html");
                 } else {
                     if (file.endsWith(".html")) {
