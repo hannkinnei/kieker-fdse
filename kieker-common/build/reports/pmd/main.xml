@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="5.2.2" timestamp="2019-04-21T15:38:00.407">
+<pmd version="5.2.2" timestamp="2019-04-29T10:15:11.088">
 <file name="/code/Github/kieker-1.13/kieker-common/src/kieker/common/configuration/Configuration.java">
 <violation beginline="39" endline="594" begincolumn="8" endcolumn="1" rule="ModifiedCyclomaticComplexity" ruleset="Code Size" package="kieker.common.configuration" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/codesize.html#ModifiedCyclomaticComplexity" priority="3">
 The class 'Configuration' has a Modified Cyclomatic Complexity of 2 (Highest = 13).

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.0.1" sequence="0" timestamp="1556438295231" analysisTimestamp="1556438295601" release="">
+<BugCollection version="3.0.1" sequence="0" timestamp="1556504117222" analysisTimestamp="1556504117420" release="">
   <Project projectName="">
     <Jar>/code/Github/kieker-1.13/kieker-monitoring/build/classes/java/main</Jar>
     <AuxClasspathEntry>/code/Github/kieker-1.13/lib/static-analysis/findbugs-3.0.1/lib/asm-debug-all-5.0.2.jar</AuxClasspathEntry>
@@ -300,13 +300,13 @@
   </BugInstance>
   <BugInstance type="DM_CONVERT_CASE" priority="3" rank="20" abbrev="Dm" category="I18N">
     <Class classname="kieker.monitoring.probe.spring.executions.CommonUtils">
-      <SourceLine classname="kieker.monitoring.probe.spring.executions.CommonUtils" start="23" end="87" sourcefile="CommonUtils.java" sourcepath="kieker/monitoring/probe/spring/executions/CommonUtils.java"/>
+      <SourceLine classname="kieker.monitoring.probe.spring.executions.CommonUtils" start="17" end="81" sourcefile="CommonUtils.java" sourcepath="kieker/monitoring/probe/spring/executions/CommonUtils.java"/>
     </Class>
     <Method classname="kieker.monitoring.probe.spring.executions.CommonUtils" name="parseTableNamesFromSql2" signature="(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;" isStatic="true">
-      <SourceLine classname="kieker.monitoring.probe.spring.executions.CommonUtils" start="48" end="87" startBytecode="0" endBytecode="742" sourcefile="CommonUtils.java" sourcepath="kieker/monitoring/probe/spring/executions/CommonUtils.java"/>
+      <SourceLine classname="kieker.monitoring.probe.spring.executions.CommonUtils" start="42" end="81" startBytecode="0" endBytecode="742" sourcefile="CommonUtils.java" sourcepath="kieker/monitoring/probe/spring/executions/CommonUtils.java"/>
     </Method>
-    <SourceLine classname="kieker.monitoring.probe.spring.executions.CommonUtils" start="50" end="50" startBytecode="9" endBytecode="9" sourcefile="CommonUtils.java" sourcepath="kieker/monitoring/probe/spring/executions/CommonUtils.java"/>
-    <SourceLine classname="kieker.monitoring.probe.spring.executions.CommonUtils" start="72" end="72" startBytecode="201" endBytecode="201" sourcefile="CommonUtils.java" sourcepath="kieker/monitoring/probe/spring/executions/CommonUtils.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="kieker.monitoring.probe.spring.executions.CommonUtils" start="44" end="44" startBytecode="9" endBytecode="9" sourcefile="CommonUtils.java" sourcepath="kieker/monitoring/probe/spring/executions/CommonUtils.java"/>
+    <SourceLine classname="kieker.monitoring.probe.spring.executions.CommonUtils" start="66" end="66" startBytecode="201" endBytecode="201" sourcefile="CommonUtils.java" sourcepath="kieker/monitoring/probe/spring/executions/CommonUtils.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
   </BugInstance>
   <BugInstance type="DP_DO_INSIDE_DO_PRIVILEGED" priority="3" rank="20" abbrev="DP" category="MALICIOUS_CODE">
     <Class classname="kieker.monitoring.probe.spring.executions.OperationExecutionMethodInvocationHibernateDaoBuilder">
@@ -346,7 +346,7 @@
   </BugInstance>
   <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" rank="18" abbrev="WMI" category="PERFORMANCE">
     <Class classname="kieker.monitoring.probe.spring.executions.OperationExecutionMethodInvocationInterceptor">
-      <SourceLine classname="kieker.monitoring.probe.spring.executions.OperationExecutionMethodInvocationInterceptor" start="44" end="238" sourcefile="OperationExecutionMethodInvocationInterceptor.java" sourcepath="kieker/monitoring/probe/spring/executions/OperationExecutionMethodInvocationInterceptor.java"/>
+      <SourceLine classname="kieker.monitoring.probe.spring.executions.OperationExecutionMethodInvocationInterceptor" start="44" end="235" sourcefile="OperationExecutionMethodInvocationInterceptor.java" sourcepath="kieker/monitoring/probe/spring/executions/OperationExecutionMethodInvocationInterceptor.java"/>
     </Class>
     <Method classname="kieker.monitoring.probe.spring.executions.OperationExecutionMethodInvocationInterceptor" name="recordSQLInfo4DaoInstance" signature="(Lorg/aopalliance/intercept/MethodInvocation;I)V" isStatic="false">
       <SourceLine classname="kieker.monitoring.probe.spring.executions.OperationExecutionMethodInvocationInterceptor" start="142" end="177" startBytecode="0" endBytecode="425" sourcefile="OperationExecutionMethodInvocationInterceptor.java" sourcepath="kieker/monitoring/probe/spring/executions/OperationExecutionMethodInvocationInterceptor.java"/>
@@ -359,7 +359,7 @@
     </Class>
   </BugInstance>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Sun, 28 Apr 2019 15:58:15 +0800" total_classes="208" referenced_classes="705" total_bugs="8" total_size="7455" num_packages="54" java_version="1.8.0_201" vm_version="25.201-b09" cpu_seconds="60.14" clock_seconds="72.58" peak_mbytes="515.68" alloc_mbytes="1700.00" gc_seconds="29.17" priority_3="7" priority_2="1">
+  <FindBugsSummary timestamp="Mon, 29 Apr 2019 10:15:17 +0800" total_classes="208" referenced_classes="705" total_bugs="8" total_size="7453" num_packages="54" java_version="1.8.0_201" vm_version="25.201-b09" cpu_seconds="31.01" clock_seconds="9.05" peak_mbytes="511.41" alloc_mbytes="1700.00" gc_seconds="0.37" priority_3="7" priority_2="1">
     <PackageStats package="kieker.monitoring" total_bugs="0" total_types="1" total_size="12">
       <ClassStats class="kieker.monitoring.IdGenerator" sourceFile="IdGenerator.java" interface="false" size="12" bugs="0"/>
     </PackageStats>
@@ -538,11 +538,11 @@
       <ClassStats class="kieker.monitoring.probe.servlet.SystemResourceUsageServletContextListener" sourceFile="SystemResourceUsageServletContextListener.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="kieker.monitoring.probe.servlet.ThreadStatusServletContextListener" sourceFile="ThreadStatusServletContextListener.java" interface="false" size="17" bugs="0"/>
     </PackageStats>
-    <PackageStats package="kieker.monitoring.probe.spring.executions" total_bugs="5" total_types="5" total_size="289" priority_3="4" priority_2="1">
+    <PackageStats package="kieker.monitoring.probe.spring.executions" total_bugs="5" total_types="5" total_size="287" priority_3="4" priority_2="1">
       <ClassStats class="kieker.monitoring.probe.spring.executions.CommonUtils" sourceFile="CommonUtils.java" interface="false" size="35" bugs="1" priority_3="1"/>
       <ClassStats class="kieker.monitoring.probe.spring.executions.OperationExecutionMethodInvocationDaoBuilder" sourceFile="OperationExecutionMethodInvocationDaoBuilder.java" interface="false" size="59" bugs="0"/>
       <ClassStats class="kieker.monitoring.probe.spring.executions.OperationExecutionMethodInvocationHibernateDaoBuilder" sourceFile="OperationExecutionMethodInvocationHibernateDaoBuilder.java" interface="false" size="59" bugs="3" priority_3="3"/>
-      <ClassStats class="kieker.monitoring.probe.spring.executions.OperationExecutionMethodInvocationInterceptor" sourceFile="OperationExecutionMethodInvocationInterceptor.java" interface="false" size="121" bugs="1" priority_2="1"/>
+      <ClassStats class="kieker.monitoring.probe.spring.executions.OperationExecutionMethodInvocationInterceptor" sourceFile="OperationExecutionMethodInvocationInterceptor.java" interface="false" size="119" bugs="1" priority_2="1"/>
       <ClassStats class="kieker.monitoring.probe.spring.executions.OperationExecutionWebRequestRegistrationInterceptor" sourceFile="OperationExecutionWebRequestRegistrationInterceptor.java" interface="false" size="15" bugs="0"/>
     </PackageStats>
     <PackageStats package="kieker.monitoring.probe.spring.flow" total_bugs="1" total_types="5" total_size="243" priority_3="1">
@@ -677,8 +677,36 @@
       <ClassStats class="kieker.monitoring.writer.tcp.TCPWriter" sourceFile="TCPWriter.java" interface="false" size="76" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="29487" invocations="2857" avgMicrosecondsPerInvocation="10321" maxMicrosecondsPerInvocation="28576697" standardDeviationMircosecondsPerInvocation="534537"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="29213" invocations="2872" avgMicrosecondsPerInvocation="10171" maxMicrosecondsPerInvocation="1234864" standardDeviationMircosecondsPerInvocation="54103"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="913" invocations="2857" avgMicrosecondsPerInvocation="319" maxMicrosecondsPerInvocation="39336" standardDeviationMircosecondsPerInvocation="1448"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="695" invocations="2872" avgMicrosecondsPerInvocation="242" maxMicrosecondsPerInvocation="14631" standardDeviationMircosecondsPerInvocation="784"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="392" invocations="705" avgMicrosecondsPerInvocation="557" maxMicrosecondsPerInvocation="13877" standardDeviationMircosecondsPerInvocation="1199"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="372" invocations="1088" avgMicrosecondsPerInvocation="342" maxMicrosecondsPerInvocation="13174" standardDeviationMircosecondsPerInvocation="776"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="354" invocations="705" avgMicrosecondsPerInvocation="503" maxMicrosecondsPerInvocation="13721" standardDeviationMircosecondsPerInvocation="1013"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="344" invocations="1105" avgMicrosecondsPerInvocation="311" maxMicrosecondsPerInvocation="8632" standardDeviationMircosecondsPerInvocation="590"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="321" invocations="1101" avgMicrosecondsPerInvocation="291" maxMicrosecondsPerInvocation="10467" standardDeviationMircosecondsPerInvocation="671"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="314" invocations="1135" avgMicrosecondsPerInvocation="277" maxMicrosecondsPerInvocation="11089" standardDeviationMircosecondsPerInvocation="674"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="290" invocations="1950" avgMicrosecondsPerInvocation="149" maxMicrosecondsPerInvocation="7236" standardDeviationMircosecondsPerInvocation="337"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="282" invocations="1150" avgMicrosecondsPerInvocation="245" maxMicrosecondsPerInvocation="9385" standardDeviationMircosecondsPerInvocation="591"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="226" invocations="1105" avgMicrosecondsPerInvocation="204" maxMicrosecondsPerInvocation="9293" standardDeviationMircosecondsPerInvocation="447"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNonShortCircuit" totalMilliseconds="216" invocations="208" avgMicrosecondsPerInvocation="1039" maxMicrosecondsPerInvocation="191568" standardDeviationMircosecondsPerInvocation="13243"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="202" invocations="856" avgMicrosecondsPerInvocation="236" maxMicrosecondsPerInvocation="7895" standardDeviationMircosecondsPerInvocation="503"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="122" invocations="974" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="17063" standardDeviationMircosecondsPerInvocation="578"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="121" invocations="2772" avgMicrosecondsPerInvocation="43" maxMicrosecondsPerInvocation="6797" standardDeviationMircosecondsPerInvocation="164"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="117" invocations="705" avgMicrosecondsPerInvocation="167" maxMicrosecondsPerInvocation="7501" standardDeviationMircosecondsPerInvocation="403"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="102" invocations="705" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="6374" standardDeviationMircosecondsPerInvocation="334"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="92" invocations="1105" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="2973" standardDeviationMircosecondsPerInvocation="214"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="89" invocations="1187" avgMicrosecondsPerInvocation="75" maxMicrosecondsPerInvocation="26046" standardDeviationMircosecondsPerInvocation="759"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="87" invocations="705" avgMicrosecondsPerInvocation="124" maxMicrosecondsPerInvocation="9453" standardDeviationMircosecondsPerInvocation="411"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="73" invocations="705" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="2815" standardDeviationMircosecondsPerInvocation="223"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="71" invocations="705" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="3310" standardDeviationMircosecondsPerInvocation="207"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="70" invocations="208" avgMicrosecondsPerInvocation="337" maxMicrosecondsPerInvocation="2916" standardDeviationMircosecondsPerInvocation="332"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="68" invocations="705" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="2905" standardDeviationMircosecondsPerInvocation="256"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SynchronizationOnSharedBuiltinConstant" totalMilliseconds="67" invocations="208" avgMicrosecondsPerInvocation="325" maxMicrosecondsPerInvocation="39901" standardDeviationMircosecondsPerInvocation="2755"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="66" invocations="208" avgMicrosecondsPerInvocation="318" maxMicrosecondsPerInvocation="3134" standardDeviationMircosecondsPerInvocation="444"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="62" invocations="208" avgMicrosecondsPerInvocation="300" maxMicrosecondsPerInvocation="2660" standardDeviationMircosecondsPerInvocation="331"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="51" invocations="208" avgMicrosecondsPerInvocation="248" maxMicrosecondsPerInvocation="3006" standardDeviationMircosecondsPerInvocation="379"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="50" invocations="17539" avgMicrosecondsPerInvocation="2" maxMicrosecondsPerInvocation="1041" standardDeviationMircosecondsPerInvocation="14"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="50" invocations="705" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="1634" standardDeviationMircosecondsPerInvocation="136"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

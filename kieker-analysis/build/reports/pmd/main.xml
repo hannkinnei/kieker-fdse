@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="5.2.2" timestamp="2019-04-21T15:36:04.414">
+<pmd version="5.2.2" timestamp="2019-04-29T10:14:58.370">
 <file name="/code/Github/kieker-1.13/kieker-analysis/src/kieker/analysis/AnalysisController.java">
 <violation beginline="228" endline="228" begincolumn="25" endcolumn="32" rule="GuardLogStatement" ruleset="Jakarta Commons Logging" package="kieker.analysis" class="AnalysisController" method="validateConfiguration" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.2/pmd-java/rules/java/logging-jakarta-commons.html#GuardLogStatement" priority="2">
 There is log block not surrounded by if
