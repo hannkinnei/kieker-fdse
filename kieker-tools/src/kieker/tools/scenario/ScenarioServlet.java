@@ -1,5 +1,7 @@
 package kieker.tools.scenario;
 
+import kieker.monitoring.core.registry.ScenarioRegistry;
+
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -16,6 +18,7 @@ import static kieker.tools.scenario.CommonUtils.readFromResource;
 public class ScenarioServlet extends HttpServlet {
 
     private static String path = "resource/scenario/";
+    private ScenarioRegistry SCENARIO_REGISTRY = ScenarioRegistry.INSTANCE;
 
     public ScenarioServlet(){
         super();
@@ -55,12 +58,15 @@ public class ScenarioServlet extends HttpServlet {
                     String startTime = getNow();
                     System.out.println(startTime);
                     System.out.println(param.get("name")[0]);
+                    SCENARIO_REGISTRY.storeScenarioName(param.get("name")[0]);
+                    SCENARIO_REGISTRY.refreshThreadLocalScenarioId();
                     response.getWriter().write(startTime);
                 }
                 else {
                     String endTime = getNow();
                     System.out.println(endTime);
                     System.out.printf("stop");
+                    SCENARIO_REGISTRY.storeScenarioName(null);
                     response.getWriter().write(endTime);
                 }
             }
