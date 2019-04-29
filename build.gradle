@@ -611,7 +611,7 @@ def aopxml = {
 
 def scenario = {
     from(file('kieker-examples/scenario')) {
-        into 'META-INF'
+        into 'resource/scenario'
     }
 }
 
