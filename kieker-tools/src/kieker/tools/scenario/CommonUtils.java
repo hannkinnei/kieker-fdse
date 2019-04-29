@@ -1,7 +1,6 @@
 package kieker.tools.scenario;
 
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -29,6 +28,34 @@ public class CommonUtils {
             if (in != null) {
                 in.close();
             }
+        }
+    }
+
+    public static String read(InputStream in) {
+        InputStreamReader reader;
+        try {
+            reader = new InputStreamReader(in, "UTF-8");
+        } catch (UnsupportedEncodingException var3) {
+            throw new IllegalStateException(var3.getMessage(), var3);
+        }
+
+        return read((Reader)reader);
+    }
+
+    public static String read(Reader reader) {
+        try {
+            StringWriter writer = new StringWriter();
+            char[] buffer = new char[4096];
+            boolean var3 = false;
+
+            int n;
+            while(-1 != (n = reader.read(buffer))) {
+                writer.write(buffer, 0, n);
+            }
+
+            return writer.toString();
+        } catch (IOException var4) {
+            throw new IllegalStateException("read error", var4);
         }
     }
 

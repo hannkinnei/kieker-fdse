@@ -36,12 +36,12 @@ public class ScenarioServlet extends HttpServlet {
             String uri = contextPath + servletPath;
             String name = requestURI.substring(contextPath.length() + servletPath.length());
             String file = path + name;
-            String text = readFromResource(file);
             Map<String, String[]> param = request.getParameterMap();
             if(param.size() <= 0) {
-                if (text == null || text == "") {
+                if (name == null || name.equals("")) {
                     response.sendRedirect(uri + "/index.html");
-                } else {
+                }
+                else {
                     if (file.endsWith(".html")) {
                         response.setContentType("text/html; charset=utf-8");
                     } else if (file.endsWith(".css")) {
@@ -49,6 +49,7 @@ public class ScenarioServlet extends HttpServlet {
                     } else if (file.endsWith(".js")) {
                         response.setContentType("text/javascript;charset=utf-8");
                     }
+                    String text = readFromResource(file);
                     response.getWriter().write(text);
                 }
             }
