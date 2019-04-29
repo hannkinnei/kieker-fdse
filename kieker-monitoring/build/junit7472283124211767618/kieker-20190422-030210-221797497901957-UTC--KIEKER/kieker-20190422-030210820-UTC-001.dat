@@ -1,3 +1,0 @@
-$0;1555902130815536397;1.13;KIEKER;icedsoul-PC;1;false;0;NANOSECONDS;0
-$1;1555902130816736167;public void kieker.test.monitoring.junit.probe.spring.executions.AbstractTestSpringMethodInterceptor$Catalog.getBook();d7ddf375-4700-4c7c-9614-9b4f01c9ad99;4021151517288431620;1555902130816729952;1555902130816731937;icedsoul-PC;2;2
-$1;1555902130816798120;public void kieker.test.monitoring.junit.probe.spring.executions.AbstractTestSpringMethodInterceptor$Bookstore.searchBook();d7ddf375-4700-4c7c-9614-9b4f01c9ad99;4021151517288431620;1555902130816700097;1555902130816795395;icedsoul-PC;1;1

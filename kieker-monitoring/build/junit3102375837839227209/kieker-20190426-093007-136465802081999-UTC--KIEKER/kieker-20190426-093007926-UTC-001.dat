@@ -1,5 +1,0 @@
-$0;1556271007923552287;1.13;KIEKER;icedsoul-PC;1;false;0;NANOSECONDS;0
-$1;1556271007924523745;public void kieker.test.monitoring.junit.probe.spring.executions.AbstractTestSpringMethodInterceptor$Catalog.getBook();f44ea0f0-a801-4ff7-9ddf-22201385d5d8;3639330711380426756;1556271007924518276;1556271007924519669;icedsoul-PC;2;2
-$1;1556271007924586371;public void kieker.test.monitoring.junit.probe.spring.executions.AbstractTestSpringMethodInterceptor$Catalog.getBook();f44ea0f0-a801-4ff7-9ddf-22201385d5d8;3639330711380426756;1556271007924583086;1556271007924584321;icedsoul-PC;4;3
-$1;1556271007924603938;public void kieker.test.monitoring.junit.probe.spring.executions.AbstractTestSpringMethodInterceptor$CRM.getOffers();f44ea0f0-a801-4ff7-9ddf-22201385d5d8;3639330711380426756;1556271007924577507;1556271007924602250;icedsoul-PC;3;2
-$1;1556271007924617553;public void kieker.test.monitoring.junit.probe.spring.executions.AbstractTestSpringMethodInterceptor$Bookstore.searchBook();f44ea0f0-a801-4ff7-9ddf-22201385d5d8;3639330711380426756;1556271007924510194;1556271007924616088;icedsoul-PC;1;1

@@ -609,6 +609,12 @@ def aopxml = {
     }
 }
 
+def scenario = {
+    from(file('kieker-examples/scenario')) {
+        into 'META-INF'
+    }
+}
+
 // Remove the default 'jar' artifact because we have our own artifacts: mainJar, emfJar, aspectJJar
 // If you don't do this, we get trouble with the Maven upload task having two Jars (default, mainJar)
 // with the same type and classifier.
@@ -628,6 +634,7 @@ task mainJar(type: Jar, dependsOn: mainSubprojects.tasks["build"]) {
     configure allArtifacts
     configure licence
     configure aopxml
+    configure scenario
 
     from configurations.resultJar.collect { it.isDirectory() ? it : zipTree(it) }
 
