@@ -20,7 +20,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
             + TYPE_SIZE_STRING // OperationExecutionRecord.hostname
             + TYPE_SIZE_INT // OperationExecutionRecord.eoi
             + TYPE_SIZE_INT // OperationExecutionRecord.ess
-            + TYPE_SIZE_LONG // OperationExecutionRecord.scenarioId
+            + TYPE_SIZE_STRING // OperationExecutionRecord.scenarioId
             + TYPE_SIZE_STRING; // OperationExecutionRecord.scenarioName
 
 
@@ -33,7 +33,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
             String.class, // OperationExecutionRecord.hostname
             int.class, // OperationExecutionRecord.eoi
             int.class, // OperationExecutionRecord.ess
-            long.class, // OperationExecutionRecord.scenarioId
+            String.class, // OperationExecutionRecord.scenarioId
             String.class //// OperationExecutionRecord.scenarioName
     };
 
@@ -44,7 +44,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
     public static final long NO_TRACE_ID = -1L;
     public static final long NO_TIMESTAMP = -1L;
     public static final int NO_EOI_ESS = -1;
-    public static final long NO_SCENARIO_ID = -1;
+    public static final String NO_SCENARIO_ID = "<no-scenario-id>";
     public static final String NO_SCENARIO_NAME = "<no-scenario-name>";
 
     /** default constants. */
@@ -56,7 +56,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
     public static final String HOSTNAME = NO_HOSTNAME;
     public static final int EOI = NO_EOI_ESS;
     public static final int ESS = NO_EOI_ESS;
-    public static final long SCENARIO_ID = NO_SCENARIO_ID;
+    public static final String SCENARIO_ID = NO_SCENARIO_ID;
     public static final String SCENARIO_NAME = NO_SCENARIO_NAME;
 
     /** property name array. */
@@ -83,13 +83,13 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
     private final String hostname;
     private final int eoi;
     private final int ess;
-    private final long scenarioId;
+    private final String scenarioId;
     private final String scenarioName;
 
 
 
     //add constructor with scenarioId
-    public ScenarioExecutionRecord(final String operationSignature, final String sessionId, final long traceId, final long tin, final long tout, final String hostname, final int eoi, final int ess, final long scenarioId, final String scenarioName) {
+    public ScenarioExecutionRecord(final String operationSignature, final String sessionId, final long traceId, final long tin, final long tout, final String hostname, final int eoi, final int ess, final String scenarioId, final String scenarioName) {
         this.operationSignature = operationSignature == null?NO_OPERATION_SIGNATURE:operationSignature;
         this.sessionId = sessionId == null?NO_SESSION_ID:sessionId;
         this.traceId = traceId;
@@ -114,7 +114,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
         this.hostname = (String) values[5];
         this.eoi = (Integer) values[6];
         this.ess = (Integer) values[7];
-        this.scenarioId = (Long) values[8];
+        this.scenarioId = (String) values[8];
         this.scenarioName = (String)values[9];
     }
 
@@ -130,7 +130,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
         this.hostname = (String) values[5];
         this.eoi = (Integer) values[6];
         this.ess = (Integer) values[7];
-        this.scenarioId = (Long) values[8];
+        this.scenarioId = (String) values[8];
         this.scenarioName = (String)values[9];
     }
 
@@ -148,7 +148,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
         this.hostname = deserializer.getString();
         this.eoi = deserializer.getInt();
         this.ess = deserializer.getInt();
-        this.scenarioId = deserializer.getLong();
+        this.scenarioId = deserializer.getString();
         this.scenarioName = deserializer.getString();
     }
 
@@ -196,7 +196,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
         serializer.putString(this.getHostname());
         serializer.putInt(this.getEoi());
         serializer.putInt(this.getEss());
-        serializer.putLong(this.getScenarioId());
+        serializer.putString(this.getScenarioId());
         serializer.putString(this.getScenarioName());
     }
     /**
@@ -254,7 +254,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
         if (this.getEoi() != castedRecord.getEoi()) return false;
         if (this.getEss() != castedRecord.getEss()) return false;
         if (this.getScenarioId() != castedRecord.getScenarioId()) return false;
-        if (this.getScenarioName() != castedRecord.getScenarioName()) return false;
+        if (!this.getScenarioName().equals(castedRecord.getScenarioName())) return false;
         return true;
     }
 
@@ -297,7 +297,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
         return this.ess;
     }
 
-    public final long getScenarioId(){
+    public final String getScenarioId(){
         return this.scenarioId;
     }
 

@@ -59,15 +59,16 @@ public class ScenarioServlet extends HttpServlet {
                     String startTime = getNow();
                     System.out.println(startTime);
                     System.out.println(param.get("name")[0]);
+                    SCENARIO_REGISTRY.refreshScenarioId();
                     SCENARIO_REGISTRY.storeScenarioName(param.get("name")[0]);
-                    SCENARIO_REGISTRY.refreshThreadLocalScenarioId();
                     response.getWriter().write(startTime);
                 }
                 else {
                     String endTime = getNow();
                     System.out.println(endTime);
                     System.out.printf("stop");
-                    SCENARIO_REGISTRY.storeScenarioName(null);
+                    SCENARIO_REGISTRY.unsetScenarioId();
+                    SCENARIO_REGISTRY.unsetScenarioName();
                     response.getWriter().write(endTime);
                 }
             }

@@ -1,26 +1,35 @@
 package kieker.monitoring.core.registry;
 
 import java.util.Random;
+import java.util.UUID;
 import java.util.concurrent.atomic.AtomicLong;
 
 public enum ScenarioRegistry {
 
     INSTANCE;
 
-    private final AtomicLong scenarioId = new AtomicLong(new Random().nextInt(2333));
-    private String scenarioName = null;
+    private String scenarioId = "<no-scenario-id>";
+    private String scenarioName = "<no-scenario-name>";
 
     private ScenarioRegistry() {}
 
-    public final long refreshThreadLocalScenarioId(){
-        final long id = scenarioId.incrementAndGet();
+    public final String refreshScenarioId(){
+        final String id = UUID.randomUUID().toString().replaceAll("-", "");
         System.out.println("---------scenarioId="+scenarioId);
         return id;
     }
 
-    public final long getScenarioId(){
-        System.out.println("---------scenarioId="+scenarioId);
-        return scenarioId.get();
+    public final String getScenarioId(){
+//        System.out.println("---------scenarioId="+scenarioId);
+        return scenarioId;
+    }
+
+    public void unsetScenarioId(){
+        this.scenarioId = "<no-scenario-id>";
+    }
+
+    public void unsetScenarioName(){
+        this.scenarioName = "<no-scenario-name>";
     }
 
     public void storeScenarioName(String s){
