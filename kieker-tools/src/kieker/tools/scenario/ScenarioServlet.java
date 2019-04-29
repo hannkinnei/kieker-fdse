@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import java.util.Map;
 
+import static kieker.tools.scenario.CommonUtils.getNow;
 import static kieker.tools.scenario.CommonUtils.readFromResource;
 
 /**
@@ -51,10 +52,16 @@ public class ScenarioServlet extends HttpServlet {
             else {
                 Integer type = Integer.valueOf(param.get("type")[0]);
                 if(type == 1){
+                    String startTime = getNow();
+                    System.out.println(startTime);
                     System.out.println(param.get("name")[0]);
+                    response.getWriter().write(startTime);
                 }
                 else {
+                    String endTime = getNow();
+                    System.out.println(endTime);
                     System.out.printf("stop");
+                    response.getWriter().write(endTime);
                 }
             }
         } catch (Exception e){

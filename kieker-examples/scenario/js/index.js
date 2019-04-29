@@ -41,8 +41,13 @@ function sendRequest(type, name) {
     xmlHttp.onreadystatechange= function () {
         if(xmlHttp.readyState === 4){
             if(xmlHttp.status === 200){
-                let responseText = document.createTextNode(xmlHttp.responseText);
-                alert(responseText);
+                // let responseText = document.createTextNode(xmlHttp.responseText);
+                if(type === 1){
+                    startTime = xmlHttp.responseText;
+                }
+                else {
+                    endTime = xmlHttp.responseText;
+                }
             }
         }
     };
