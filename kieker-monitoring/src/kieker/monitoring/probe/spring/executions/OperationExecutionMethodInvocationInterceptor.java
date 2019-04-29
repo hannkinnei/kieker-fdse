@@ -16,6 +16,8 @@
 
 package kieker.monitoring.probe.spring.executions;
 
+import kieker.common.record.controlflow.ScenarioExecutionRecord;
+import kieker.monitoring.core.registry.ScenarioRegistry;
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
 
@@ -45,6 +47,8 @@ public class OperationExecutionMethodInvocationInterceptor implements MethodInte
 
 	private static final SessionRegistry SESSION_REGISTRY = SessionRegistry.INSTANCE;
 	private static final ControlFlowRegistry CF_REGISTRY = ControlFlowRegistry.INSTANCE;
+	//scenario id
+	private static final ScenarioRegistry SCENARIO_REGISTRY = ScenarioRegistry.INSTANCE;
 
 	private final IMonitoringController monitoringCtrl;
 	private final ITimeSource timeSource;
@@ -121,7 +125,11 @@ public class OperationExecutionMethodInvocationInterceptor implements MethodInte
 				signature = signature.replace(oldClassName, newClassName);
 			}
 			this.monitoringCtrl.newMonitoringRecord(
-					new OperationExecutionRecord(signature, sessionId, traceId, tin, tout, this.hostname, eoi, ess));
+					new ScenarioExecutionRecord(signature, sessionId, traceId, tin, tout, this.hostname, eoi, ess, SCENARIO_REGISTRY.getScenarioId(), SCENARIO_REGISTRY.getScenarioName()));
+
+//			this.monitoringCtrl.newMonitoringRecord(
+//					new OperationExecutionRecord(signature, sessionId, traceId, tin, tout, this.hostname, eoi, ess));
+
 			this.recordSQLInfo4DaoInstance(invocation, ess + 1);
 			// cleanup
 			if (entrypoint) {
@@ -200,8 +208,9 @@ public class OperationExecutionMethodInvocationInterceptor implements MethodInte
 		final long tout = tin;//this.timeSource.getTime();
 
 		this.monitoringCtrl.newMonitoringRecord(
-				new OperationExecutionRecord(tableName, sessionId, traceId, tin, tout, nodeType, eoi, ess));
-
+				new ScenarioExecutionRecord(tableName, sessionId, traceId, tin, tout, nodeType, eoi, ess, SCENARIO_REGISTRY.getScenarioId(), SCENARIO_REGISTRY.getScenarioName()));
+//		this.monitoringCtrl.newMonitoringRecord(
+//				new OperationExecutionRecord(tableName, sessionId, traceId, tin, tout, nodeType, eoi, ess));
 	}
 
 	private boolean isPersistentClassMethod(final MethodInvocation invocation) {
