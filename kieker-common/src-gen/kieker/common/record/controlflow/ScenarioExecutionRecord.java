@@ -20,8 +20,9 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
             + TYPE_SIZE_STRING // OperationExecutionRecord.hostname
             + TYPE_SIZE_INT // OperationExecutionRecord.eoi
             + TYPE_SIZE_INT // OperationExecutionRecord.ess
-            + TYPE_SIZE_STRING // OperationExecutionRecord.scenarioId
-            + TYPE_SIZE_STRING; // OperationExecutionRecord.scenarioName
+            + TYPE_SIZE_STRING // ScenarioExecutionRecord.scenarioId
+            + TYPE_SIZE_STRING // ScenarioExecutionRecord.scenarioName
+            + TYPE_SIZE_DOUBLE; //ScenarioExecutionRecord.scenarioFrequency
 
 
     public static final Class<?>[] TYPES = {
@@ -33,8 +34,9 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
             String.class, // OperationExecutionRecord.hostname
             int.class, // OperationExecutionRecord.eoi
             int.class, // OperationExecutionRecord.ess
-            String.class, // OperationExecutionRecord.scenarioId
-            String.class //// OperationExecutionRecord.scenarioName
+            String.class, // ScenarioExecutionRecord.scenarioId
+            String.class, // ScenarioExecutionRecord.scenarioName
+            Double.class //ScenarioExecutionRecord.scenarioFrequency
     };
 
     /** user-defined constants. */
@@ -46,6 +48,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
     public static final int NO_EOI_ESS = -1;
     public static final String NO_SCENARIO_ID = "<no-scenario-id>";
     public static final String NO_SCENARIO_NAME = "<no-scenario-name>";
+    public static final double NO_SCENARIO_FREQUENCY = -1;
 
     /** default constants. */
     public static final String OPERATION_SIGNATURE = NO_OPERATION_SIGNATURE;
@@ -58,6 +61,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
     public static final int ESS = NO_EOI_ESS;
     public static final String SCENARIO_ID = NO_SCENARIO_ID;
     public static final String SCENARIO_NAME = NO_SCENARIO_NAME;
+    public static final double SCENARIO_FREQUENCY = NO_SCENARIO_FREQUENCY;
 
     /** property name array. */
     private static final String[] PROPERTY_NAMES = {
@@ -70,7 +74,8 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
             "eoi",
             "ess",
             "scenarioId",
-            "scenarioName"
+            "scenarioName",
+            "scenarioFrequency"
     };
 
 
@@ -85,11 +90,12 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
     private final int ess;
     private final String scenarioId;
     private final String scenarioName;
-
+    private final double scenarioFrequency;
 
 
     //add constructor with scenarioId
-    public ScenarioExecutionRecord(final String operationSignature, final String sessionId, final long traceId, final long tin, final long tout, final String hostname, final int eoi, final int ess, final String scenarioId, final String scenarioName) {
+    public ScenarioExecutionRecord(final String operationSignature, final String sessionId, final long traceId, final long tin, final long tout, final String hostname, final int eoi, final int ess,
+                                   final String scenarioId, final String scenarioName, final double scenarioFrequency) {
         this.operationSignature = operationSignature == null?NO_OPERATION_SIGNATURE:operationSignature;
         this.sessionId = sessionId == null?NO_SESSION_ID:sessionId;
         this.traceId = traceId;
@@ -100,6 +106,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
         this.ess = ess;
         this.scenarioId = scenarioId;
         this.scenarioName = scenarioName;
+        this.scenarioFrequency = scenarioFrequency;
     }
 
 
@@ -116,6 +123,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
         this.ess = (Integer) values[7];
         this.scenarioId = (String) values[8];
         this.scenarioName = (String)values[9];
+        this.scenarioFrequency = (Double) values[10];
     }
 
 
@@ -132,6 +140,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
         this.ess = (Integer) values[7];
         this.scenarioId = (String) values[8];
         this.scenarioName = (String)values[9];
+        this.scenarioFrequency = (Double)values[10];
     }
 
 
@@ -150,6 +159,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
         this.ess = deserializer.getInt();
         this.scenarioId = deserializer.getString();
         this.scenarioName = deserializer.getString();
+        this.scenarioFrequency = deserializer.getDouble();
     }
 
     /**
@@ -170,7 +180,8 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
                 this.getEoi(),
                 this.getEss(),
                 this.getScenarioId(),
-                this.getScenarioName()
+                this.getScenarioName(),
+                this.getScenarioFrequency()
         };
     }
     /**
@@ -198,6 +209,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
         serializer.putInt(this.getEss());
         serializer.putString(this.getScenarioId());
         serializer.putString(this.getScenarioName());
+        serializer.putDouble(this.getScenarioFrequency());
     }
     /**
      * {@inheritDoc}
@@ -255,6 +267,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
         if (this.getEss() != castedRecord.getEss()) return false;
         if (this.getScenarioId() != castedRecord.getScenarioId()) return false;
         if (!this.getScenarioName().equals(castedRecord.getScenarioName())) return false;
+        if(this.getScenarioFrequency() != castedRecord.getScenarioFrequency()) return false;
         return true;
     }
 
@@ -303,6 +316,10 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
 
     public final String getScenarioName(){
         return this.scenarioName;
+    }
+
+    public final double getScenarioFrequency(){
+        return this.scenarioFrequency;
     }
 
 }
