@@ -10,6 +10,7 @@ public enum ScenarioRegistry {
 
     private String scenarioId = "<no-scenario-id>";
     private String scenarioName = "<no-scenario-name>";
+    private double scenarioFrequency = 1;
 
     private ScenarioRegistry() {}
 
@@ -40,4 +41,11 @@ public enum ScenarioRegistry {
         return this.scenarioName;
     }
 
+    public double getScenarioFrequency() {
+        return scenarioFrequency;
+    }
+
+    public void setScenarioFrequency(double scenarioFrequency) {
+        this.scenarioFrequency = scenarioFrequency;
+    }
 }

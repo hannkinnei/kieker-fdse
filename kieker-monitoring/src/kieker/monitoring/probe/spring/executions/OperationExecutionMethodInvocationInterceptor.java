@@ -133,7 +133,7 @@ public class OperationExecutionMethodInvocationInterceptor implements MethodInte
 				signature = signature.replace(oldClassName, newClassName);
 			}
 			this.monitoringCtrl.newMonitoringRecord(
-					new ScenarioExecutionRecord(signature, sessionId, traceId, tin, tout, NODE_TYPE_CLASS_FUNCTION, eoi, ess, SCENARIO_REGISTRY.getScenarioId(), SCENARIO_REGISTRY.getScenarioName()));
+					new ScenarioExecutionRecord(signature, sessionId, traceId, tin, tout, NODE_TYPE_CLASS_FUNCTION, eoi, ess, SCENARIO_REGISTRY.getScenarioId(), SCENARIO_REGISTRY.getScenarioName(), SCENARIO_REGISTRY.getScenarioFrequency()));
 
 //			this.monitoringCtrl.newMonitoringRecord(
 //					new OperationExecutionRecord(signature, sessionId, traceId, tin, tout, NODE_TYPE_CLASS_FUNCTION, eoi, ess));
@@ -216,7 +216,7 @@ public class OperationExecutionMethodInvocationInterceptor implements MethodInte
 		final long tout = tin;//this.timeSource.getTime();
 
 		this.monitoringCtrl.newMonitoringRecord(
-				new ScenarioExecutionRecord(tableName, sessionId, traceId, tin, tout, nodeType, eoi, ess, SCENARIO_REGISTRY.getScenarioId(), SCENARIO_REGISTRY.getScenarioName()));
+				new ScenarioExecutionRecord(tableName, sessionId, traceId, tin, tout, nodeType, eoi, ess, SCENARIO_REGISTRY.getScenarioId(), SCENARIO_REGISTRY.getScenarioName(),SCENARIO_REGISTRY.getScenarioFrequency()));
 //		this.monitoringCtrl.newMonitoringRecord(
 //				new OperationExecutionRecord(tableName, sessionId, traceId, tin, tout, nodeType, eoi, ess));
 	}
