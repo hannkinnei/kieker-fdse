@@ -5,8 +5,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import static com.alibaba.druid.util.Utils.read;
-
 /**
  * @author IcedSoul
  * @date 19-4-29 下午2:09

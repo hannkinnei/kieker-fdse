@@ -23,7 +23,7 @@ public class CommonUtils {
             TablesNamesFinder tablesNamesFinder = new TablesNamesFinder();
             List<String> tables = tablesNamesFinder.getTableList(statement);
             for(String table : tables){
-                tableList.add(dataBaseName + "." + table);
+                tableList.add(dataBaseName + ":" + table);
             }
         } catch (JSQLParserException e) {
             try {

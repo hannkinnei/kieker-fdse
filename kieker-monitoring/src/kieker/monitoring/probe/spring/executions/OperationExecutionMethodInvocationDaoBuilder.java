@@ -42,12 +42,13 @@ public class OperationExecutionMethodInvocationDaoBuilder {
 
             String sql = conf4DaoXml.getMappedStatement(id).getSqlSource().getBoundSql(parameter).getSql();
 
-            String sqlId = assembleSqlId(conf4DaoXml.getMappedStatement(id).getResource(),
-                    conf4DaoXml.getMappedStatement(id).getId());
+            String databaseName = getMybatisDataBaseName();
 
-            String dabaseName = getMybatisDataBaseName();
+//            String sqlId = assembleSqlId(conf4DaoXml.getMappedStatement(id).getResource(),
+//                    conf4DaoXml.getMappedStatement(id).getId());
+            String sqlId = databaseName + ":" + sql.replace("\n"," ");
 
-            tableInfoMap.put(sqlId, parseTableNamesFromSql(sql, dabaseName));
+            tableInfoMap.put(sqlId, parseTableNamesFromSql(sql, databaseName));
 
         } catch (Exception e) {
 

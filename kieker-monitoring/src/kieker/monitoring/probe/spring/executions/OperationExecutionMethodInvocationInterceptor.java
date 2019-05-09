@@ -59,7 +59,8 @@ public class OperationExecutionMethodInvocationInterceptor implements MethodInte
 	private int type = 0;
 
 	private static final String NODE_TYPE_CLASS_FUNCTION = "CLASS-FUNCTION";
-	private static final String NODE_TYPE_DATABASE_SQL = "DATABASE-SQL";
+	private static final String NODE_TYPE_SQL = "SQL";
+	private static final String NODE_TYPE_DATABASE_TABLE = "DATABASE-TABLE";
 	private static final String PERSISTENT_TYPE_MYBATIS = "MyBatisDao";
 
 
@@ -91,6 +92,13 @@ public class OperationExecutionMethodInvocationInterceptor implements MethodInte
 		if (!this.monitoringCtrl.isProbeActivated(signature)) {
 			return invocation.proceed();
 		}
+
+        String previousSignature = CF_REGISTRY.getLocalThreadSignature();
+        if (signature != null && previousSignature != null && previousSignature.equalsIgnoreCase(signature)) {
+            return invocation.proceed();
+        } else {
+            CF_REGISTRY.setLocalThreadSignature(signature);
+        }
 
 		final String sessionId = SESSION_REGISTRY.recallThreadLocalSessionId();
 		final int eoi; // this is executionOrderIndex-th execution in this trace
@@ -125,10 +133,10 @@ public class OperationExecutionMethodInvocationInterceptor implements MethodInte
 				signature = signature.replace(oldClassName, newClassName);
 			}
 			this.monitoringCtrl.newMonitoringRecord(
-					new ScenarioExecutionRecord(signature, sessionId, traceId, tin, tout, this.hostname, eoi, ess, SCENARIO_REGISTRY.getScenarioId(), SCENARIO_REGISTRY.getScenarioName()));
+					new ScenarioExecutionRecord(signature, sessionId, traceId, tin, tout, NODE_TYPE_CLASS_FUNCTION, eoi, ess, SCENARIO_REGISTRY.getScenarioId(), SCENARIO_REGISTRY.getScenarioName()));
 
 //			this.monitoringCtrl.newMonitoringRecord(
-//					new OperationExecutionRecord(signature, sessionId, traceId, tin, tout, this.hostname, eoi, ess));
+//					new OperationExecutionRecord(signature, sessionId, traceId, tin, tout, NODE_TYPE_CLASS_FUNCTION, eoi, ess));
 
 			this.recordSQLInfo4DaoInstance(invocation, ess + 1);
 			// cleanup
@@ -163,13 +171,13 @@ public class OperationExecutionMethodInvocationInterceptor implements MethodInte
 
 					String sqlId = tableNameIterator.next();
 
-//					recordSQLTableInfo(NODE_TYPE_DATABASE_SQL, sqlId, parentNodeIndex);
+					recordSQLTableInfo(NODE_TYPE_SQL, sqlId, parentNodeIndex);
 
 					List<String> tableNameList = tableInfoMap.get(sqlId);
 
 					for (String tableName : tableNameList) {
 
-						recordSQLTableInfo(NODE_TYPE_DATABASE_SQL, tableName, parentNodeIndex);
+						recordSQLTableInfo(NODE_TYPE_DATABASE_TABLE, tableName, parentNodeIndex + 1);
 
 					}
 
