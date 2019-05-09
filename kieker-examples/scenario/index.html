@@ -18,9 +18,13 @@
 <body>
 <div class="container-fluid">
     <div class="row col-md-8 col-md-offset-2">
-        <div class="form-group col-md-12">
+        <div class="form-group col-md-7">
             <label for="scenarioName">Scenario Name</label>
-            <input type="text" class="form-control" id="scenarioName" placeholder="Scenario Name">
+            <input type="text" value="1" step="1" class="form-control" id="scenarioName" placeholder="Scenario Name">
+        </div>
+        <div class="form-group col-md-4 col-md-offset-1">
+            <label for="scenarioFrequency">Scenario Frequency</label>
+            <input type="number" class="form-control" id="scenarioFrequency" placeholder="Scenario Frequency">
         </div>
         <div class="col-md-12">
             <button id="startScenario"  type="button" class="btn btn-success">Start</button>

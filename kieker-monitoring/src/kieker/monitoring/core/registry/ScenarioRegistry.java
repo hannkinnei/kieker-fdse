@@ -1,8 +1,6 @@
 package kieker.monitoring.core.registry;
 
-import java.util.Random;
 import java.util.UUID;
-import java.util.concurrent.atomic.AtomicLong;
 
 public enum ScenarioRegistry {
 
@@ -10,7 +8,7 @@ public enum ScenarioRegistry {
 
     private String scenarioId = "<no-scenario-id>";
     private String scenarioName = "<no-scenario-name>";
-    private double scenarioFrequency = 1;
+    private double scenarioFrequency = -1;
 
     private ScenarioRegistry() {}
 
