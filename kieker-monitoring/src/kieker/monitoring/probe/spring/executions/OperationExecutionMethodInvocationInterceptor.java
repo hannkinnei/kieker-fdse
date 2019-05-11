@@ -132,6 +132,9 @@ public class OperationExecutionMethodInvocationInterceptor implements MethodInte
 				String newClassName = this.mybatisDaoBuilder.getClassName(invocation);
 				signature = signature.replace(oldClassName, newClassName);
 			}
+//			System.out.println("======newMonitoringRecord begin====");
+//			System.out.println(SCENARIO_REGISTRY.getScenarioName());
+//			System.out.println("======newMonitoringRecord end====");
 			this.monitoringCtrl.newMonitoringRecord(
 					new ScenarioExecutionRecord(signature, sessionId, traceId, tin, tout, NODE_TYPE_CLASS_FUNCTION, eoi, ess, SCENARIO_REGISTRY.getScenarioId(), SCENARIO_REGISTRY.getScenarioName(), SCENARIO_REGISTRY.getScenarioFrequency()));
 

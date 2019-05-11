@@ -144,6 +144,9 @@ public class AsciiFileWriter extends AbstractMonitoringWriter implements IRegist
 		record.serialize(this.serializer);
 
 		this.buffer.flip();
+//		System.out.println("==========record begin===========");
+//		System.out.println(this.buffer.toString());
+//		System.out.println("==========record end===========");
 		fileWriter.print(this.buffer.toString());
 		fileWriter.println();
 

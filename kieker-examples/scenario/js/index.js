@@ -42,6 +42,8 @@ function sendRequest(type, name, frequency) {
         xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
     }
     let queryString="scenario?";
+    /*解决中文乱码*/
+    name = encodeURI(encodeURI(name));
     queryString=queryString+"type=" + type +"&name=" + name + "&frequency=" + frequency;
     xmlHttp.onreadystatechange= function () {
         if(xmlHttp.readyState === 4){

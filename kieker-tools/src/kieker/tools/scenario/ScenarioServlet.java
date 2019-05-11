@@ -1,11 +1,13 @@
 package kieker.tools.scenario;
 
 import kieker.monitoring.core.registry.ScenarioRegistry;
+import sun.security.pkcs.PKCS8Key;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import java.net.URLDecoder;
 import java.util.Map;
 
 import static kieker.tools.scenario.CommonUtils.getNow;
@@ -27,6 +29,8 @@ public class ScenarioServlet extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response){
         try {
+            request.setCharacterEncoding("utf-8");
+            response.setCharacterEncoding("utf-8");
             String contextPath = request.getContextPath();
             String servletPath = request.getServletPath();
             String requestURI = request.getRequestURI();
@@ -58,7 +62,12 @@ public class ScenarioServlet extends HttpServlet {
                 if(type == 1){
                     String startTime = getNow();
                     SCENARIO_REGISTRY.refreshScenarioId();
-                    SCENARIO_REGISTRY.storeScenarioName(param.get("name")[0]);
+                    //解决中文乱码
+                    String scenarioName = URLDecoder.decode(param.get("name")[0], "utf-8");
+//                    System.out.println("==========storeScenarioName begin===========");
+//                    System.out.println("storeScenarioName:"+scenarioName);
+//                    System.out.println("==========storeScenarioName end===========");
+                    SCENARIO_REGISTRY.storeScenarioName(scenarioName);
                     SCENARIO_REGISTRY.setScenarioFrequency(Double.valueOf(param.get("frequency")[0]));
                     response.getWriter().write(startTime);
                 }

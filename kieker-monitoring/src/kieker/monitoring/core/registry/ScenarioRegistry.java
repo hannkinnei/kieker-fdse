@@ -14,7 +14,7 @@ public enum ScenarioRegistry {
 
     public final String refreshScenarioId(){
         this.scenarioId = UUID.randomUUID().toString().replaceAll("-", "");
-        System.out.println("---------scenarioId="+scenarioId);
+//        System.out.println("---------scenarioId="+scenarioId);
         return this.scenarioId;
     }
 
@@ -36,6 +36,9 @@ public enum ScenarioRegistry {
     }
 
     public String getScenarioName(){
+        System.out.println("==========getScenarioName begin============");
+        System.out.println(this.scenarioName);
+        System.out.println("==========getScenarioName end============");
         return this.scenarioName;
     }
 
