@@ -36,9 +36,9 @@ public enum ScenarioRegistry {
     }
 
     public String getScenarioName(){
-        System.out.println("==========getScenarioName begin============");
-        System.out.println(this.scenarioName);
-        System.out.println("==========getScenarioName end============");
+//        System.out.println("==========getScenarioName begin============");
+//        System.out.println(this.scenarioName);
+//        System.out.println("==========getScenarioName end============");
         return this.scenarioName;
     }
 
