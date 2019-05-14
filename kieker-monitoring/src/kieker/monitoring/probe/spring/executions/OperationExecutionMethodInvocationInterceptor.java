@@ -136,7 +136,7 @@ public class OperationExecutionMethodInvocationInterceptor implements MethodInte
 //			System.out.println(SCENARIO_REGISTRY.getScenarioName());
 //			System.out.println("======newMonitoringRecord end====");
 			this.monitoringCtrl.newMonitoringRecord(
-					new ScenarioExecutionRecord(signature, sessionId, traceId, tin, tout, NODE_TYPE_CLASS_FUNCTION, eoi, ess, SCENARIO_REGISTRY.getScenarioId(), SCENARIO_REGISTRY.getScenarioName(), SCENARIO_REGISTRY.getScenarioFrequency()));
+					new ScenarioExecutionRecord(signature, sessionId, traceId, tin, tout, NODE_TYPE_CLASS_FUNCTION, eoi, ess, SCENARIO_REGISTRY.getScenarioId(), SCENARIO_REGISTRY.getScenarioName(), SCENARIO_REGISTRY.getScenarioFrequency(), SCENARIO_REGISTRY.getModuleName()));
 
 //			this.monitoringCtrl.newMonitoringRecord(
 //					new OperationExecutionRecord(signature, sessionId, traceId, tin, tout, NODE_TYPE_CLASS_FUNCTION, eoi, ess));
@@ -155,11 +155,8 @@ public class OperationExecutionMethodInvocationInterceptor implements MethodInte
 	}
 
 	private void recordSQLInfo4DaoInstance(final MethodInvocation invocation, int parentNodeIndex) {
-
-		try
-		{
+		try {
 			if (isPersistentClassMethod(invocation)) {
-
 				Map<String, List<String>> tableInfoMap = null;
 				if(this.type == 1) {
 					tableInfoMap = mybatisDaoBuilder.parseMybatisPersistentMethodSqlInfo(invocation);
@@ -171,26 +168,17 @@ public class OperationExecutionMethodInvocationInterceptor implements MethodInte
 				Iterator<String> tableNameIterator = tableInfoMap.keySet().iterator();
 
 				while (tableNameIterator.hasNext()) {
-
 					String sqlId = tableNameIterator.next();
-
 					recordSQLTableInfo(NODE_TYPE_SQL, sqlId, parentNodeIndex);
-
 					List<String> tableNameList = tableInfoMap.get(sqlId);
 
 					for (String tableName : tableNameList) {
-
 						recordSQLTableInfo(NODE_TYPE_DATABASE_TABLE, tableName, parentNodeIndex + 1);
-
 					}
-
 				}
-
 			}
 		} catch (Exception e) {
-
 			LOGGER.warn(e.getMessage());
-
 		}
 
 	}
@@ -219,7 +207,7 @@ public class OperationExecutionMethodInvocationInterceptor implements MethodInte
 		final long tout = tin;//this.timeSource.getTime();
 
 		this.monitoringCtrl.newMonitoringRecord(
-				new ScenarioExecutionRecord(tableName, sessionId, traceId, tin, tout, nodeType, eoi, ess, SCENARIO_REGISTRY.getScenarioId(), SCENARIO_REGISTRY.getScenarioName(),SCENARIO_REGISTRY.getScenarioFrequency()));
+				new ScenarioExecutionRecord(tableName, sessionId, traceId, tin, tout, nodeType, eoi, ess, SCENARIO_REGISTRY.getScenarioId(), SCENARIO_REGISTRY.getScenarioName(),SCENARIO_REGISTRY.getScenarioFrequency(), SCENARIO_REGISTRY.getModuleName()));
 //		this.monitoringCtrl.newMonitoringRecord(
 //				new OperationExecutionRecord(tableName, sessionId, traceId, tin, tout, nodeType, eoi, ess));
 	}

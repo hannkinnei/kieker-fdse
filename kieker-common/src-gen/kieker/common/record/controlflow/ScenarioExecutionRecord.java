@@ -22,7 +22,8 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
             + TYPE_SIZE_INT // OperationExecutionRecord.ess
             + TYPE_SIZE_STRING // ScenarioExecutionRecord.scenarioId
             + TYPE_SIZE_STRING // ScenarioExecutionRecord.scenarioName
-            + TYPE_SIZE_DOUBLE; //ScenarioExecutionRecord.scenarioFrequency
+            + TYPE_SIZE_DOUBLE //ScenarioExecutionRecord.scenarioFrequency
+            + TYPE_SIZE_STRING; //ModuleName
 
 
     public static final Class<?>[] TYPES = {
@@ -36,7 +37,8 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
             int.class, // OperationExecutionRecord.ess
             String.class, // ScenarioExecutionRecord.scenarioId
             String.class, // ScenarioExecutionRecord.scenarioName
-            Double.class //ScenarioExecutionRecord.scenarioFrequency
+            Double.class, //ScenarioExecutionRecord.scenarioFrequency
+            String.class //ModuleName
     };
 
     /** user-defined constants. */
@@ -49,6 +51,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
     public static final String NO_SCENARIO_ID = "<no-scenario-id>";
     public static final String NO_SCENARIO_NAME = "<no-scenario-name>";
     public static final double NO_SCENARIO_FREQUENCY = -1;
+    public static final String NO_MODULE_NAME = "<no-module-name>";
 
     /** default constants. */
     public static final String OPERATION_SIGNATURE = NO_OPERATION_SIGNATURE;
@@ -62,6 +65,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
     public static final String SCENARIO_ID = NO_SCENARIO_ID;
     public static final String SCENARIO_NAME = NO_SCENARIO_NAME;
     public static final double SCENARIO_FREQUENCY = NO_SCENARIO_FREQUENCY;
+    public static final String MODULE_NAME = NO_MODULE_NAME;
 
     /** property name array. */
     private static final String[] PROPERTY_NAMES = {
@@ -75,7 +79,8 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
             "ess",
             "scenarioId",
             "scenarioName",
-            "scenarioFrequency"
+            "scenarioFrequency",
+            "moduleName"
     };
 
 
@@ -91,11 +96,12 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
     private final String scenarioId;
     private final String scenarioName;
     private final double scenarioFrequency;
+    private final String moduleName;
 
 
     //add constructor with scenarioId
     public ScenarioExecutionRecord(final String operationSignature, final String sessionId, final long traceId, final long tin, final long tout, final String hostname, final int eoi, final int ess,
-                                   final String scenarioId, final String scenarioName, final double scenarioFrequency) {
+                                   final String scenarioId, final String scenarioName, final double scenarioFrequency, final String moduleName) {
         this.operationSignature = operationSignature == null?NO_OPERATION_SIGNATURE:operationSignature;
         this.sessionId = sessionId == null?NO_SESSION_ID:sessionId;
         this.traceId = traceId;
@@ -107,6 +113,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
         this.scenarioId = scenarioId;
         this.scenarioName = scenarioName;
         this.scenarioFrequency = scenarioFrequency;
+        this.moduleName = moduleName;
     }
 
 
@@ -124,6 +131,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
         this.scenarioId = (String) values[8];
         this.scenarioName = (String)values[9];
         this.scenarioFrequency = (Double) values[10];
+        this.moduleName = (String) values[11];
     }
 
 
@@ -141,6 +149,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
         this.scenarioId = (String) values[8];
         this.scenarioName = (String)values[9];
         this.scenarioFrequency = (Double)values[10];
+        this.moduleName = (String)values[11];
     }
 
 
@@ -160,6 +169,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
         this.scenarioId = deserializer.getString();
         this.scenarioName = deserializer.getString();
         this.scenarioFrequency = deserializer.getDouble();
+        this.moduleName = deserializer.getString();
     }
 
     /**
@@ -181,7 +191,8 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
                 this.getEss(),
                 this.getScenarioId(),
                 this.getScenarioName(),
-                this.getScenarioFrequency()
+                this.getScenarioFrequency(),
+                this.getModuleName()
         };
     }
     /**
@@ -210,6 +221,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
         serializer.putString(this.getScenarioId());
         serializer.putString(this.getScenarioName());
         serializer.putDouble(this.getScenarioFrequency());
+        serializer.putString(this.getModuleName());
     }
     /**
      * {@inheritDoc}
@@ -268,6 +280,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
         if (this.getScenarioId() != castedRecord.getScenarioId()) return false;
         if (!this.getScenarioName().equals(castedRecord.getScenarioName())) return false;
         if(this.getScenarioFrequency() != castedRecord.getScenarioFrequency()) return false;
+        if(!this.getModuleName().equals(castedRecord.getModuleName())) return false;
         return true;
     }
 
@@ -320,6 +333,10 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
 
     public final double getScenarioFrequency(){
         return this.scenarioFrequency;
+    }
+
+    public final String getModuleName(){
+        return this.moduleName;
     }
 
 }
