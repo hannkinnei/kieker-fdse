@@ -91,11 +91,12 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
     private final String scenarioId;
     private final String scenarioName;
     private final double scenarioFrequency;
+    private final String moduleName;
 
 
     //add constructor with scenarioId
     public ScenarioExecutionRecord(final String operationSignature, final String sessionId, final long traceId, final long tin, final long tout, final String hostname, final int eoi, final int ess,
-                                   final String scenarioId, final String scenarioName, final double scenarioFrequency) {
+                                   final String scenarioId, final String scenarioName, final double scenarioFrequency, final String moduleName) {
         this.operationSignature = operationSignature == null?NO_OPERATION_SIGNATURE:operationSignature;
         this.sessionId = sessionId == null?NO_SESSION_ID:sessionId;
         this.traceId = traceId;
@@ -107,6 +108,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
         this.scenarioId = scenarioId;
         this.scenarioName = scenarioName;
         this.scenarioFrequency = scenarioFrequency;
+        this.moduleName = moduleName;
     }
 
 
@@ -124,6 +126,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
         this.scenarioId = (String) values[8];
         this.scenarioName = (String)values[9];
         this.scenarioFrequency = (Double) values[10];
+        this.moduleName = (String) values[11];
     }
 
 
@@ -141,6 +144,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
         this.scenarioId = (String) values[8];
         this.scenarioName = (String)values[9];
         this.scenarioFrequency = (Double)values[10];
+        this.moduleName = (String) values[11];
     }
 
 
@@ -160,6 +164,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
         this.scenarioId = deserializer.getString();
         this.scenarioName = deserializer.getString();
         this.scenarioFrequency = deserializer.getDouble();
+        this.moduleName = deserializer.getString();
     }
 
     /**
@@ -181,7 +186,8 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
                 this.getEss(),
                 this.getScenarioId(),
                 this.getScenarioName(),
-                this.getScenarioFrequency()
+                this.getScenarioFrequency(),
+                this.getModuleName()
         };
     }
     /**
@@ -210,6 +216,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
         serializer.putString(this.getScenarioId());
         serializer.putString(this.getScenarioName());
         serializer.putDouble(this.getScenarioFrequency());
+        serializer.putString(this.getModuleName());
     }
     /**
      * {@inheritDoc}
@@ -268,6 +275,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
         if (this.getScenarioId() != castedRecord.getScenarioId()) return false;
         if (!this.getScenarioName().equals(castedRecord.getScenarioName())) return false;
         if(this.getScenarioFrequency() != castedRecord.getScenarioFrequency()) return false;
+        if(this.getModuleName() != castedRecord.getModuleName()) return false;
         return true;
     }
 
@@ -322,4 +330,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
         return this.scenarioFrequency;
     }
 
+    public String getModuleName() {
+        return moduleName;
+    }
 }

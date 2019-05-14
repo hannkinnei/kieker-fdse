@@ -68,4 +68,10 @@ public class CommonUtils {
     public static String getNow(){
         return simpleDateFormat.format(new Date());
     }
+
+    public static boolean isNullString(String str){
+        if (str == null)
+            return true;
+        return str.trim().equals("");
+    }
 }

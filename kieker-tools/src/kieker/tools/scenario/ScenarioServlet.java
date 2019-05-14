@@ -1,7 +1,7 @@
 package kieker.tools.scenario;
 
+import kieker.monitoring.core.registry.ModuleRegistry;
 import kieker.monitoring.core.registry.ScenarioRegistry;
-import sun.security.pkcs.PKCS8Key;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -10,8 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.net.URLDecoder;
 import java.util.Map;
 
-import static kieker.tools.scenario.CommonUtils.getNow;
-import static kieker.tools.scenario.CommonUtils.readFromResource;
+import static kieker.tools.scenario.CommonUtils.*;
 
 /**
  * @author IcedSoul
@@ -21,6 +20,7 @@ public class ScenarioServlet extends HttpServlet {
 
     private static String path = "resource/scenario";
     private ScenarioRegistry SCENARIO_REGISTRY = ScenarioRegistry.INSTANCE;
+    private ModuleRegistry MODULE_REGISTRY = ModuleRegistry.INSTANCE;
 
     public ScenarioServlet(){
         super();
@@ -42,7 +42,7 @@ public class ScenarioServlet extends HttpServlet {
             String file = path + name;
             Map<String, String[]> param = request.getParameterMap();
             if(param.size() <= 0) {
-                if (name == null || name.equals("")) {
+                if (name.equals("")) {
                     response.sendRedirect(uri + "/index.html");
                 }
                 else {
@@ -64,11 +64,21 @@ public class ScenarioServlet extends HttpServlet {
                     SCENARIO_REGISTRY.refreshScenarioId();
                     //解决中文乱码
                     String scenarioName = URLDecoder.decode(param.get("name")[0], "utf-8");
-//                    System.out.println("==========storeScenarioName begin===========");
-//                    System.out.println("storeScenarioName:"+scenarioName);
-//                    System.out.println("==========storeScenarioName end===========");
-                    SCENARIO_REGISTRY.storeScenarioName(scenarioName);
-                    SCENARIO_REGISTRY.setScenarioFrequency(Double.valueOf(param.get("frequency")[0]));
+                    String module = URLDecoder.decode(param.get("module")[0], "utf-8");
+                    if(isNullString(module)){
+                        MODULE_REGISTRY.unSetModuleName();
+                    }
+                    else {
+                        MODULE_REGISTRY.storeModuleName(module);
+                    }
+                    if(isNullString(scenarioName)){
+                        SCENARIO_REGISTRY.unsetScenarioName();
+                        SCENARIO_REGISTRY.unsetScenarioId();
+                    }
+                    else {
+                        SCENARIO_REGISTRY.storeScenarioName(scenarioName);
+                        SCENARIO_REGISTRY.setScenarioFrequency(Double.valueOf(param.get("frequency")[0]));
+                    }
                     response.getWriter().write(startTime);
                 }
                 else {
