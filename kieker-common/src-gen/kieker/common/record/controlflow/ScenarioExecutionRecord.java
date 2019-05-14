@@ -22,7 +22,8 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
             + TYPE_SIZE_INT // OperationExecutionRecord.ess
             + TYPE_SIZE_STRING // ScenarioExecutionRecord.scenarioId
             + TYPE_SIZE_STRING // ScenarioExecutionRecord.scenarioName
-            + TYPE_SIZE_DOUBLE; //ScenarioExecutionRecord.scenarioFrequency
+            + TYPE_SIZE_DOUBLE //ScenarioExecutionRecord.scenarioFrequency
+            + TYPE_SIZE_STRING; //ScenarioExecutionRecord.moduleName
 
 
     public static final Class<?>[] TYPES = {
@@ -49,6 +50,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
     public static final String NO_SCENARIO_ID = "<no-scenario-id>";
     public static final String NO_SCENARIO_NAME = "<no-scenario-name>";
     public static final double NO_SCENARIO_FREQUENCY = -1;
+    public static final String NO_MUDULE_NAME = "<no-module-name>";
 
     /** default constants. */
     public static final String OPERATION_SIGNATURE = NO_OPERATION_SIGNATURE;
@@ -62,6 +64,7 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
     public static final String SCENARIO_ID = NO_SCENARIO_ID;
     public static final String SCENARIO_NAME = NO_SCENARIO_NAME;
     public static final double SCENARIO_FREQUENCY = NO_SCENARIO_FREQUENCY;
+    public static final String MUDULE_NAME = NO_MUDULE_NAME;
 
     /** property name array. */
     private static final String[] PROPERTY_NAMES = {
@@ -75,7 +78,8 @@ public class ScenarioExecutionRecord extends AbstractMonitoringRecord implements
             "ess",
             "scenarioId",
             "scenarioName",
-            "scenarioFrequency"
+            "scenarioFrequency",
+            "moduleName"
     };
 
 

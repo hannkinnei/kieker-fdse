@@ -53,7 +53,6 @@ public class OperationExecutionMethodInvocationInterceptor implements MethodInte
 
 	private final IMonitoringController monitoringCtrl;
 	private final ITimeSource timeSource;
-	private final String hostname;
 	private OperationExecutionMethodInvocationDaoBuilder mybatisDaoBuilder;
 	private OperationExecutionMethodInvocationHibernateDaoBuilder hibernateDaoBuilder;
 
@@ -78,7 +77,7 @@ public class OperationExecutionMethodInvocationInterceptor implements MethodInte
 	public OperationExecutionMethodInvocationInterceptor(final IMonitoringController monitoringController) {
 		this.monitoringCtrl = monitoringController;
 		this.timeSource = this.monitoringCtrl.getTimeSource();
-		this.hostname = this.monitoringCtrl.getHostname();
+//		this.hostname = this.monitoringCtrl.getHostname();
 	}
 
 	/**

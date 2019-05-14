@@ -9,6 +9,7 @@ public enum ScenarioRegistry {
     private String scenarioId = "<no-scenario-id>";
     private String scenarioName = "<no-scenario-name>";
     private double scenarioFrequency = -1;
+    private String moduleName = "<no-module-name>";
 
     private ScenarioRegistry() {}
 
@@ -31,6 +32,8 @@ public enum ScenarioRegistry {
         this.scenarioName = "<no-scenario-name>";
     }
 
+
+
     public void storeScenarioName(String s){
         this.scenarioName = s;
     }
@@ -48,5 +51,17 @@ public enum ScenarioRegistry {
 
     public void setScenarioFrequency(double scenarioFrequency) {
         this.scenarioFrequency = scenarioFrequency;
+    }
+
+    public void unsetModuleName(){
+        this.moduleName = "<no-module-name>";
+    }
+
+    public String getModuleName(){
+        return this.moduleName;
+    }
+
+    public void setModuleName(String moduleName){
+        this.moduleName = moduleName;
     }
 }
