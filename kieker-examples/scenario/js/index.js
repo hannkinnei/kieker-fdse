@@ -22,6 +22,7 @@ startButton.click(function () {
     sendRequest(1, name, frequency, module);
     startButton.attr("disabled", true);
     endButton.attr("disabled", false);
+    moduleNames.attr("disabled", true);
     scenarioNames.attr("disabled", true);
     scenarioFrequencies.attr("disabled", true);
     // startTime = new Date().toLocaleString();
@@ -33,6 +34,7 @@ endButton.click(function () {
     endButton.attr("disabled", true);
     endTime = new Date().toLocaleString();
     scenarioNames.attr("disabled", false);
+    moduleNames.attr("disabled", false);
     scenarioFrequencies.attr("disabled", false);
     addScenario();
 });
