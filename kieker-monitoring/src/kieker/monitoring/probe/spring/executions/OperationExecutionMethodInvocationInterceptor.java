@@ -54,8 +54,9 @@ public class OperationExecutionMethodInvocationInterceptor implements MethodInte
 	private final IMonitoringController monitoringCtrl;
 	private final ITimeSource timeSource;
 	private OperationExecutionMethodInvocationDaoBuilder mybatisDaoBuilder;
-	private OperationExecutionMethodInvocationHibernateDaoBuilder hibernateDaoBuilder;
+//	private OperationExecutionMethodInvocationHibernateDaoBuilder hibernateDaoBuilder;
 
+    // 0 是 Hibernate, 1 是Mybatis
 	private int type = 0;
 
 	private static final String NODE_TYPE_CLASS_FUNCTION = "CLASS-FUNCTION";
@@ -121,17 +122,20 @@ public class OperationExecutionMethodInvocationInterceptor implements MethodInte
 				this.monitoringCtrl.terminateMonitoring();
 			}
 		}
+		if(isPersistentClassMethod(invocation)) {
+			CommonUtils.currentMethod = invocation.getMethod().getDeclaringClass().getCanonicalName() + "." + invocation.getMethod().getName();
+			if(this.type == 1){
+				String oldClassName = invocation.getMethod().getDeclaringClass().getCanonicalName();
+				String newClassName = this.mybatisDaoBuilder.getClassName(invocation);
+				signature = signature.replace(oldClassName, newClassName);
+			}
+		}
 		final long tin = this.timeSource.getTime();
 		final Object retval;
 		try {
 			retval = invocation.proceed();
 		} finally {
 			final long tout = this.timeSource.getTime();
-			if(isPersistentClassMethod(invocation)){
-				String oldClassName = invocation.getMethod().getDeclaringClass().getCanonicalName();
-				String newClassName = this.mybatisDaoBuilder.getClassName(invocation);
-				signature = signature.replace(oldClassName, newClassName);
-			}
 //			System.out.println("======newMonitoringRecord begin====");
 //			System.out.println(SCENARIO_REGISTRY.getScenarioName());
 //			System.out.println("======newMonitoringRecord end====");
@@ -155,40 +159,28 @@ public class OperationExecutionMethodInvocationInterceptor implements MethodInte
 	}
 
 	private void recordSQLInfo4DaoInstance(final MethodInvocation invocation, int parentNodeIndex) {
-
 		try
 		{
 			if (isPersistentClassMethod(invocation)) {
-
 				Map<String, List<String>> tableInfoMap = null;
 				if(this.type == 1) {
 					tableInfoMap = mybatisDaoBuilder.parseMybatisPersistentMethodSqlInfo(invocation);
 				}
 				else {
-					tableInfoMap = hibernateDaoBuilder.parseHibernatePersistentMethodSqlInfo(invocation);
+//					tableInfoMap = hibernateDaoBuilder.parseHibernatePersistentMethodSqlInfo(invocation);
+                    tableInfoMap = HibernateHelper.getTable(invocation);
 				}
-
 				Iterator<String> tableNameIterator = tableInfoMap.keySet().iterator();
-
 				while (tableNameIterator.hasNext()) {
-
 					String sqlId = tableNameIterator.next();
-
 					recordSQLTableInfo(NODE_TYPE_SQL, sqlId, parentNodeIndex);
-
 					List<String> tableNameList = tableInfoMap.get(sqlId);
-
 					for (String tableName : tableNameList) {
-
 						recordSQLTableInfo(NODE_TYPE_DATABASE_TABLE, tableName, parentNodeIndex + 1);
-
 					}
-
 				}
-
 			}
 		} catch (Exception e) {
-
 			LOGGER.warn(e.getMessage());
 
 		}
@@ -225,7 +217,7 @@ public class OperationExecutionMethodInvocationInterceptor implements MethodInte
 	}
 
 	private boolean isPersistentClassMethod(final MethodInvocation invocation) {
-		return this.type == 1 ? isMybatisDaoClassMethod(invocation):isHibernateDaoClassMethod(invocation);
+		return isMybatisDaoClassMethod(invocation) || isHibernateDaoClassMethod(invocation);
 	}
 
 
@@ -236,7 +228,9 @@ public class OperationExecutionMethodInvocationInterceptor implements MethodInte
 				return true;
 			}
 		}
-		return invocation.getMethod().getDeclaringClass().getCanonicalName().endsWith("Dao");
+		return invocation.getMethod().getDeclaringClass().getCanonicalName().endsWith("Dao") ||
+                invocation.getMethod().getDeclaringClass().getCanonicalName().endsWith("Repository") ||
+                invocation.getMethod().getDeclaringClass().getCanonicalName().endsWith("Mapper");
 	}
 
 	private boolean isHibernateDaoClassMethod(MethodInvocation invocation){
@@ -249,8 +243,8 @@ public class OperationExecutionMethodInvocationInterceptor implements MethodInte
 		this.type = 1;
 	}
 
-	public void setHibernateDaoBuilder(OperationExecutionMethodInvocationHibernateDaoBuilder hibernateDaoBuilder) {
-		this.hibernateDaoBuilder = hibernateDaoBuilder;
-		this.type = 2;
-	}
+//	public void setHibernateDaoBuilder(OperationExecutionMethodInvocationHibernateDaoBuilder hibernateDaoBuilder) {
+//		this.hibernateDaoBuilder = hibernateDaoBuilder;
+//		this.type = 2;
+//	}
 }

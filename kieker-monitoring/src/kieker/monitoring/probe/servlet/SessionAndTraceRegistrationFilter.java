@@ -165,8 +165,10 @@ public class SessionAndTraceRegistrationFilter implements Filter, IMonitoringPro
 			chain.doFilter(request, response);
 			return;
 		}
-
-		// Register session information which needs to be reset after the chain has been executed.
+		chain.doFilter(request, response);
+		return;
+		/**
+		 // Register session information which needs to be reset after the chain has been executed.
 		String sessionId = this.registerSessionInformation(request); // {@link OperationExecutionRecord#NO_SESSION_ID} if no session ID
 		long traceId = OperationExecutionRecord.NO_TRACE_ID; // note that we must NOT register anything to the CF_REGISTRY here!
 
@@ -200,6 +202,7 @@ public class SessionAndTraceRegistrationFilter implements Filter, IMonitoringPro
 				CF_REGISTRY.unsetThreadLocalESS();
 			}
 		}
+		 **/
 	}
 
 	@Override

@@ -28,11 +28,16 @@ dependencies {
 	compile resolveLibrary('framework-libs/spring/spring-webmvc-*.jar')
 	compile resolveLibrary('framework-libs/spring/spring-orm-*.jar')
 	compile resolveLibrary('framework-libs/spring/spring-aop-*.jar')
-	
+
+	compile resolveLibrary('orm-libs/jboss-logging-*.jar')
+	compile resolveLibrary('orm-libs/antlr-*.jar')
 	compile resolveLibrary('orm-libs/hibernate-core-*.jar')
+	compile resolveLibrary('orm-libs/commons-dbcp2-*.jar')
     compile resolveLibrary('orm-libs/mybatis-*.jar')
 	compile resolveLibrary('orm-libs/druid-*.jar')
-	compile resolveLibrary('jsqlparser-*.jar')
+	compile resolveLibrary('orm-libs/jsqlparser-*.jar')
+	
+	
 	// this project depends on the tests of kieker-common, e.g., it requires the class AbstractKiekerTest
 	testCompile project (path: ':kieker-common', configuration: 'testArchives')
 	testCompile resolveLibrary('framework-libs/spring/spring-beans-*.jar')

@@ -52,7 +52,7 @@ public class OperationExecutionMethodInvocationDaoBuilder {
 
         } catch (Exception e) {
 
-            logger.warn(e.getMessage());
+//            logger.warn(e.getMessage());
 
         }
 
@@ -62,58 +62,44 @@ public class OperationExecutionMethodInvocationDaoBuilder {
 
 
     private String getMybatisDataBaseName() throws SQLException {
-
         String databaseName = dbName.get();
-
         if (databaseName == null || databaseName.trim().length() == 0) {
-
             Connection conn = null;
-
             try {
-
                 conn = sqlSessionFactoryBean.getConfiguration().getEnvironment().getDataSource().getConnection();
-
                 databaseName = conn.getCatalog();
-
             } finally {
-
                 if (conn != null) {
-
                     conn.close();
-
                 }
-
             }
-
         }
-
         return databaseName;
-
     }
 
-    private String assembleSqlId(String sourceFile, String sqlIdinSourceFile) {
-
-        StringBuffer sqlId = new StringBuffer();
-
-        if (sourceFile != null && sourceFile.length() > 0 && sourceFile.endsWith(".xml]")) {
-
-            sqlId.append(sourceFile.substring(sourceFile.lastIndexOf("\\") + 1, sourceFile.lastIndexOf(".")));
-
-        } else {
-
-            sqlId.append("Annotation");
-
-        }
-
-        if (sqlIdinSourceFile != null && sqlIdinSourceFile.length() > 0) {
-
-            sqlId.append(sqlIdinSourceFile.substring(sqlIdinSourceFile.lastIndexOf(".")));
-
-        }
-
-        return sqlId.toString().trim();
-
-    }
+//    private String assembleSqlId(String sourceFile, String sqlIdinSourceFile) {
+//
+//        StringBuffer sqlId = new StringBuffer();
+//
+//        if (sourceFile != null && sourceFile.length() > 0 && sourceFile.endsWith(".xml]")) {
+//
+//            sqlId.append(sourceFile.substring(sourceFile.lastIndexOf("\\") + 1, sourceFile.lastIndexOf(".")));
+//
+//        } else {
+//
+//            sqlId.append("Annotation");
+//
+//        }
+//
+//        if (sqlIdinSourceFile != null && sqlIdinSourceFile.length() > 0) {
+//
+//            sqlId.append(sqlIdinSourceFile.substring(sqlIdinSourceFile.lastIndexOf(".")));
+//
+//        }
+//
+//        return sqlId.toString().trim();
+//
+//    }
 
     public String getClassName(MethodInvocation invocation){
         try {

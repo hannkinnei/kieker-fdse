@@ -22,6 +22,7 @@ startButton.click(function () {
     sendRequest(1, name, frequency, module);
     startButton.attr("disabled", true);
     endButton.attr("disabled", false);
+    startTime = new Date().toLocaleString();
     moduleNames.attr("disabled", true);
     scenarioNames.attr("disabled", true);
     scenarioFrequencies.attr("disabled", true);
@@ -50,19 +51,19 @@ function sendRequest(type, name, frequency, module) {
     /*解决中文乱码*/
     name = encodeURI(encodeURI(name));
     queryString=queryString+"type=" + type +"&name=" + name + "&frequency=" + frequency + "&module=" + module;
-    xmlHttp.onreadystatechange= function () {
-        if(xmlHttp.readyState === 4){
-            if(xmlHttp.status === 200){
+    // xmlHttp.onreadystatechange= function () {
+    //     if(xmlHttp.readyState === 4){
+    //         if(xmlHttp.status === 200){
                 // let responseText = document.createTextNode(xmlHttp.responseText);
-                if(type === 1){
-                    startTime = xmlHttp.responseText;
-                }
-                else {
-                    endTime = xmlHttp.responseText;
-                }
-            }
-        }
-    };
+                // if(type === 1){
+                //     startTime = xmlHttp.responseText;
+                // }
+                // else {
+                //     endTime = xmlHttp.responseText;
+                // }
+    //         }
+    //     }
+    // };
     xmlHttp.open("GET",queryString,true);
     xmlHttp.send(null);
 }
@@ -71,7 +72,6 @@ function addScenario() {
     let html = scenarios.html();
     if($.trim(html) === ""){
         html = "<tr>\n" +
-            "            <th>Module Name</th>\n" +
             "            <th>Scenario Name</th>\n" +
             "            <th>Start Time</th>\n" +
             "            <th>End Time</th>\n" +
@@ -79,7 +79,6 @@ function addScenario() {
             "        </tr>";
     }
     html += "<tr>\n" +
-        "            <td>" + moduleName + "</td>\n" +
         "            <td>" + scenarioName + "</td>\n" +
         "            <td>" + startTime + "</td>\n" +
         "            <td>" + endTime + "</td>\n" +
